@@ -1,0 +1,8 @@
+/*************************************************************************************************************/
+IMPORTANT IMPORTANT IMPORTANT 
+
+ONLY core page attributes are placed within this folder. 
+
+That means only header, footer, and other core attributes
+
+/*************************************************************************************************************/

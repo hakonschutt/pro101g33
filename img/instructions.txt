@@ -1,0 +1,10 @@
+/******************************************************************************/
+IMPORTANT! IMPORTANT! IMPORTANT! 
+
+All images related to diffrent pages, are to be placed inn a uniqe folder! 
+
+Only CORE(!!) images are placed in the general folder. 
+
+/*****************************************************************************/
+
+
