@@ -1,0 +1,25 @@
+{
+  "name": "pro101g33",
+  "version": "1.0.0",
+  "description": "Webprosjekt - gruppe 33",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakonschutt/pro101g33.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakonschutt/pro101g33/issues"
+  },
+  "homepage": "https://github.com/hakonschutt/pro101g33#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
