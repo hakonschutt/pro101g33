@@ -1,0 +1,7 @@
+/*******************************************************************************************************/
+This folder is for JS scripts that are being used on the site. 
+
+ONLY Javascript. 
+If you intende to make a script with a different coding language, you have to make a unique folder
+
+/*******************************************************************************************************/
