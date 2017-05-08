@@ -1,15 +1,16 @@
 <?php
+
     $host = "localhost";
-    $db = "###";
+    $db = "campus";
     $bruker = "root";
     $pass = "root";
 
-    // Trying to connect to the databse. If a problem occures, gi the follow custom message to the user. 
+    // Prøv å koble til databasen. Hvis problem oppstår, gi en feilmelding til bruker.
     try {
         $database = new PDO("mysql:host=$host;dbname=$db", "$bruker", "$pass");
         $database -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
-        echo "Beklager, det oppstod et problem med databasen. Gi beskjed til administr$
+        echo "Beklager, det oppstod et problem med databasen. Gi beskjed til administrasjonen";
         exit();
-    }
+    } 
 ?>
