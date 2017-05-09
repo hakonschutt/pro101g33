@@ -3,6 +3,7 @@
 require 'core/init.php'; 
 echo Init::header();
 
+require_once 'core/header.php';
 
 $error = null;
 $id = null;
@@ -40,4 +41,32 @@ if ($error === null){
 	}
 }
 
+// Starter queryen.
+    $query = "SELECT * FROM type";
+    $sql = $database->prepare("$query;");
+    $sql->setFetchMode(PDO::FETCH_OBJ);
+    $sql->execute();
+
+    // Kjører en loop for hvert element i som PDO henter.
+    while ($element = $sql->fetch()) {
+    	echo'
+	    	<a href="#">
+	            <div class="aktivitet" id="aktivitet' . $element->type_id . '">
+	                <img class="aktivitet-icon" src="' . $element->bilde_path . '"/>
+	                <span class="aktivitet-name">' . $element->type_navn . '</span>
+	            </div>
+	        </a>
+        ';
+    }
+
+require_once 'core/footer.php';
+
 echo Init::footer(); 
+
+
+
+
+
+
+
+
