@@ -64,6 +64,28 @@ echo '<div class="activities">';
 	echo '</div>';
 echo '</div>';
 
+/***************************************/
+/*	Room for rest of activity post
+/*
+/***************************************/
+
+?>
+<div class="info">
+	<div class="info--inner">
+		<div class="info--inner-left">
+	
+
+		</div>
+		<div class="info--inner-right">
+		
+
+		</div>
+	</div>
+</div>
+
+
+
+<?php
 require_once 'core/footer.php';
 
 echo Init::footer(); 
