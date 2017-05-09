@@ -14,10 +14,10 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 }
 
-echo $id; 
+//echo $id; 
 
 
-if ($error === null){
+/*if ($error === null){
 	// Starter queryen.
 
 	$query = "SELECT * FROM campus WHERE campus_id = :id";
@@ -39,25 +39,30 @@ if ($error === null){
 	        </a>
 	    ';
 	}
-}
+}*/
 
-// Starter queryen.
-    $query = "SELECT * FROM type";
-    $sql = $database->prepare("$query;");
-    $sql->setFetchMode(PDO::FETCH_OBJ);
-    $sql->execute();
+echo '<div class="activities">';
+	echo '<div class="activities-inner">';
+	// Starter queryen.
+	    $query = "SELECT * FROM type";
+	    $sql = $database->prepare("$query;");
+	    $sql->setFetchMode(PDO::FETCH_OBJ);
+	    $sql->execute();
 
-    // Kjører en loop for hvert element i som PDO henter.
-    while ($element = $sql->fetch()) {
-    	echo'
-	    	<a href="#">
-	            <div class="aktivitet" id="aktivitet' . $element->type_id . '">
-	                <img class="aktivitet-icon" src="' . $element->bilde_path . '"/>
-	                <span class="aktivitet-name">' . $element->type_navn . '</span>
-	            </div>
-	        </a>
-        ';
-    }
+	    // Kjører en loop for hvert element i som PDO henter.
+	    while ($element = $sql->fetch()) {
+	    	echo'
+		    	<a href="#">
+		            <div class="activity" id="activity' . $element->type_id . '">
+		                <img class="activity-icon" src="' . $element->bilde_path . '"/>
+		                <span class="activity-name">' . $element->type_navn . '</span>
+		            </div>
+		        </a>
+	        ';
+	    }
+
+	echo '</div>';
+echo '</div>';
 
 require_once 'core/footer.php';
 
