@@ -77,6 +77,29 @@
       width: 0%;
       left: 50%; }
 
+#opacity {
+  position: fixed;
+  height: calc(100% - 70px);
+  top: 70px;
+  left: 0;
+  width: calc(100% - 300px);
+  background-color: #ffffff;
+  opacity: 0.5;
+  display: none; }
+
+.menu {
+  position: fixed;
+  height: calc(100% - 70px);
+  top: 70px;
+  right: 0;
+  background-color: #2B518C;
+  display: none; }
+  .menu-inner {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    margin-left: 50px; }
+
 .footer {
   background-color: #2B518C;
   width: 100%;
