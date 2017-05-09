@@ -1,5 +1,87 @@
 /* Speider specific fonts */
 /* Typography */
 /* Colours */
+.indexbody {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center fixed;
+  background-size: cover; }
+
+.main-container {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #ffffff; }
+
+.left-col {
+  width: 45%;
+  height: 100%;
+  float: left;
+  position: relative; }
+  .left-col-inner {
+    width: 60%;
+    margin: auto 20%;
+    position: absolute; }
+    .left-col-inner-logo {
+      width: 100%;
+      margin-bottom: 40px; }
+    .left-col-inner-text {
+      text-align: justify; }
+
+.middle-line {
+  position: relative;
+  transform: rotate(90deg); }
+
+.right-col {
+  width: 45%;
+  float: right; }
+  .right-col .campus-title {
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 30px; }
+  .right-col .campus {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 120px;
+    margin: 10px 0;
+    position: relative;
+    display: block; }
+    .right-col .campus-icon {
+      position: absolute;
+      height: 100px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 20px; }
+    .right-col .campus-name {
+      font-size: 2.5rem;
+      line-height: 120px;
+      color: #ffffff;
+      position: absolute;
+      margin-left: 150px; }
+    .right-col .campus-arrow {
+      position: absolute;
+      height: 50px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

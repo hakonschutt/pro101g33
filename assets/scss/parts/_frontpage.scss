@@ -1,0 +1,120 @@
+.indexbody {
+	width: 100%; 
+	height: 100%; 
+	background: no-repeat center center fixed;
+	background-size: cover; 
+}
+
+.main-container {
+	margin: 0; 
+	padding: 0;
+	width: 80%; 
+	height: 80%; 
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	top: 0; 
+	bottom: 0; 
+	margin: auto; 
+	//background-color: red; 
+	color: #ffffff; 
+}
+
+.left-col {
+	width: 45%;
+	height: 100%; 
+	float: left;
+	position: relative;
+	//background-color: green;
+
+	&-inner {
+		width: 60%;
+		margin: auto 20%; 
+		position: absolute; 
+		
+		//background-color: yellow; 
+
+		&-logo {
+			width: 100%;
+			margin-bottom: 40px;  
+		} 
+
+		&-text {
+			text-align:justify;
+		} 
+	}
+}
+
+.middle-line {
+	position: relative;
+	transform: rotate(90deg);
+}
+
+.right-col {
+	width: 45%; 
+	float: right; 
+
+	.campus-title {
+		width: 80%; 
+		text-align: center; 
+		font-size: 3rem; 
+		border-bottom: 2px solid white;
+		left: 0; 
+		right: 0; 
+		margin: auto; 
+		margin-bottom: 30px; 
+	} 
+
+	.campus {
+		border: 2px solid #fff;
+		border-radius: 10px; 
+		height: 120px; 
+		margin: 10px 0; 
+		position: relative;
+		display: block;   
+
+		&-icon {
+			position: absolute; 
+			height: 100px;
+			top: 0; 
+			bottom: 0; 
+			left: 0; 
+			margin: auto 20px; 
+
+		}
+
+		&-name {
+			font-size: 2.5rem;
+			line-height: 120px;
+			color: #ffffff;
+			position: absolute;
+			margin-left: 150px; 
+
+		}
+
+		&-arrow {
+			position: absolute; 
+			height: 50px;
+			top: 0; 
+			bottom: 0; 
+			right: 0; 
+			margin: auto 20px; 
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
