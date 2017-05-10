@@ -40,8 +40,9 @@
 			}
 
 			&-info {
-				width: 250px;
-				height: 182px;
+				width: 230px;
+				height: 162px;
+				padding: 20px;
 				background-color: $brandcolor;
 				position: absolute;
 				left: 30px;
@@ -51,19 +52,21 @@
 					width: 100%;
 					height: 50px;
 					display: block;
-					margin-top: 8px;
+					margin-top: 5px;
 
 					img {
 						display: inline-block;
-						max-height: 40px;
+						max-height: 30px;
 						max-width: 30px;
-						margin: 5px;
-						margin-left: 10px;
+						margin: 10px 10px;
 					}
 
 					p {
 						display: inline-block;
 						font-size: 10px;
+						bottom: 20px;
+						position: relative;
+						font-size: 0.9rem;
 					}
 				}
 			}
@@ -73,8 +76,49 @@
 			width: 45%;
 			float: right;
 			height: 436px;
-			background-color: blue;
 			position: relative;
+
+			&-wrap {
+				width: 450px;
+				height: 300px; 
+				position: absolute;
+				top: 0;
+				right: 0; 
+				bottom: 0; 
+				left: 0; 
+				margin: auto;
+
+				input, textarea {
+					padding: 5px;
+					width: 435px;
+					font-family: Helvetica, sans-serif;
+					font-size: 1.4em;
+					margin: 0px 0px 20px 0px;
+					border: 1px solid $white;
+					background-color: transparent;
+					color: $white;
+				}
+
+				input::placeholder, textarea::placeholder{
+					color: white;
+				}
+
+				textarea {
+					height: 130px;
+				}
+
+				textarea:focus, input:focus {
+					border: 2px solid $brandcolor;
+				}
+
+				input.submit-button {
+					width: 180px;
+					float: right;
+					color: $white;
+					background-color: transparent;
+				}
+
+			}
 		}
 	}
 }

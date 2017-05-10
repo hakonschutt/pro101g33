@@ -99,7 +99,7 @@ echo '</div>';
 			<div class="contact-inner-left-info">
 				<div class="contact-inner-left-info-bit">
 					<img src="img/icons/pin.png" />
-					<p>Chr. Krohgs gate 32, 0186 Oslo</p>
+					<p style="bottom: 12px;">Chr. Krohgs gate 32, </br>0186 Oslo</p>
 				</div>
 				<div class="contact-inner-left-info-bit">
 					<img src="img/icons/mail.png" />
@@ -109,11 +109,20 @@ echo '</div>';
 					<img src="img/icons/phone.png" />
 					<p>22 05 75 50</p>
 				</div>	
-
 			</div>
 		</div>
 		<div class="contact-inner-right">
+			<div class="contact-inner-right-wrap">
+				<form method="post" action="core/contactaction.php">
+					<input type="text" name="Name" id="Name" placeholder="Navn"/>
+		
+					<input type="text" name="Email" id="Email" placeholder="Email"/>
+					
+					<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
 
+					<input type="submit" name="submit" value="Send melding" class="submit-button" />
+				</form>
+			</div>
 		</div>
 	</div>
 
