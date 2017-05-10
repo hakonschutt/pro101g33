@@ -129,8 +129,68 @@
 	&-inner {
 		position: relative;
     	height: 100%;
-    	width: 300px;
-    	margin-left: 50px;
+    	width: 350px;
+
+    	&-items {
+    		margin-top: 100px;
+    		width: 100%; 
+    		text-align: center;
+    		list-style-type: none;  
+
+    		a {
+    			text-decoration: none; 
+    			color: $white;
+    		}
+
+    		&-item {
+    			padding: 10px 0; 
+    			display: block; 
+    			font-size: 1.5rem;
+    		}
+    	}
+
+    	&-campuses {
+    		width: 100%; 
+    		height: 200px; 
+    		margin-top: 150px;
+    		position: relative;
+
+
+    		&-title {
+    			width :100%; 
+    			text-align: center;
+    			color: $white;
+
+    		}
+
+    		&-campus {
+    			display: inline-block;
+    			position: relative;
+    			width: 90px;
+    			height: 90px;
+    			margin-left: 17px;
+    			margin-top: 20px;
+    			line-height: 100px;
+
+    			&-icon {
+    				height: 100%;
+    				width: 100%; 
+
+    			} 
+
+    			&-name {
+    				width: 100%; 
+    				text-align: center;
+    				font-size: 3.0rem; 
+    				position: absolute;
+    				top: 0; 
+    				bottom: 0; 
+    				margin: auto;
+    				color: white; 
+
+    			}
+    		}
+    	}
 	}
 }
 

@@ -45,9 +45,45 @@
 		    }
 		});
 	</script>
-	<div id="opacity"></div>
+	<a href="#"><div id="opacity"></div></a>
 	<div class="menu" id="menu">
 		<div class="menu-inner">
+			<ul class="menu-inner-items">
+				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
+				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
+				<a href="#omoss"><li class="menu-inner-items-item">Om oss</li></a>
+				<a href="#kontaktoss"><li class="menu-inner-items-item">Kontakt oss</li></a>
+				<a href="#"><li class="menu-inner-items-item">Kart oversikt</li></a>
+			</ul>
 
+			<div class="menu-inner-campuses">
+                <h1 class="menu-inner-campuses-title">Velg Campus</h1>
+            	<?php 
+                    
+                    // Starter queryen.
+                    $query = "SELECT * FROM campus";
+                    $sql = $database->prepare("$query;");
+                    $sql->setFetchMode(PDO::FETCH_OBJ);
+                    $sql->execute();
+
+                    // Kjører en loop for hvert element i som PDO henter.
+                    while ($element = $sql->fetch()) {
+                        if ($element->campus_id === $id){
+                        	$class = 'active';
+                        } else {
+                        	$class = '';
+                        }
+
+                        echo '
+	                            <a href="campus.php?id=' . $element->campus_id . '">
+	                                <div class="menu-inner-campuses-campus ' . $class . '" id="campus' . $element->campus_id . '">
+	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->bilde_path . '"/>
+	                                    <span class="menu-inner-campuses-campus-name">' . substr($element->navn,0,1) . '</span>
+	                                </div>
+	                            </a>
+	                        ';
+                    }
+                ?>
+            </div>
 		</div>
 	</div>

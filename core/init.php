@@ -26,7 +26,6 @@
 				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 			    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-			    <!-- Bruker PHP for å hente tittelen på gjeldende side -->
 			    <title>@Campus</title>
 			</head>
    		';

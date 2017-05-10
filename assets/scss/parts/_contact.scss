@@ -100,7 +100,7 @@
 				}
 
 				input::placeholder, textarea::placeholder{
-					color: white;
+					color: $white;
 				}
 
 				textarea {
@@ -108,7 +108,7 @@
 				}
 
 				textarea:focus, input:focus {
-					border: 2px solid $brandcolor;
+					border: 1px solid $brandcolor;
 				}
 
 				input.submit-button {

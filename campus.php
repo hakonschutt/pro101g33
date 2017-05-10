@@ -41,7 +41,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	}
 }*/
 
-echo '<div class="activities">';
+echo '<div class="activities" id="Aktiviteter">';
 	echo '<div class="activities-inner">';
 	// Starter queryen.
 	    $query = "SELECT * FROM type";
@@ -70,7 +70,7 @@ echo '</div>';
 /***************************************/
 
 ?>
-<div class="info">
+<div class="info" id="omoss">
 	<div class="info-inner">
 		<div class="info-inner-left">
 			<div class="info-inner-left-topwrap">
@@ -91,7 +91,7 @@ echo '</div>';
 	</div>
 </div>
 
-<div class="contact" style="background-image: url('img/LargePic/Background.png');">
+<div class="contact" id="kontaktoss" style="background-image: url('img/LargePic/Background.png');">
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>
 		<div class="contact-inner-left">

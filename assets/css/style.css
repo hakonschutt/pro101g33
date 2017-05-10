@@ -103,8 +103,48 @@
   .menu-inner {
     position: relative;
     height: 100%;
-    width: 300px;
-    margin-left: 50px; }
+    width: 350px; }
+    .menu-inner-items {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center;
+      list-style-type: none; }
+      .menu-inner-items a {
+        text-decoration: none;
+        color: #ffffff; }
+      .menu-inner-items-item {
+        padding: 10px 0;
+        display: block;
+        font-size: 1.5rem; }
+    .menu-inner-campuses {
+      width: 100%;
+      height: 200px;
+      margin-top: 150px;
+      position: relative; }
+      .menu-inner-campuses-title {
+        width: 100%;
+        text-align: center;
+        color: #ffffff; }
+      .menu-inner-campuses-campus {
+        display: inline-block;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin-left: 17px;
+        margin-top: 20px;
+        line-height: 100px; }
+        .menu-inner-campuses-campus-icon {
+          height: 100%;
+          width: 100%; }
+        .menu-inner-campuses-campus-name {
+          width: 100%;
+          text-align: center;
+          font-size: 3.0rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          color: white; }
 
 .footer {
   background-color: #2B518C;
@@ -378,11 +418,11 @@
           background-color: transparent;
           color: #ffffff; }
         .contact-inner-right-wrap input::placeholder, .contact-inner-right-wrap textarea::placeholder {
-          color: white; }
+          color: #ffffff; }
         .contact-inner-right-wrap textarea {
           height: 130px; }
         .contact-inner-right-wrap textarea:focus, .contact-inner-right-wrap input:focus {
-          border: 2px solid #2B518C; }
+          border: 1px solid #2B518C; }
         .contact-inner-right-wrap input.submit-button {
           width: 180px;
           float: right;
