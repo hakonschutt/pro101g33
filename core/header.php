@@ -37,13 +37,6 @@
 				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
 				<a href="#omoss"><li class="menu-inner-items-item">Om oss</li></a>
 				<a href="#kontaktoss"><li class="menu-inner-items-item">Kontakt oss</li></a>
-				<script type="text/javascript">
-				$(document).ready(function(){
-					$('#map').click(function(){
-						$('#nav-icon').toggleClass('open');
-					});
-				});	
-			</script>
 				<a href="#"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 
