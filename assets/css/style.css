@@ -1,7 +1,10 @@
 /* Typography */
 /* Colours */
 .mainbody {
-  background-color: #E8ECF3; }
+  background-color: #E8ECF3;
+  position: relative;
+  margin: 0;
+  padding-bottom: 100px; }
 
 .nav {
   background-color: #2B518C;
@@ -85,20 +88,19 @@
   position: fixed;
   height: calc(100% - 70px);
   margin-top: 70px;
-  left: 0;
-  width: calc(100% - 300px);
+  width: calc(100% - 350px);
+  left: calc(-100% + 350px);
   background-color: #ffffff;
   opacity: 0.5;
-  display: none;
+  display: block;
   z-index: 98; }
 
 .menu {
   position: fixed;
   height: calc(100% - 70px);
   margin-top: 70px;
-  right: 0;
+  right: -350px;
   background-color: #2B518C;
-  display: none;
   z-index: 99; }
   .menu-inner {
     position: relative;
@@ -132,7 +134,7 @@
         height: 90px;
         margin-left: 17px;
         margin-top: 20px;
-        line-height: 100px; }
+        line-height: 90px; }
         .menu-inner-campuses-campus-icon {
           height: 100%;
           width: 100%; }
@@ -145,13 +147,18 @@
           bottom: 0;
           margin: auto;
           color: white; }
+        .menu-inner-campuses-campus .active {
+          border-radius: 50%;
+          background-color: #2B518C;
+          opacity: 0.4; }
 
 .footer {
   background-color: #2B518C;
   width: 100%;
   height: 100px;
-  bottom: 0 !important;
-  position: relative; }
+  position: absolute;
+  bottom: 0;
+  overflow: hidden; }
   .footer-inner {
     width: 90%;
     position: absolute;
@@ -271,8 +278,12 @@
   top: 70px;
   position: relative;
   width: 100%;
-  height: 300px;
-  margin-bottom: 150px; }
+  min-height: 200px;
+  max-height: 700px;
+  height: 700px;
+  display: flex;
+  margin-bottom: 150px;
+  list-style: none; }
   .activities-inner {
     max-width: 1000px;
     height: 100%;
@@ -282,13 +293,13 @@
     margin: auto; }
   .activities .activity {
     display: inline-block;
-    padding: 15px;
+    padding: 20px;
+    margin-left: 10px;
     width: 107px;
     height: 115px;
     margin-top: 20px;
     position: relative;
-    text-align: center;
-    border: 1px solid #ffffff; }
+    text-align: center; }
     .activities .activity-icon {
       max-height: 80px;
       max-width: 80px; }
@@ -299,7 +310,10 @@
       bottom: 10px;
       left: 0;
       right: 0;
-      margin: auto; }
+      margin: auto;
+      color: #2B518C; }
+  .activities .activity:hover {
+    border-bottom: 1px solid #2B518C; }
 
 .info {
   width: 100%;

@@ -29,22 +29,6 @@
 			</div></a>
 	    </div>
 	</div>
-	<script type="text/javascript">
-		var btnClick = document.getElementById("nav-icon");
-
-		btnClick.addEventListener("click", function() {
-		    var myDiv = document.getElementById("menu");
-		    var myDiv2 = document.getElementById("opacity");
-		    if (myDiv.style.display == "block") {
-		       myDiv.style.display = "none";
-		       myDiv2.style.display = "none";
-		    }
-		    else{
-		        myDiv.style.display = "block";
-		        myDiv2.style.display = "block";
-		    }
-		});
-	</script>
 	<a href="#"><div id="opacity"></div></a>
 	<div class="menu" id="menu">
 		<div class="menu-inner">
@@ -53,7 +37,14 @@
 				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
 				<a href="#omoss"><li class="menu-inner-items-item">Om oss</li></a>
 				<a href="#kontaktoss"><li class="menu-inner-items-item">Kontakt oss</li></a>
-				<a href="#"><li class="menu-inner-items-item">Kart oversikt</li></a>
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$('#map').click(function(){
+						$('#nav-icon').toggleClass('open');
+					});
+				});	
+			</script>
+				<a href="#"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 
 			<div class="menu-inner-campuses">
@@ -76,14 +67,48 @@
 
                         echo '
 	                            <a href="campus.php?id=' . $element->campus_id . '">
-	                                <div class="menu-inner-campuses-campus ' . $class . '" id="campus' . $element->campus_id . '">
+	                                <div class="menu-inner-campuses-campus" id="campus' . $element->campus_id . '">
 	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->bilde_path . '"/>
-	                                    <span class="menu-inner-campuses-campus-name">' . substr($element->navn,0,1) . '</span>
+	                                    <span class="menu-inner-campuses-campus-name ' . $class . '">' . substr($element->navn,0,1) . '</span>
 	                                </div>
 	                            </a>
 	                        ';
                     }
                 ?>
             </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script>
+				var $rightMenu = $('#menu');
+				var $leftMenu = $('#opacity');
+				var rightVal = parseInt($rightMenu.css('right'));
+				var leftVal = parseInt($leftMenu.css('left'));
+
+				$('#nav-icon').click(function () {
+				    animateRight = (parseInt($rightMenu.css('right')) == 0) ? rightVal : 0;
+					$rightMenu.animate({
+						right: animateRight + 'px'
+				    });
+
+				    animateLeft = (parseInt($leftMenu.css('left')) == 0) ? leftVal : 0;
+					$leftMenu.animate({
+						left: animateLeft + 'px'
+				    });
+				});
+
+				$('#opacity').click(function () {
+					$('#nav-icon').toggleClass('open');
+
+					animateRight = (parseInt($rightMenu.css('right')) == 0) ? rightVal : 0;
+					$rightMenu.animate({
+						right: animateRight + 'px'
+				    });
+
+				    animateLeft = (parseInt($leftMenu.css('left')) == 0) ? leftVal : 0;
+					$leftMenu.animate({
+						left: animateLeft + 'px'
+				    });
+				});
+
+			</script>
 		</div>
 	</div>

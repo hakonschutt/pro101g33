@@ -1,5 +1,8 @@
 .mainbody {
 	background-color: $backgroundcolor;
+	position: relative;
+	margin: 0;
+	padding-bottom: 100px;
 }
 
 .nav {
@@ -109,11 +112,11 @@
 	position: fixed;
 	height: calc(100% - 70px); 
 	margin-top: 70px; 
-	left: 0; 
-	width: calc(100% - 300px);
+	width: calc(100% - 350px);
+	left: calc(-100% + 350px); 
 	background-color: $white; 
 	opacity: 0.5; 
-	display: none; 
+	display: block; 
 	z-index: 98; 
 }
 
@@ -121,9 +124,8 @@
 	position: fixed;
 	height: calc(100% - 70px);
 	margin-top: 70px; 
-	right: 0; 
+	right: -350px; 
 	background-color: $brandcolor;
-	display: none;
 	z-index: 99;
 
 	&-inner {
@@ -170,12 +172,11 @@
     			height: 90px;
     			margin-left: 17px;
     			margin-top: 20px;
-    			line-height: 100px;
+    			line-height: 90px;
 
     			&-icon {
     				height: 100%;
     				width: 100%; 
-
     			} 
 
     			&-name {
@@ -187,7 +188,12 @@
     				bottom: 0; 
     				margin: auto;
     				color: white; 
+    			}
 
+    			.active {
+    				border-radius: 50%; 
+    				background-color: $brandcolor;
+    				opacity: 0.4;
     			}
     		}
     	}

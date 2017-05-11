@@ -60,7 +60,6 @@ echo '<div class="activities" id="Aktiviteter">';
 		        </a>
 	        ';
 	    }
-
 	echo '</div>';
 echo '</div>';
 
