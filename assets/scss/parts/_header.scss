@@ -142,6 +142,9 @@
     		a {
     			text-decoration: none; 
     			color: $white;
+    			display: block; 
+    			width: 100%; 
+    			height: 100%;
     		}
 
     		&-item {
@@ -194,6 +197,7 @@
     				border-radius: 50%; 
     				background-color: $brandcolor;
     				opacity: 0.4;
+    				cursor: not-allowed;
     			}
     		}
     	}

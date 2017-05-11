@@ -113,7 +113,10 @@
       list-style-type: none; }
       .menu-inner-items a {
         text-decoration: none;
-        color: #ffffff; }
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        height: 100%; }
       .menu-inner-items-item {
         padding: 10px 0;
         display: block;
@@ -150,7 +153,8 @@
         .menu-inner-campuses-campus .active {
           border-radius: 50%;
           background-color: #2B518C;
-          opacity: 0.4; }
+          opacity: 0.4;
+          cursor: not-allowed; }
 
 .footer {
   background-color: #2B518C;
@@ -439,9 +443,15 @@
           border: 1px solid #2B518C; }
         .contact-inner-right-wrap input.submit-button {
           width: 180px;
+          height: 45px;
+          padding: 10px 5px;
           float: right;
           color: #ffffff;
-          background-color: transparent; }
+          background-color: transparent;
+          transition: all 0.3s ease 0s; }
+        .contact-inner-right-wrap input.submit-button:hover {
+          background-color: #ffffff;
+          color: #2B518C; }
 
 * {
   margin: 0;

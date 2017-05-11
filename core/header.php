@@ -32,14 +32,13 @@
 	<a href="#"><div id="opacity"></div></a>
 	<div class="menu" id="menu">
 		<div class="menu-inner">
-			<ul class="menu-inner-items">
+			<ul class="menu-inner-items" id="navmenu">
 				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
 				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
 				<a href="#omoss"><li class="menu-inner-items-item">Om oss</li></a>
 				<a href="#kontaktoss"><li class="menu-inner-items-item">Kontakt oss</li></a>
 				<a href="#"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
-
 			<div class="menu-inner-campuses">
                 <h1 class="menu-inner-campuses-title">Velg Campus</h1>
             	<?php 
@@ -101,6 +100,22 @@
 						left: animateLeft + 'px'
 				    });
 				});
+
+				function goToByScroll(id){
+			        id = id.replace("link", "");
+			        $('html,body').animate({
+			            scrollTop: $("#"+id).offset().top},
+			            'slow');
+			    }
+
+			    $("#navmenu > ul > a").click(function(e) { 
+			          // Prevent a page reload when a link is pressed
+			        e.preventDefault(); 
+			          // Call the scroll function
+			        goToByScroll($(this).attr("id"));           
+			    });
+
+				
 
 			</script>
 		</div>

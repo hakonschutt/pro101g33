@@ -113,9 +113,17 @@
 
 				input.submit-button {
 					width: 180px;
+					height: 45px;
+					padding: 10px 5px;
 					float: right;
 					color: $white;
 					background-color: transparent;
+				    transition: all 0.3s ease 0s;
+				}
+
+				input.submit-button:hover {
+					background-color: $white; 
+					color: $brandcolor;
 				}
 
 			}
