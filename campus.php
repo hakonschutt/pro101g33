@@ -69,7 +69,7 @@ echo '</div>';
 /***************************************/
 
 ?>
-<div class="info" id="omoss">
+<div class="info" id="Omoss">
 	<div class="info-inner">
 		<div class="info-inner-left">
 			<div class="info-inner-left-topwrap">
@@ -90,7 +90,7 @@ echo '</div>';
 	</div>
 </div>
 
-<div class="contact" id="kontaktoss" style="background-image: url('img/LargePic/Background.png');">
+<div class="contact" id="Kontaktoss" style="background-image: url('img/LargePic/Background.png');">
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>
 		<div class="contact-inner-left">

@@ -15,10 +15,9 @@
 
 	&-bar {
 		width: 85%; 
-		position: absolute;
-		left: 0; 
-		right: 0; 
-		top: 0; 
+		height: 100%;
+		position: relative;
+		right: 0;  
 		bottom: 0; 
 		margin: auto; 
 
@@ -110,8 +109,7 @@
 
 #opacity {
 	position: fixed;
-	height: calc(100% - 70px); 
-	margin-top: 70px; 
+	height: calc(100% - 70px);  
 	width: calc(100% - 350px);
 	left: calc(-100% + 350px); 
 	background-color: $white; 
@@ -123,7 +121,6 @@
 .menu { 
 	position: fixed;
 	height: calc(100% - 70px);
-	margin-top: 70px; 
 	right: -350px; 
 	background-color: $brandcolor;
 	z-index: 99;

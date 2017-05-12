@@ -35,8 +35,8 @@
 			<ul class="menu-inner-items" id="navmenu">
 				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
 				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
-				<a href="#omoss"><li class="menu-inner-items-item">Om oss</li></a>
-				<a href="#kontaktoss"><li class="menu-inner-items-item">Kontakt oss</li></a>
+				<a href="#Omoss"><li class="menu-inner-items-item">Omoss</li></a>
+				<a href="#Kontaktoss"><li class="menu-inner-items-item">Kontaktoss</li></a>
 				<a href="#"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 			<div class="menu-inner-campuses">
@@ -85,6 +85,8 @@
 					$leftMenu.animate({
 						left: animateLeft + 'px'
 				    });
+
+				    return false; 
 				});
 
 				$('#opacity').click(function () {
@@ -99,23 +101,31 @@
 					$leftMenu.animate({
 						left: animateLeft + 'px'
 				    });
+
+				    return false; 
 				});
 
-				function goToByScroll(id){
-			        id = id.replace("link", "");
-			        $('html,body').animate({
-			            scrollTop: $("#"+id).offset().top},
-			            'slow');
-			    }
+				$('#navmenu').find('a').on('click', function (e) {
+				    var targetSec = $(this).text();
+				    //var targetSec = this.href;
+				   	//var targetSec = $('a').attr('href');
+				    //var targetSec = $(this).attr('href');
+				    $('html, body').animate({
+				        scrollTop: $('#' + targetSec).offset().top - 100
+				    }, 1000);
 
-			    $("#navmenu > ul > a").click(function(e) { 
-			          // Prevent a page reload when a link is pressed
-			        e.preventDefault(); 
-			          // Call the scroll function
-			        goToByScroll($(this).attr("id"));           
-			    });
+				    $('#nav-icon').toggleClass('open');
 
-				
+					animateRight = (parseInt($rightMenu.css('right')) == 0) ? rightVal : 0;
+					$rightMenu.animate({
+						right: animateRight + 'px'
+				    });
+
+				    animateLeft = (parseInt($leftMenu.css('left')) == 0) ? leftVal : 0;
+					$leftMenu.animate({
+						left: animateLeft + 'px'
+				    });
+				});
 
 			</script>
 		</div>
