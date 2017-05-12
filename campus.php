@@ -63,6 +63,8 @@ echo '<div class="activities" id="Aktiviteter">';
 	echo '</div>';
 echo '</div>';
 
+
+
 /***************************************/
 /*	Room for rest of activity post
 /*
