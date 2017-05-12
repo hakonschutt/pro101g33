@@ -34,9 +34,9 @@
 		<div class="menu-inner">
 			<ul class="menu-inner-items" id="navmenu">
 				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
-				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
-				<a href="#Omoss"><li class="menu-inner-items-item">Omoss</li></a>
-				<a href="#Kontaktoss"><li class="menu-inner-items-item">Kontaktoss</li></a>
+				<a href="<?php echo 'campus.php?id=' . $id . '#Aktiviteter'?>"><li class="menu-inner-items-item">Aktiviteter</li></a>
+				<a href="<?php echo 'campus.php?id=' . $id . '#Omoss'?>"><li class="menu-inner-items-item">Omoss</li></a>
+				<a href="<?php echo 'campus.php?id=' . $id . '#Kontaktoss'?>"><li class="menu-inner-items-item">Kontaktoss</li></a>
 				<a href="<?php echo 'map.php?id=' . $id ?>"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 			<div class="menu-inner-campuses">
@@ -111,7 +111,7 @@
 				   	//var targetSec = $('a').attr('href');
 				    //var targetSec = $(this).attr('href');
 				    $('html, body').animate({
-				        scrollTop: $('#' + targetSec).offset().top - 100
+				        scrollTop: $('#' + targetSec).offset().top
 				    }, 1000);
 
 				    $('#nav-icon').toggleClass('open');

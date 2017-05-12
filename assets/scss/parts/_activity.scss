@@ -1,12 +1,11 @@
 .activities { 
-	margin-top: 70px; 
+	padding-top: 70px; 
 	position: relative;
 	width: 100%; 
 	min-height: 200px; 
 	max-height: 700px; 
 	height: 200px;
 	display: flex; 
-	margin-bottom: 100px;
 	list-style: none;
 
 	&-inner {
