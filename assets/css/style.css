@@ -293,6 +293,8 @@
     left: 0;
     right: 0;
     margin: auto; }
+  .activities a {
+    text-decoration: none; }
   .activities .activity {
     display: inline-block;
     padding: 20px;
