@@ -37,7 +37,7 @@
 				<a href="#Aktiviteter"><li class="menu-inner-items-item">Aktiviteter</li></a>
 				<a href="#Omoss"><li class="menu-inner-items-item">Omoss</li></a>
 				<a href="#Kontaktoss"><li class="menu-inner-items-item">Kontaktoss</li></a>
-				<a href="#"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
+				<a href="<?php echo 'map.php?id=' . $id ?>"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 			<div class="menu-inner-campuses">
                 <h1 class="menu-inner-campuses-title">Velg Campus</h1>
