@@ -12,10 +12,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$error = "You need to pass an ID";
 } else {
 	$id = $_GET['id'];
-}
+}?>
 
-//echo $id; 
-
+//echo $id;
 
 /*if ($error === null){
 	// Starter queryen.
@@ -31,46 +30,72 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	while ($element = $sql->fetch()) {
 	    echo '
-	        <a href="campus.php?id=' . $element->campus_id . '">
+	        <!--<a href="campus.php?id=' . $element->campus_id . '">
 	            <div id="campus campus' . $element->campus_id . '">
 	                <img class="campus--icon" src="' . $element->bilde_path . '"/>
 	                <span class="campusn--ame">' . $element->navn . '</span>
 	            </div>
-	        </a>
+	        </a>-->
 	    ';
 	}
 }*/
 
-echo '<div class="activities" id="Aktiviteter">';
-	echo '<div class="activities-inner">';
+<div class="activities" id="Aktiviteter">
+	<div class="activities-inner">
+	<?php
 	// Starter queryen.
 	    $query = "SELECT * FROM type";
 	    $sql = $database->prepare("$query;");
 	    $sql->setFetchMode(PDO::FETCH_OBJ);
 	    $sql->execute();
 
-	    // Kjører en loop for hvert element i som PDO henter.
+	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a href="#">
+		    	<a href="#act-div' . $element->type_id . '"">
 		            <div class="activity" id="activity' . $element->type_id . '">
 		                <img class="activity-icon" src="' . $element->bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
 		        </a>
 	        ';
-	    }
-	echo '</div>';
-echo '</div>';
+	    }?>
+	</div>
+</div>
+<div class="act-div">
+	<?php
+	// Starter queryen.
+		$query = "SELECT * FROM type";
+	    $sql = $database->prepare("$query;");
+	    $sql->setFetchMode(PDO::FETCH_OBJ);
+	    $sql->execute();
 
+	// Kjører en loop for hvert element i som PDO henter. &id
+		while ($element = $sql->fetch()) {
+			$type_id = $element->type_id;
 
+			echo'
+				<div class="act-div-inner" id="act-div' . $type_id . '">
+					<div class="act-div-inner-left">
+						<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
+						<img class"act-div-inner-left-icon" src="' . $element->bilde_path . '" />
+						<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
+					</div>
+					<div class="act-div-inner-right">';
 
-/***************************************/
-/*	Room for rest of activity post
-/*
-/***************************************/
+					// Starter queryen.
+						$query = "SELECT * FROM campus";
+					    $sql = $database->prepare("$query;");
+					    $sql->setFetchMode(PDO::FETCH_OBJ);
+					    $sql->execute();
 
-?>
+						while ($element = $sql->fetch()) {
+							echo 'hello';
+						}
+				echo '</div>
+			    </div>';
+		}?>
+</div>
 <div class="info" id="Omoss">
 	<div class="info-inner">
 		<div class="info-inner-left">
