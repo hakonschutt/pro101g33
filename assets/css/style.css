@@ -454,13 +454,19 @@
           background-color: #ffffff;
           color: #2B518C; }
 
+.inaktiv-d {
+  height: 500px; }
+
+.aktiv-d {
+  height: 750px; }
+
 .act-div {
   position: relative;
   width: 100%;
-  height: 500px;
   overflow: hidden;
   margin-top: 50px;
   background-color: #ffffff;
+  transition: .3s ease-in-out;
   box-shadow: inset 0px 15px 20px -20px #172d4f, inset 0px -15px 20px -20px #172d4f; }
   .act-div-inner {
     width: 1000px;
@@ -468,8 +474,7 @@
     height: 85%;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: 50px;
     margin: auto; }
     .act-div-inner-left {
       width: 250px;

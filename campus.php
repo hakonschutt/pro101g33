@@ -62,7 +62,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    }?>
 	</div>
 </div>
-<div class="act-div">
+<div class="act-div inaktiv-d">
 	<?php
 	// Starter queryen.
 		$query = "

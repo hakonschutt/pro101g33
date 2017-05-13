@@ -1,10 +1,18 @@
+.inaktiv-d {
+	height: 500px;
+}
+
+.aktiv-d {
+	height: 750px;
+}
+
 .act-div {
 	position: relative;
 	width: 100%; 
-	height: 500px;
 	overflow: hidden;
 	margin-top: 50px; 
 	background-color: $white;
+	transition: .3s ease-in-out;
 	box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);	
 
 	&-inner {
@@ -13,8 +21,7 @@
 		height: 85%; 
 		left: 0; 
 		right: 0; 
-		top: 0;
-		bottom: 0;
+		top: 50px;
 		margin: auto; 
 
 		&-left {

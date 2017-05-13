@@ -135,9 +135,13 @@
 	                if ($($id).hasClass('aktiv')) {
 	                    $($id).removeClass('aktiv');
 	                    $($id).addClass('inaktiv');
-	                } else{
+	                    $('.act-div').removeClass('aktiv-d');
+	                    $('.act-div').addClass('inaktiv-d');
+	                } else {
 	                    $('.act-div-inner-right-box-inner').removeClass('aktiv');
 	                    $('.act-div-inner-right-box-inner').addClass('inaktiv');
+	                    $('.act-div').addClass('aktiv-d');
+	                    $('.act-div').removeClass('inaktiv-d');
 	                    $($id).removeClass('inaktiv');
 	                    $($id).addClass('aktiv');
 	                }
