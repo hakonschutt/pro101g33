@@ -52,9 +52,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a href="#act-div' . $element->type_id . '"">
-		            <div class="activity" id="activity' . $element->type_id . '">
-		                <img class="activity-icon" src="' . $element->bilde_path . '"/>
+		    	<a href="#act-div' . $element->id . '"">
+		            <div class="activity" id="activity' . $element->id . '">
+		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
 		        </a>
@@ -66,50 +66,64 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	<?php
 	// Starter queryen.
 		$query = "
-			SELECT * FROM data
-			JOIN type ON data.type_id = type.type_id;
+			SELECT * FROM type
 		";
 	    $sql = $database->prepare("$query;");
 	    $sql->setFetchMode(PDO::FETCH_OBJ);
 	    $sql->execute();
 
+	    $result = $sql->fetchAll(PDO::FETCH_OBJ);
+
+	    //echo '<pre>' . print_r($result, true) . '</pre>';
+
 	// Kjører en loop for hvert element i som PDO henter. &id
-		while ($element = $sql->fetch()) {
-			$type_id = $element->type_id;
+		foreach ($result as $element) {
+			$type_id = $element->id;
+
+			//echo '<pre>' . print_r($element, true) . '</pre>';
 
 			echo'
-				<div class="act-div-inner" id="act-div' . $type_id . '">
+				<div class="act-div-inner" id="act-div' . $element->id . '">
 					<div class="act-div-inner-left">
 						<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
-						<img class"act-div-inner-left-icon" src="' . $element->bilde_path . '" />
+						<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
 						<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
 					</div>
 					<div class="act-div-inner-right">';
-
+					
 					// Starter queryen.
 						$query = "
 							SELECT * FROM data
-							WHERE campus_id = '$id'
-							LIMIT 6;
+							WHERE campus_id = '$id' AND type_id = '$type_id'
 						";
 					    $sql = $database->prepare("$query;");
 					    $sql->setFetchMode(PDO::FETCH_OBJ);
 					    $sql->execute();
 
-						while ($element = $sql->fetch()) {
+					    $rows = $sql->fetchAll(PDO::FETCH_OBJ);
+
+						foreach ($rows as $row) {
 							echo '
 								<div class="act-div-inner-right-box">
-									<div id="aktivitet' . $element->id  . '" class="act-div-inner-right-box-inner inaktiv">
-		                				<div onclick="aapne(\'#aktivitet' . $element->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap">
-											<h3 class="act-div-inner-right-box-name">' . $element->navn . '</h3>
+									<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
+		                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap">
+											<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
 											<div class="act-div-inner-right-box-right">
-												<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $element->reisetid . 'min</p>
-												<img class="act-div-inner-right-box-right-icon" src="img/icons/arrow.png" />
+												<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
 												<p class="act-div-inner-right-box-right-les">Les mer</p>
 											</div>
 										</div>
-										<div class="act-div-inner-right-box-drop">
-											<p>tekst</p>
+										<div class="act-div-inner-right-box-drop dropdown">
+											<div class="dropdown-inner">
+												<div class="dropdown-inner-left">
+													<p>Adresse: </p>
+													<span>' . $row->adresse . '</span>
+													</br>
+													<p>Beskrivelse: </p>
+													<span>' . $row->beskrivelse . '</span>
+												</div>
+												<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+											</div>
 										</div>
 									</div>
 								</div>

@@ -23,12 +23,12 @@
 		right: 0; 
 		top: 50px;
 		margin: auto; 
+		background-color: $white;
 
 		&-left {
 			width: 250px; 
 			height: 100%;
 			float: left; 
-			background-color: $white; 
 			top: 0; 
 			color: $brandcolor;
 
@@ -53,7 +53,7 @@
 		}
 
 		&-right {
-			width: 70%; 
+			width: 700px; 
 			height: 100%;
 			float: right; 
 			top: 0; 
@@ -88,13 +88,7 @@
 						line-height: 60px;
 						display: inline-block;
 						float: right;
-					}
-
-					&-icon {
-						height: 24px; 
-						margin: 18px 15px;
-						float: right; 
-						display: inline-block;
+						margin-right: 70px;
 					}
 				}
 
@@ -109,21 +103,78 @@
 				&-inner {
 					overflow: hidden;
 					transition: .3s ease-in-out;
+
+					&-wrap {
+						transition: .3s ease-in-out;
+					}
 				}
 
-				&-drop {
+				&-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+					background: 
+				        url('../../img/icons/dropDown.png') no-repeat,
+				        $brandcolor;
+				    color: #444;
+				    background-position: 650px 16px;
+				    background-size: 30px;
+				    color: $white;
+				}
+
+				&-inner.aktiv .act-div-inner-right-box-inner-wrap {
+					background: 
+				        url('../../img/icons/dropDown.png') no-repeat,
+				        $brandcolor;
+				    color: #444;
+				    background-position: 650px -34px;
+				    background-size: 30px;
+				    color: $white;
+				}
+
+				.dropdown {
 					height: 250px;
 					width: 100%; 
-					background-color: red;
+					position: relative;
+					box-sizing: border-box;
+					border: 2px solid $brandcolor;
+
+					&-inner {
+						height: 230px;
+						width: 680px;
+						background-color: $backgroundcolor;
+						position: absolute;
+						top: 0; 
+						right: 0;
+						bottom: 0; 
+						left: 0;
+						margin: auto;
+
+						&-left {
+							height: 200px;
+							width: 300px;
+							float: left; 
+							margin: 15px 15px;
+							color: $brandcolor;
+						}
+
+						p {
+							display: block; 
+						}
+
+						span {
+							display: block;
+							margin-top: 5px;
+							margin-left: 10px;
+						}
+
+						&-image {
+							height: 200px;
+							width: 300px; 
+							overflow: hidden; 
+							float: right; 
+							margin: 15px 15px;
+						}
+					}
 				}
-
-
-
 			}
 		}
 	}
-}
-
-#act-div1, #act-div2, #act-div4, #act-div5, #act-div6 {
-	display: none;
 }

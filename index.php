@@ -25,9 +25,9 @@
                     // Kjører en loop for hvert element i som PDO henter.
                     while ($element = $sql->fetch()) {
                         echo '
-                            <a href="campus.php?id=' . $element->campus_id . '">
-                                <div class="campus" id="campus' . $element->campus_id . '">
-                                    <img class="campus-icon" src="' . $element->bilde_path . '"/>
+                            <a href="campus.php?id=' . $element->id . '">
+                                <div class="campus" id="campus' . $element->id . '">
+                                    <img class="campus-icon" src="' . $element->campus_bilde_path . '"/>
                                     <span class="campus-name">' . $element->navn . '</span>
                                     <img class="campus-arrow" src="img/arrow-icon.png"/>
                                 </div>

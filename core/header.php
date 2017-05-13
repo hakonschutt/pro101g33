@@ -51,16 +51,16 @@
 
                     // Kjører en loop for hvert element i som PDO henter.
                     while ($element = $sql->fetch()) {
-                        if ($element->campus_id === $id){
+                        if ($element->id === $id){
                         	$class = 'active';
                         } else {
                         	$class = '';
                         }
 
                         echo '
-	                            <a href="campus.php?id=' . $element->campus_id . '">
-	                                <div class="menu-inner-campuses-campus" id="campus' . $element->campus_id . '">
-	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->bilde_path . '"/>
+	                            <a href="campus.php?id=' . $element->id . '">
+	                                <div class="menu-inner-campuses-campus" id="campus' . $element->id . '">
+	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->campus_bilde_path . '"/>
 	                                    <span class="menu-inner-campuses-campus-name ' . $class . '">' . substr($element->navn,0,1) . '</span>
 	                                </div>
 	                            </a>
