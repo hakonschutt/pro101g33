@@ -151,10 +151,7 @@
 	                if ($($content).hasClass('stopp')) {
 	                    $($content).removeClass('stopp');
 	                    $($content).addClass('start');
-	                } else {
-	                    $($content).removeClass('start');
-	                    $($content).addClass('stopp');
-	                }
+	                } 
 	            }
 
 	            /*$(".tester").click(function () {

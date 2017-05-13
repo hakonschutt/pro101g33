@@ -41,7 +41,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 }*/
 
 <div class="activities" id="Aktiviteter">
-	<div class="activities-inner">
+	<div onclick="start('.act');" class="activities-inner">
 	<?php
 	// Starter queryen.
 	    $query = "
@@ -54,7 +54,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a onclick="start(\'.act\');" class="tester">
+		    	<a href="#" class="tester">
 		            <div class="activity" id="activity' . $element->id . '">
 		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
@@ -106,6 +106,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 						    $rows = $sql->fetchAll(PDO::FETCH_OBJ);
 
 							foreach ($rows as $row) {
+
 								echo '
 									<div class="act-div-inner-right-box">
 										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
@@ -117,16 +118,42 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 												</div>
 											</div>
 											<div class="act-div-inner-right-box-drop dropdown">
-												<div class="dropdown-inner">
-													<div class="dropdown-inner-left">
-														<p>Adresse: </p>
-														<span>' . $row->adresse . '</span>
-														</br>
-														<p>Beskrivelse: </p>
-														<span>' . $row->beskrivelse . '</span>
-													</div>
-													<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-												</div>
+												<div class="dropdown-inner">';
+												/*for ($type_id = 1; $type_id <= 2; $type_id++) {
+												    echo '
+														Hello
+													';
+												} 
+
+												for ($type_id = 3; $type_id <= 6; $type_id++) {
+													echo '
+														<div class="dropdown-inner-left">
+															<p>Adresse: </p>
+															<span>' . $row->adresse . '</span>
+															</br>
+															<p>Beskrivelse: </p>
+															<span>' . $row->beskrivelse . '</span>
+														</div>
+														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+													';
+												}*/
+												if ($row->type_id <= 2){
+													echo '
+														Hello
+													';
+												} else {
+													echo '
+														<div class="dropdown-inner-left">
+															<p>Adresse: </p>
+															<span>' . $row->adresse . '</span>
+															</br>
+															<p>Beskrivelse: </p>
+															<span>' . $row->beskrivelse . '</span>
+														</div>
+														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+													';
+												}
+												echo '</div>
 											</div>
 										</div>
 									</div>
