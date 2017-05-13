@@ -27,7 +27,15 @@
 		overflow: hidden;
 		background-color: $white;
 		transition: .3s ease-in-out;
-		box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);	
+		box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);
+
+		.off {
+			display: none; 
+		}	
+
+		.on {
+			display: block;
+		}
 
 		&-inner {
 			width: 1000px; 
@@ -192,8 +200,4 @@
 			}
 		}
 	}
-}
-
-#act-div6, #act-div5, #act-div4, #act-div3 {
-	display: none;
 }

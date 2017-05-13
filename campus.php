@@ -41,7 +41,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 }*/
 
 <div class="activities" id="Aktiviteter">
-	<div onclick="start('.act');" class="activities-inner">
+	<div onclick="start('.act'); return false;" class="activities-inner">
 	<?php
 	// Starter queryen.
 	    $query = "
@@ -54,8 +54,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a href="#" class="tester">
-		            <div class="activity" id="activity' . $element->id . '">
+		    	<a class="tester">
+		            <div onclick="on(\'#act-div' . $element->id  . '\'); return false;" class="activity" id="activity' . $element->id . '">
 		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
@@ -86,7 +86,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 				//echo '<pre>' . print_r($element, true) . '</pre>';
 
 				echo'
-					<div class="act-div-inner" id="act-div' . $element->id . '">
+					<div class="act-div-inner act-div' . $element->id . ' off" id="act-div' . $element->id . '">
 						<div class="act-div-inner-left">
 							<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
 							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />

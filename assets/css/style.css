@@ -475,6 +475,10 @@
     background-color: #ffffff;
     transition: .3s ease-in-out;
     box-shadow: inset 0px 15px 20px -20px #172d4f, inset 0px -15px 20px -20px #172d4f; }
+    .act-div .off {
+      display: none; }
+    .act-div .on {
+      display: block; }
     .act-div-inner {
       width: 1000px;
       position: absolute;
@@ -588,9 +592,6 @@
                 overflow: hidden;
                 float: right;
                 margin: 15px 15px; }
-
-#act-div6, #act-div5, #act-div4, #act-div3 {
-  display: none; }
 
 * {
   margin: 0;

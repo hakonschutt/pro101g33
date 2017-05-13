@@ -154,6 +154,15 @@
 	                } 
 	            }
 
+	            function on($act) {
+	                if ($($act).hasClass('off')) {
+	                	$('.act-div-inner').removeClass('on');
+	                    $('.act-div-inner').addClass('off');
+	                    $($act).removeClass('off');
+	                    $($act).addClass('on');
+	                }
+	            }
+
 	            /*$(".tester").click(function () {
 				    $tester = $(this);
 				    //getting the next element
