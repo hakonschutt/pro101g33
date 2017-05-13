@@ -65,7 +65,10 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 <div class="act-div">
 	<?php
 	// Starter queryen.
-		$query = "SELECT * FROM type";
+		$query = "
+			SELECT * FROM data
+			JOIN type ON data.type_id = type.type_id;
+		";
 	    $sql = $database->prepare("$query;");
 	    $sql->setFetchMode(PDO::FETCH_OBJ);
 	    $sql->execute();
@@ -84,13 +87,25 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 					<div class="act-div-inner-right">';
 
 					// Starter queryen.
-						$query = "SELECT * FROM campus";
+						$query = "
+							SELECT * FROM data
+							WHERE campus_id = '$id'
+							LIMIT 6;
+						";
 					    $sql = $database->prepare("$query;");
 					    $sql->setFetchMode(PDO::FETCH_OBJ);
 					    $sql->execute();
 
 						while ($element = $sql->fetch()) {
-							echo 'hello';
+							echo '
+								<a href="#"><div class="act-div-inner-right-box">
+									<p class="act-div-inner-right-box-name">' . $element->navn . '</p>
+									<p class="act-div-inner-right-box-adress">' . $element->adresse . '</p>
+									<p class="act-div-inner-right-box-reisetid">Reisetid: ' . $element->reisetid . 'min</p>
+									<p class="act-div-inner-right-box-les">Les mer</p>
+									<img class="act-div-inner-right-box-icon" src="img/icons/arrow.png" />
+								</div></a>
+							';
 						}
 				echo '</div>
 			    </div>';

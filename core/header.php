@@ -127,6 +127,10 @@
 				    });
 				});
 
+				$(document).on("click", ".active", function (e) {
+					e.preventDefault();
+				});r
+
 			</script>
 		</div>
 	</div>

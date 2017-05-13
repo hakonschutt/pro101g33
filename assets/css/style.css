@@ -476,7 +476,8 @@
       height: 100%;
       float: left;
       background-color: #ffffff;
-      top: 0; }
+      top: 0;
+      color: #2B518C; }
       .act-div-inner-left-header {
         width: 100%;
         text-align: center;
@@ -496,6 +497,13 @@
       background-color: yellow;
       float: right;
       top: 0; }
+      .act-div-inner-right-box {
+        height: 60px;
+        width: 100%;
+        position: relative;
+        background-color: #2B518C;
+        margin-bottom: 10px;
+        color: #ffffff; }
 
 #act-div1, #act-div2, #act-div4, #act-div5, #act-div6 {
   display: none; }
