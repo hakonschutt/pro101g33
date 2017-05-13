@@ -1,180 +1,199 @@
-.inaktiv-d {
-	height: 500px;
+#act {
 }
 
-.aktiv-d {
-	height: 750px;
+.stopp {
+	max-height: 0px;
 }
 
-.act-div {
-	position: relative;
-	width: 100%; 
+.start {
+	max-height: 750px;
+}
+
+.act {
 	overflow: hidden;
-	margin-top: 50px; 
-	background-color: $white;
-	transition: .3s ease-in-out;
-	box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);	
+	transition: max-height .5s ease-in-out;
 
-	&-inner {
-		width: 1000px; 
-		position: absolute; 
-		height: 85%; 
-		left: 0; 
-		right: 0; 
-		top: 50px;
-		margin: auto; 
+	.inaktiv-d {
+	height: 500px;
+	}
+
+	.aktiv-d {
+		height: 750px;
+	}
+
+	&-div {
+		position: relative;
+		width: 100%; 
+		overflow: hidden;
 		background-color: $white;
+		transition: .3s ease-in-out;
+		box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);	
 
-		&-left {
-			width: 250px; 
-			height: 100%;
-			float: left; 
-			top: 0; 
-			color: $brandcolor;
+		&-inner {
+			width: 1000px; 
+			position: absolute; 
+			height: 85%; 
+			left: 0; 
+			right: 0; 
+			top: 50px;
+			margin: auto; 
+			background-color: $white;
 
-			&-header {
-				width: 100%; 
-				text-align: center; 
-				margin-top: 30px;
-				font-size: 1.5rem;
+			&-left {
+				width: 250px; 
+				height: 100%;
+				float: left; 
+				top: 0; 
+				color: $brandcolor;
+
+				&-header {
+					width: 100%; 
+					text-align: center; 
+					margin-top: 30px;
+					font-size: 1.5rem;
+				}
+
+				img {
+					width: 120px;
+					height: 120px;
+					margin: 30px 65px;
+				}
+
+				&-des {
+					width: 200px; 
+					margin: 0px 25px;
+					text-align: justify;
+				}
 			}
 
-			img {
-				width: 120px;
-				height: 120px;
-				margin: 30px 65px;
-			}
+			&-right {
+				width: 700px; 
+				height: 100%;
+				float: right; 
+				top: 0; 
 
-			&-des {
-				width: 200px; 
-				margin: 0px 25px;
-				text-align: justify;
-			}
-		}
-
-		&-right {
-			width: 700px; 
-			height: 100%;
-			float: right; 
-			top: 0; 
-
-			&-box {
-				width: 100%; 
-				position: relative;
-				background-color: $brandcolor;
-				margin-bottom: 10px;
-				color: $white;
-				display: block;
-
-				&-name {
-					font-size: 1.5rem; 
-					height: 60px; 
-					margin-left: 20px; 
-					line-height: 60px;
-					display: inline-block;
-				}
-
-				&-right {
-					height: 100%; 
-					width: 50%; 
-					float: right; 
-
-					&-reisetid {
-						line-height: 60px;
-						display: inline-block;
-					}
-
-					&-les {
-						line-height: 60px;
-						display: inline-block;
-						float: right;
-						margin-right: 70px;
-					}
-				}
-
-				.inaktiv {
-					height: 60px;
-				}
-
-				.aktiv {
-					height: 310px;
-				}
-
-				&-inner {
-					overflow: hidden;
-					transition: .3s ease-in-out;
-
-					&-wrap {
-						transition: .3s ease-in-out;
-					}
-				}
-
-				&-inner.inaktiv .act-div-inner-right-box-inner-wrap {
-					background: 
-				        url('../../img/icons/dropDown.png') no-repeat,
-				        $brandcolor;
-				    color: #444;
-				    background-position: 650px 16px;
-				    background-size: 30px;
-				    color: $white;
-				}
-
-				&-inner.aktiv .act-div-inner-right-box-inner-wrap {
-					background: 
-				        url('../../img/icons/dropDown.png') no-repeat,
-				        $brandcolor;
-				    color: #444;
-				    background-position: 650px -34px;
-				    background-size: 30px;
-				    color: $white;
-				}
-
-				.dropdown {
-					height: 250px;
+				&-box {
 					width: 100%; 
 					position: relative;
-					box-sizing: border-box;
-					border: 2px solid $brandcolor;
+					background-color: $brandcolor;
+					margin-bottom: 10px;
+					color: $white;
+					display: block;
+
+					&-name {
+						font-size: 1.5rem; 
+						height: 60px; 
+						margin-left: 20px; 
+						line-height: 60px;
+						display: inline-block;
+					}
+
+					&-right {
+						height: 100%; 
+						width: 50%; 
+						float: right; 
+
+						&-reisetid {
+							line-height: 60px;
+							display: inline-block;
+						}
+
+						&-les {
+							line-height: 60px;
+							display: inline-block;
+							float: right;
+							margin-right: 70px;
+						}
+					}
+
+					.inaktiv {
+						height: 60px;
+					}
+
+					.aktiv {
+						height: 310px;
+					}
 
 					&-inner {
-						height: 230px;
-						width: 680px;
-						background-color: $backgroundcolor;
-						position: absolute;
-						top: 0; 
-						right: 0;
-						bottom: 0; 
-						left: 0;
-						margin: auto;
+						overflow: hidden;
+						transition: .3s ease-in-out;
 
-						&-left {
-							height: 200px;
-							width: 300px;
-							float: left; 
-							margin: 15px 15px;
-							color: $brandcolor;
+						&-wrap {
+							transition: .3s ease-in-out;
 						}
+					}
 
-						p {
-							display: block; 
-						}
+					&-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+						background: 
+					        url('../../img/icons/dropDown.png') no-repeat,
+					        $brandcolor;
+					    color: #444;
+					    background-position: 650px 16px;
+					    background-size: 30px;
+					    color: $white;
+					}
 
-						span {
-							display: block;
-							margin-top: 5px;
-							margin-left: 10px;
-						}
+					&-inner.aktiv .act-div-inner-right-box-inner-wrap {
+						background: 
+					        url('../../img/icons/dropDown.png') no-repeat,
+					        $brandcolor;
+					    color: #444;
+					    background-position: 650px -34px;
+					    background-size: 30px;
+					    color: $white;
+					}
 
-						&-image {
-							height: 200px;
-							width: 300px; 
-							overflow: hidden; 
-							float: right; 
-							margin: 15px 15px;
+					.dropdown {
+						height: 250px;
+						width: 100%; 
+						position: relative;
+						box-sizing: border-box;
+						border: 2px solid $brandcolor;
+
+						&-inner {
+							height: 230px;
+							width: 680px;
+							background-color: $backgroundcolor;
+							position: absolute;
+							top: 0; 
+							right: 0;
+							bottom: 0; 
+							left: 0;
+							margin: auto;
+
+							&-left {
+								height: 200px;
+								width: 300px;
+								float: left; 
+								margin: 15px 15px;
+								color: $brandcolor;
+							}
+
+							p {
+								display: block; 
+							}
+
+							span {
+								display: block;
+								margin-top: 5px;
+								margin-left: 10px;
+							}
+
+							&-image {
+								height: 200px;
+								width: 300px; 
+								overflow: hidden; 
+								float: right; 
+								margin: 15px 15px;
+							}
 						}
 					}
 				}
 			}
 		}
 	}
+}
+
+#act-div6, #act-div5, #act-div4 {
+	display: none;
 }

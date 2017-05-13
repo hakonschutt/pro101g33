@@ -111,7 +111,7 @@
 				   	//var targetSec = $('a').attr('href');
 				    //var targetSec = $(this).attr('href');
 				    $('html, body').animate({
-				        scrollTop: $('#' + targetSec).offset().top
+				        scrollTop: $('#' + targetSec).offset().top - 50
 				    }, 1000);
 
 				    $('#nav-icon').toggleClass('open');
@@ -146,6 +146,42 @@
 	                    $($id).addClass('aktiv');
 	                }
 	            }
+
+	            function start($content) {
+	                if ($($content).hasClass('stopp')) {
+	                    $($content).removeClass('stopp');
+	                    $($content).addClass('start');
+	                } else {
+	                    $($content).removeClass('start');
+	                    $($content).addClass('stopp');
+	                }
+	            }
+
+	            /*$(".tester").click(function () {
+				    $tester = $(this);
+				    //getting the next element
+				    $content = document.getElementByClassName("act");
+				    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+
+				    if ($($content).hasClass('stopp')) {
+		                    $($content).removeClass('stopp');
+		                    $($content).addClass('start');
+                	} else {
+                		$($content).removeClass('start');
+                		$($content).addClass('stopp');
+                	}*/
+
+
+				   /* $content.slideToggle(500, function () {
+				        //execute this after slideToggle is done
+				        //change text of header based on visibility of content div
+				        /*$header.text(function () {
+				            //change text based on condition
+				            return $content.is(":visible") ? "Collapse" : "Expand";
+				        });*/
+
+				    /*});*/
+				/*});*/
 
 			</script>
 		</div>

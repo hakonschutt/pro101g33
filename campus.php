@@ -44,7 +44,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	<div class="activities-inner">
 	<?php
 	// Starter queryen.
-	    $query = "SELECT * FROM type";
+	    $query = "
+	    	SELECT * FROM type
+	    ";
 	    $sql = $database->prepare("$query;");
 	    $sql->setFetchMode(PDO::FETCH_OBJ);
 	    $sql->execute();
@@ -52,7 +54,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a href="#act-div' . $element->id . '"">
+		    	<a onclick="start(\'.act\');" class="tester">
 		            <div class="activity" id="activity' . $element->id . '">
 		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
@@ -62,76 +64,78 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    }?>
 	</div>
 </div>
-<div class="act-div inaktiv-d">
-	<?php
-	// Starter queryen.
-		$query = "
-			SELECT * FROM type
-		";
-	    $sql = $database->prepare("$query;");
-	    $sql->setFetchMode(PDO::FETCH_OBJ);
-	    $sql->execute();
+<div class="act stopp" id="act">
+	<div class="act-div inaktiv-d">
+		<?php
+		// Starter queryen.
+			$query = "
+				SELECT * FROM type
+			";
+		    $sql = $database->prepare("$query;");
+		    $sql->setFetchMode(PDO::FETCH_OBJ);
+		    $sql->execute();
 
-	    $result = $sql->fetchAll(PDO::FETCH_OBJ);
+		    $result = $sql->fetchAll(PDO::FETCH_OBJ);
 
-	    //echo '<pre>' . print_r($result, true) . '</pre>';
+		    //echo '<pre>' . print_r($result, true) . '</pre>';
 
-	// Kjører en loop for hvert element i som PDO henter. &id
-		foreach ($result as $element) {
-			$type_id = $element->id;
+		// Kjører en loop for hvert element i som PDO henter. &id
+			foreach ($result as $element) {
+				$type_id = $element->id;
 
-			//echo '<pre>' . print_r($element, true) . '</pre>';
+				//echo '<pre>' . print_r($element, true) . '</pre>';
 
-			echo'
-				<div class="act-div-inner" id="act-div' . $element->id . '">
-					<div class="act-div-inner-left">
-						<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
-						<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
-						<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
-					</div>
-					<div class="act-div-inner-right">';
-					
-					// Starter queryen.
-						$query = "
-							SELECT * FROM data
-							WHERE campus_id = '$id' AND type_id = '$type_id'
-						";
-					    $sql = $database->prepare("$query;");
-					    $sql->setFetchMode(PDO::FETCH_OBJ);
-					    $sql->execute();
+				echo'
+					<div class="act-div-inner" id="act-div' . $element->id . '">
+						<div class="act-div-inner-left">
+							<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
+							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
+							<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
+						</div>
+						<div class="act-div-inner-right">';
+						
+						// Starter queryen.
+							$query = "
+								SELECT * FROM data
+								WHERE campus_id = '$id' AND type_id = '$type_id'
+							";
+						    $sql = $database->prepare("$query;");
+						    $sql->setFetchMode(PDO::FETCH_OBJ);
+						    $sql->execute();
 
-					    $rows = $sql->fetchAll(PDO::FETCH_OBJ);
+						    $rows = $sql->fetchAll(PDO::FETCH_OBJ);
 
-						foreach ($rows as $row) {
-							echo '
-								<div class="act-div-inner-right-box">
-									<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
-		                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap">
-											<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
-											<div class="act-div-inner-right-box-right">
-												<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
-												<p class="act-div-inner-right-box-right-les">Les mer</p>
-											</div>
-										</div>
-										<div class="act-div-inner-right-box-drop dropdown">
-											<div class="dropdown-inner">
-												<div class="dropdown-inner-left">
-													<p>Adresse: </p>
-													<span>' . $row->adresse . '</span>
-													</br>
-													<p>Beskrivelse: </p>
-													<span>' . $row->beskrivelse . '</span>
+							foreach ($rows as $row) {
+								echo '
+									<div class="act-div-inner-right-box">
+										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
+			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap">
+												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
+												<div class="act-div-inner-right-box-right">
+													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
+													<p class="act-div-inner-right-box-right-les">Les mer</p>
 												</div>
-												<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+											</div>
+											<div class="act-div-inner-right-box-drop dropdown">
+												<div class="dropdown-inner">
+													<div class="dropdown-inner-left">
+														<p>Adresse: </p>
+														<span>' . $row->adresse . '</span>
+														</br>
+														<p>Beskrivelse: </p>
+														<span>' . $row->beskrivelse . '</span>
+													</div>
+													<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							';
-						}
-				echo '</div>
-			    </div>';
-		}?>
+								';
+							}
+					echo '</div>
+				    </div>';
+			}?>
+	</div>
 </div>
 <div class="info" id="Omoss">
 	<div class="info-inner">
