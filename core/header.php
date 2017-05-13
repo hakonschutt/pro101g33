@@ -129,7 +129,19 @@
 
 				$(document).on("click", ".active", function (e) {
 					e.preventDefault();
-				});r
+				});
+
+	            function aapne($id) {
+	                if ($($id).hasClass('aktiv')) {
+	                    $($id).removeClass('aktiv');
+	                    $($id).addClass('inaktiv');
+	                } else{
+	                    $('.act-div-inner-right-box-inner').removeClass('aktiv');
+	                    $('.act-div-inner-right-box-inner').addClass('inaktiv');
+	                    $($id).removeClass('inaktiv');
+	                    $($id).addClass('aktiv');
+	                }
+	            }
 
 			</script>
 		</div>

@@ -465,7 +465,7 @@
   .act-div-inner {
     width: 1000px;
     position: absolute;
-    height: 90%;
+    height: 85%;
     left: 0;
     right: 0;
     top: 0;
@@ -494,16 +494,48 @@
     .act-div-inner-right {
       width: 70%;
       height: 100%;
-      background-color: yellow;
       float: right;
       top: 0; }
       .act-div-inner-right-box {
-        height: 60px;
         width: 100%;
         position: relative;
         background-color: #2B518C;
         margin-bottom: 10px;
-        color: #ffffff; }
+        color: #ffffff;
+        display: block; }
+        .act-div-inner-right-box-name {
+          font-size: 1.5rem;
+          height: 60px;
+          margin-left: 20px;
+          line-height: 60px;
+          display: inline-block; }
+        .act-div-inner-right-box-right {
+          height: 100%;
+          width: 50%;
+          float: right; }
+          .act-div-inner-right-box-right-reisetid {
+            line-height: 60px;
+            display: inline-block; }
+          .act-div-inner-right-box-right-les {
+            line-height: 60px;
+            display: inline-block;
+            float: right; }
+          .act-div-inner-right-box-right-icon {
+            height: 24px;
+            margin: 18px 15px;
+            float: right;
+            display: inline-block; }
+        .act-div-inner-right-box .inaktiv {
+          height: 60px; }
+        .act-div-inner-right-box .aktiv {
+          height: 310px; }
+        .act-div-inner-right-box-inner {
+          overflow: hidden;
+          transition: .3s ease-in-out; }
+        .act-div-inner-right-box-drop {
+          height: 250px;
+          width: 100%;
+          background-color: red; }
 
 #act-div1, #act-div2, #act-div4, #act-div5, #act-div6 {
   display: none; }

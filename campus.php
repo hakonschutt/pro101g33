@@ -98,13 +98,21 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 
 						while ($element = $sql->fetch()) {
 							echo '
-								<a href="#"><div class="act-div-inner-right-box">
-									<p class="act-div-inner-right-box-name">' . $element->navn . '</p>
-									<p class="act-div-inner-right-box-adress">' . $element->adresse . '</p>
-									<p class="act-div-inner-right-box-reisetid">Reisetid: ' . $element->reisetid . 'min</p>
-									<p class="act-div-inner-right-box-les">Les mer</p>
-									<img class="act-div-inner-right-box-icon" src="img/icons/arrow.png" />
-								</div></a>
+								<div class="act-div-inner-right-box">
+									<div id="aktivitet' . $element->id  . '" class="act-div-inner-right-box-inner inaktiv">
+		                				<div onclick="aapne(\'#aktivitet' . $element->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap">
+											<h3 class="act-div-inner-right-box-name">' . $element->navn . '</h3>
+											<div class="act-div-inner-right-box-right">
+												<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $element->reisetid . 'min</p>
+												<img class="act-div-inner-right-box-right-icon" src="img/icons/arrow.png" />
+												<p class="act-div-inner-right-box-right-les">Les mer</p>
+											</div>
+										</div>
+										<div class="act-div-inner-right-box-drop">
+											<p>tekst</p>
+										</div>
+									</div>
+								</div>
 							';
 						}
 				echo '</div>
