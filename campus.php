@@ -137,10 +137,15 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
 													';
 												}*/
-												if ($row->type_id <= 2){
+												if ($row->type_id <= 1){
 													echo '
-														Hello
+														Bysykkel
 													';
+												} else if ($row->type_id == 2){
+													$ruter_id = $row->x_id;
+
+													require 'core/ruter.php';
+
 												} else {
 													echo '
 														<div class="dropdown-inner-left">

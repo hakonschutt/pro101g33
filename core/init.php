@@ -25,6 +25,8 @@
 				<link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" />
 				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 			    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+				<script src="script.js"></script>
 
 			    <title>@Campus</title>
 			</head>
@@ -44,5 +46,13 @@
    		return $content;
 
    	} // End footer
+   }
+
+   function debug($data, $return = false) {
+   	$res = '<pre>' . print_f($data, true) . '</pre>';
+   	if ($return){
+   		return $res;
+   	}
+   	echo $res;
    }
 ?>
