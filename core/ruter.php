@@ -21,11 +21,9 @@ $ruter_url = 'https://hjelvik.net/spotOn/proxy_v3.php?stop=' . $ruter_id;
 		$minutes = ($tempMinutes == 0 ? "Nå" : $tempMinutes . " min");
 
 		echo '
-				<div class="dropdown-inner-rep">
-					<div class="dropdown-inner-rep-inner">
-						<p>' . $LineRef . ' ' .  $DesName . '</p>
-						<span>' . $minutes . '</span>
-					</div>
+				<div class="dropdown-inner-rep-inner">
+					<span>' . $LineRef . ' ' .  $DesName . '</span>
+					<span>' . $minutes . '</span>
 				</div>
 			';
     }

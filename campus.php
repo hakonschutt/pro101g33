@@ -144,7 +144,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 												} else if ($row->type_id == 2){
 													$ruter_id = $row->x_id;
 
-													require 'core/ruter.php';
+													echo '<div class="dropdown-inner-rep">';
+														require 'core/ruter.php';
+													echo '</div>';
 
 												} else {
 													echo '
