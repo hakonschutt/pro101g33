@@ -110,7 +110,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 								echo '
 									<div class="act-div-inner-right-box">
 										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
-			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap">
+			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap transportCallWrapper">
 												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
 												<div class="act-div-inner-right-box-right">
 													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
@@ -144,8 +144,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 												} else if ($row->type_id == 2){
 													$ruter_id = $row->x_id;
 
-													echo '<div class="dropdown-inner-rep">';
-														require 'core/ruter.php';
+															echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
+														// require 'core/ruter.php';
 													echo '</div>';
 
 												} else {

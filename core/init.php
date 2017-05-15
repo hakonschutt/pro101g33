@@ -26,7 +26,7 @@
 				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 			    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 		        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-				<script src="script.js"></script>
+				  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 			    <title>@Campus</title>
 			</head>
@@ -39,6 +39,7 @@
    	public static function footer(){
 
    		$content = '
+            <script src="assets/js/transportloader.js"></script>
 			</body>
 			</html>
    		';

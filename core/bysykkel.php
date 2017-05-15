@@ -27,18 +27,19 @@ function runUrl($url) {
 } // End runUrl
 
 
-	$channelsApi = 'https://oslobysykkel.no/api/v1/';
+	$channelsApi = 'https://oslobysykkel.no/api/v1/stations/availability';
 	$clientId = 'd1a8d9b87607f4bd4ea54957557d39d6';
 	$ch = curl_init();
 
 	curl_setopt_array($ch, array(
-	CURLOPT_HTTPHEADER => array(
-	   'Client-Identifier: ' . $clientId
-	),
-	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_URL => $channelsApi
+		CURLOPT_HTTPHEADER => array(
+		   'Client-Identifier: ' . $clientId
+		),
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_URL => $channelsApi
 	));
 
 	$response = curl_exec($ch);
 	curl_close($ch);
 
+	echo '<pre>' . print_r(json_decode($response), true) . '</pre>';
