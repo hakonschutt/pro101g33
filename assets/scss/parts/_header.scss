@@ -21,6 +21,25 @@
 		bottom: 0; 
 		margin: auto; 
 
+		&-campus {
+			float: left; 
+			height: 50px; 
+			margin: 10px 5px; 
+			color: $white; 
+			text-decoration: none; 
+
+			&-icon {
+				height: 100%; 
+			}
+
+			span { 
+				font-size: 1.5rem; 
+				position: relative;
+				margin-left: 5px;
+				top: -18px;
+			}
+		}
+
 		&-logo {
 			float: left; 
 			height: 50px; 

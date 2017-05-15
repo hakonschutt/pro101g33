@@ -28,16 +28,15 @@ function runUrl($url) {
 
 
 	$channelsApi = 'https://oslobysykkel.no/api/v1/';
-	$channelName = 'twitch';
-	$clientId = 'axjhfp777tflhy0yjb5sftsil';
+	$clientId = 'd1a8d9b87607f4bd4ea54957557d39d6';
 	$ch = curl_init();
 
 	curl_setopt_array($ch, array(
 	CURLOPT_HTTPHEADER => array(
-	   'Client-ID: ' . $clientId
+	   'Client-Identifier: ' . $clientId
 	),
 	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_URL => $channelsApi . $channelName
+	CURLOPT_URL => $channelsApi
 	));
 
 	$response = curl_exec($ch);

@@ -12,7 +12,29 @@
 <body class="mainbody">
 	<div class="nav">
 	    <div class="nav-bar">
-	    	<a href="index.php"><img class="nav-bar-logo" src="img/westerdals-hvit.png" /></a>
+	    <?php
+	    	// Starter queryen.
+            $query = "
+            	SELECT * FROM campus
+            	WHERE id = '$id'
+            	";
+
+            $sql = $database->prepare("$query;");
+            $sql->setFetchMode(PDO::FETCH_OBJ);
+            $sql->execute();
+
+            // Kjører en loop for hvert element i som PDO henter.
+            while ($element = $sql->fetch()) {
+                echo '
+                        <a href="index.php">
+                            <div class="nav-bar-campus" id="campus' . $element->id . '">
+                            	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '"/>
+                            	<span class="nav-bar-campus-navn">@Campus - ' . $element->navn . '</span>
+                            </div>
+                        </a>
+                    ';
+            }?>
+    		<!--<a href="index.php"><img class="nav-bar-logo" src="img/westerdals-hvit.png" /></a>-->
 	    	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function(){
@@ -42,7 +64,6 @@
 			<div class="menu-inner-campuses">
                 <h1 class="menu-inner-campuses-title">Velg Campus</h1>
             	<?php 
-                    
                     // Starter queryen.
                     $query = "SELECT * FROM campus";
                     $sql = $database->prepare("$query;");
@@ -162,32 +183,6 @@
 	                    $($act).addClass('on');
 	                }
 	            }
-
-	            /*$(".tester").click(function () {
-				    $tester = $(this);
-				    //getting the next element
-				    $content = document.getElementByClassName("act");
-				    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-
-				    if ($($content).hasClass('stopp')) {
-		                    $($content).removeClass('stopp');
-		                    $($content).addClass('start');
-                	} else {
-                		$($content).removeClass('start');
-                		$($content).addClass('stopp');
-                	}*/
-
-
-				   /* $content.slideToggle(500, function () {
-				        //execute this after slideToggle is done
-				        //change text of header based on visibility of content div
-				        /*$header.text(function () {
-				            //change text based on condition
-				            return $content.is(":visible") ? "Collapse" : "Expand";
-				        });*/
-
-				    /*});*/
-				/*});*/
 
 			</script>
 		</div>
