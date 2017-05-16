@@ -642,6 +642,15 @@
                 overflow: hidden;
                 float: right;
                 margin: 15px 15px; }
+              .act-div-inner-right-box .dropdown-inner .byLoader .loadWrapper {
+                text-align: left;
+                font-size: 1.5rem; }
+              .act-div-inner-right-box .dropdown-inner .stopLoader .loadWrapper {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 3rem;
+                margin-top: 50px; }
               .act-div-inner-right-box .dropdown-inner-rep {
                 width: 100%; }
                 .act-div-inner-right-box .dropdown-inner-rep-inner {

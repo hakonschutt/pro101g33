@@ -246,6 +246,24 @@
 								margin: 15px 15px;
 							}
 
+							.byLoader {
+								.loadWrapper { 
+									text-align: left; 
+									font-size: 1.5rem;
+								}
+							}
+
+							.stopLoader{
+
+								.loadWrapper {
+									width: 100%; 
+									height: 100%; 
+									text-align: center; 
+									font-size: 3rem;
+									margin-top: 50px;
+								}
+							}
+
 							&-rep {
 								width: 100%; 
 

@@ -142,11 +142,11 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 
 													echo '
 															<div class="dropdown-inner-left">
-																<p>Beskrivelse: </p>
-																<span>' . $row->beskrivelse . '</span>
+																<p>' . $row->beskrivelse . '</p>
 																</br>
-																<p>Adresse: </p>
-																<span>' . $row->adresse . '</span>
+																<p>Åpningstid: </p>
+																<span>' . $row->aapningstid . '</span>
+																</br>
 																</br>
 																<p>Tilgjenglighet: </p>
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
