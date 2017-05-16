@@ -138,14 +138,14 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 													';
 												}*/
 												if ($row->type_id <= 1){
-													echo '
-														Bysykkel
-													';
+													$by_id = $row->x_id;
+
+													echo '<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">';
+													echo '</div>';
 												} else if ($row->type_id == 2){
 													$ruter_id = $row->x_id;
 
-															echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
-														// require 'core/ruter.php';
+													echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
 													echo '</div>';
 
 												} else {

@@ -4,7 +4,9 @@
 
 	if (isset($_GET['stop']) && !empty($_GET['stop'])){
 		$ruter_id = $_GET['stop'];
-	} 
+	} else {
+		http_response_code(404);
+	}
 
 	$ruter_url = 'https://hjelvik.net/spotOn/proxy_v3.php?stop=' . $ruter_id;
     $ruter_json = file_get_contents($ruter_url);
