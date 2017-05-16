@@ -452,6 +452,11 @@
           background-color: #ffffff;
           color: #2B518C; }
 
+.mapcontainer {
+  height: 1200px;
+  background-color: red;
+  position: relative; }
+
 * {
   margin: 0;
   padding: 0;
