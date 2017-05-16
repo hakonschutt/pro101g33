@@ -192,6 +192,50 @@
 									margin-top: 5px;
 									margin-left: 10px;
 								}
+
+								.bysykkel-lock {
+									height: 50px; 
+									width: 70px; 
+									float: left; 
+									margin: 15px 0 0 10px;
+									display: inline-block;
+
+									img {
+										height: 30px; 
+										display:inline-block;
+										vertical-align: middle;
+									}
+
+									span {
+										position: relative;
+										margin-top: 0px; 
+										font-size: 2rem;
+										display:inline-block;
+										vertical-align: middle;
+									}
+								}
+
+								.bysykkel-bikes {
+									height: 50px; 
+									width: 100px; 
+									margin: 10px 90px 0 30px;
+									float: right; 
+									display: inline-block;
+
+									img {
+										width: 45px; 
+										//margin-top: -5px;
+										display:inline-block;
+										vertical-align: middle;
+									}
+
+									span {
+										position: relative;
+										font-size: 2rem;
+										display:inline-block;
+										vertical-align: middle;
+									}
+								}
 							}
 
 							&-image {

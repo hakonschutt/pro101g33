@@ -110,7 +110,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 								echo '
 									<div class="act-div-inner-right-box">
 										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
-			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap transportCallWrapper">
+			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap CallWrapper">
 												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
 												<div class="act-div-inner-right-box-right">
 													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
@@ -140,8 +140,20 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 												if ($row->type_id <= 1){
 													$by_id = $row->x_id;
 
-													echo '<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">';
-													echo '</div>';
+													echo '
+															<div class="dropdown-inner-left">
+																<p>Beskrivelse: </p>
+																<span>' . $row->beskrivelse . '</span>
+																</br>
+																<p>Adresse: </p>
+																<span>' . $row->adresse . '</span>
+																</br>
+																<p>Tilgjenglighet: </p>
+																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
+																</div>
+															</div>
+														';
+
 												} else if ($row->type_id == 2){
 													$ruter_id = $row->x_id;
 

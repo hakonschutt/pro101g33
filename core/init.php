@@ -39,6 +39,7 @@
    	public static function footer(){
 
    		$content = '
+            <script src="assets/js/sykkelloader.js"></script>
             <script src="assets/js/transportloader.js"></script>
 			</body>
 			</html>

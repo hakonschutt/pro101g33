@@ -1,5 +1,5 @@
 $(function() {
-	$transportWrappers = $('.transportCallWrapper');
+	$transportWrappers = $('.CallWrapper');
 
 	$transportWrappers.on("click", function (e){
 		 var $_this = $(this);

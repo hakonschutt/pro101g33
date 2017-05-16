@@ -605,6 +605,37 @@
                   display: block;
                   margin-top: 5px;
                   margin-left: 10px; }
+                .act-div-inner-right-box .dropdown-inner-left .bysykkel-lock {
+                  height: 50px;
+                  width: 70px;
+                  float: left;
+                  margin: 15px 0 0 10px;
+                  display: inline-block; }
+                  .act-div-inner-right-box .dropdown-inner-left .bysykkel-lock img {
+                    height: 30px;
+                    display: inline-block;
+                    vertical-align: middle; }
+                  .act-div-inner-right-box .dropdown-inner-left .bysykkel-lock span {
+                    position: relative;
+                    margin-top: 0px;
+                    font-size: 2rem;
+                    display: inline-block;
+                    vertical-align: middle; }
+                .act-div-inner-right-box .dropdown-inner-left .bysykkel-bikes {
+                  height: 50px;
+                  width: 100px;
+                  margin: 10px 90px 0 30px;
+                  float: right;
+                  display: inline-block; }
+                  .act-div-inner-right-box .dropdown-inner-left .bysykkel-bikes img {
+                    width: 45px;
+                    display: inline-block;
+                    vertical-align: middle; }
+                  .act-div-inner-right-box .dropdown-inner-left .bysykkel-bikes span {
+                    position: relative;
+                    font-size: 2rem;
+                    display: inline-block;
+                    vertical-align: middle; }
               .act-div-inner-right-box .dropdown-inner-image {
                 height: 200px;
                 width: auto;

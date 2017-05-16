@@ -29,7 +29,15 @@ foreach ($data as $tempStation) {
 	if ($station === null && $tempStation['id'] == $by_id) {
 		$station = $tempStation['availability'];
 
-		echo $station['bikes']; 
-		echo $station['locks'];
+		echo '
+				<div class="bysykkel-lock">
+					<img class="bysykkel-lock-img" src="img/icons/lock.png" />
+					<span>' . $station['locks'] . '</span>
+				</div>
+				<div class="bysykkel-bikes">
+					<img class="bysykkel-bikes-img" src="img/icons/bicycle.png" />
+					<span>' . $station['bikes'] . '</span>
+				</div>
+			';
 	}
 }
