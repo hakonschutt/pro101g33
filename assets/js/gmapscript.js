@@ -38,15 +38,15 @@ var infoWindow;
 switch(id) {
     case "1":
         centerPos = new google.maps.LatLng(59.916049, 10.760024);
-        createMap(zoom, fjerdingen_locations);
+        createMap(zoom, fjerdingen_locations, 0);
         break;
     case "2":
         centerPos = new google.maps.LatLng(59.923341, 10.752494);
-        createMap(zoom, vulkan_locations);
+        createMap(zoom, vulkan_locations, 0);
         break;
     case "3":
         centerPos = new google.maps.LatLng(59.920360, 10.752799);
-        createMap(zoom, brenneriveien_locations);
+        createMap(zoom, brenneriveien_locations, 0);
         break;
 }
 
@@ -69,7 +69,6 @@ function createMap(zoom, locations, locId) {
     
     if (locId > 0) {
         addMarker(locations[locId][0], locations[locId][1], locations[locId][2], locations[locId][3], map);
-        }
     } else {
         for(i = 0; i < locations.length; i++) {
             addMarker(locations[i][0], locations[i][1], locations[i][2], locations[i][3], map);
