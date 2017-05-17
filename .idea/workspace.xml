@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26200d6-2e9d-428d-af72-f63c5af8e310" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_actdrop.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_actdrop.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_contact.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_contact.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_frontpage.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_frontpage.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_actdrop.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_actdrop.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_contact.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_contact.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campus.php" afterPath="$PROJECT_DIR$/campus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/init.php" afterPath="$PROJECT_DIR$/core/init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_frontpage.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_frontpage.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

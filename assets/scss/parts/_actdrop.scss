@@ -12,6 +12,9 @@
 .act {
 	overflow: hidden;
 	transition: max-height .5s ease-in-out;
+	-webkit-transition: max-height .5s ease-in-out;
+	-moz-transition: max-height .5s ease-in-out;
+	-o-transition: max-height .5s ease-in-out;
 
 	.inaktiv-d {
 	height: 500px;
@@ -27,6 +30,9 @@
 		overflow: hidden;
 		background-color: $white;
 		transition: .3s ease-in-out;
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+		-o-transition: .3s ease-in-out;
 		box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);
 
 		.off {
@@ -131,9 +137,15 @@
 					&-inner {
 						overflow: hidden;
 						transition: .3s ease-in-out;
+						-webkit-transition: .3s ease-in-out;
+						-moz-transition: .3s ease-in-out;
+						-o-transition: .3s ease-in-out;
 
 						&-wrap {
 							transition: .3s ease-in-out;
+							-webkit-transition: .3s ease-in-out;
+							-moz-transition: .3s ease-in-out;
+							-o-transition: .3s ease-in-out;
 						}
 					}
 

@@ -127,6 +127,9 @@
 					color: $white;
 					background-color: transparent;
 				    transition: all 0.3s ease 0s;
+				    -webkit-transition: all 0.3s ease 0s;
+				    -moz-transition: all 0.3s ease 0s;
+				    -o-transition: all 0.3s ease 0s;
 				}
 
 				input.submit-button:hover {
