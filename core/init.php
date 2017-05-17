@@ -44,6 +44,7 @@
             <script src="assets/js/navbar.js"></script>
             <script src="assets/js/sykkelloader.js"></script>
             <script src="assets/js/transportloader.js"></script>
+            <script src="assets/js/contact.js"></script>
 			</body>
 			</html>
    		';

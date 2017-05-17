@@ -88,6 +88,14 @@
 				left: 0; 
 				margin: auto;
 
+				.successMessage {
+					width: 100%; 
+					text-align: center; 
+					font-size: 1.2rem; 
+					top: -35px; 
+					position: absolute; 
+				}
+
 				input, textarea {
 					padding: 5px;
 					width: 435px;

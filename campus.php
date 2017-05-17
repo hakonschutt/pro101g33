@@ -226,12 +226,12 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		</div>
 		<div class="contact-inner-right">
 			<div class="contact-inner-right-wrap">
-				<form method="post" action="core/contactaction.php">
-					<input type="text" name="Name" id="Name" placeholder="Navn"/>
+				<form method="post" id="contactForm" action="core/contactaction.php">
+					<input required type="text" name="Name" id="Name" placeholder="Navn"/>
 		
-					<input type="text" name="Email" id="Email" placeholder="Email"/>
+					<input required type="email" name="Email" id="Email" placeholder="Email"/>
 					
-					<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
+					<textarea required name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
 
 					<input type="submit" name="submit" value="Send melding" class="submit-button" />
 				</form>

@@ -441,6 +441,12 @@
         bottom: 0;
         left: 0;
         margin: auto; }
+        .contact-inner-right-wrap .successMessage {
+          width: 100%;
+          text-align: center;
+          font-size: 1.2rem;
+          top: -35px;
+          position: absolute; }
         .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
           padding: 5px;
           width: 435px;
