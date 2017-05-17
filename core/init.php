@@ -19,14 +19,15 @@
 			<!DOCTYPE html>
 			<html lang="no">
 			<head>
-			    <meta charset="utf-8" />
-			    <meta name="author" content="Gruppe 36 - PJ2100">
-				<meta http-equiv="X-UA-Compatible" content="IE=9" />
-				<link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" />
-				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-			    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-		        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-				  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            <meta charset="utf-8" />
+            <meta name="author" content="Gruppe 36 - PJ2100">
+            <meta http-equiv="X-UA-Compatible" content="IE=9" />
+            <link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" />
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+            <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 			    <title>@Campus</title>
 			</head>
@@ -39,6 +40,8 @@
    	public static function footer(){
 
    		$content = '
+            <script src="assets/js/aktivitet.js"></script>
+            <script src="assets/js/navbar.js"></script>
             <script src="assets/js/sykkelloader.js"></script>
             <script src="assets/js/transportloader.js"></script>
 			</body>
