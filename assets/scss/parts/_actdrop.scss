@@ -178,7 +178,7 @@
 
 							&-left {
 								height: 200px;
-								width: 300px;
+								width: 310px;
 								float: left; 
 								margin: 15px 15px;
 								color: $brandcolor;
@@ -195,7 +195,7 @@
 
 								.bysykkel-lock {
 									height: 50px; 
-									width: 70px; 
+									width: 85px; 
 									float: left; 
 									margin: 15px 0 0 10px;
 									display: inline-block;
@@ -217,8 +217,8 @@
 
 								.bysykkel-bikes {
 									height: 50px; 
-									width: 100px; 
-									margin: 10px 90px 0 30px;
+									width: 110px; 
+									margin: 10px 90px 0 10px;
 									float: right; 
 									display: inline-block;
 
@@ -265,7 +265,9 @@
 							}
 
 							&-rep {
-								width: 100%; 
+								width: 100%;
+								height: 100%; 
+								overflow: auto;  
 
 								&-inner {
 									width: 100%; 

@@ -49,8 +49,8 @@
 			<ul class="menu-inner-items" id="navmenu">
 				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
 				<a href="<?php echo 'campus.php?id=' . $id . '#Aktiviteter'?>"><li class="menu-inner-items-item">Aktiviteter</li></a>
-				<a href="<?php echo 'campus.php?id=' . $id . '#Omoss'?>"><li class="menu-inner-items-item">Omoss</li></a>
-				<a href="<?php echo 'campus.php?id=' . $id . '#Kontaktoss'?>"><li class="menu-inner-items-item">Kontaktoss</li></a>
+				<a href="<?php echo 'campus.php?id=' . $id . '#Omoss'?>"><li class="menu-inner-items-item">Om oss</li></a>
+				<a href="<?php echo 'campus.php?id=' . $id . '#Kontaktoss'?>"><li class="menu-inner-items-item">Kontakt oss</li></a>
 				<a href="<?php echo 'map.php?id=' . $id ?>"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 			<div class="menu-inner-campuses">

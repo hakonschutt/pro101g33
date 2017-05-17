@@ -38,25 +38,33 @@ $('#opacity').click(function () {
     return false; 
 });
 
-$('#navmenu').find('a').on('click', function (e) {
-    var targetSec = $(this).text();
-    //var targetSec = this.href;
-   	//var targetSec = $('a').attr('href');
-    //var targetSec = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $('#' + targetSec).offset().top - 50
-    }, 1000);
+$(document).ready(function(){
+    $("a").on('click', function(event) {
 
-    $('#nav-icon').toggleClass('open');
+        if (this.hash !== "") {
+            event.preventDefault();
 
-	animateRight = (parseInt($rightMenu.css('right')) == 0) ? rightVal : 0;
-	$rightMenu.animate({
-		right: animateRight + 'px'
-    });
+            var hash = this.hash;
 
-    animateLeft = (parseInt($leftMenu.css('left')) == 0) ? leftVal : 0;
-	$leftMenu.animate({
-		left: animateLeft + 'px'
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top -50
+            }, 1000, function(){
+
+            window.location.hash = hash;
+            });
+
+            $('#nav-icon').toggleClass('open');
+
+            animateRight = (parseInt($rightMenu.css('right')) == 0) ? rightVal : 0;
+            $rightMenu.animate({
+                right: animateRight + 'px'
+            });
+
+            animateLeft = (parseInt($leftMenu.css('left')) == 0) ? leftVal : 0;
+            $leftMenu.animate({
+                left: animateLeft + 'px'
+            });
+        }
     });
 });
 
