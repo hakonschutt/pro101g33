@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26200d6-2e9d-428d-af72-f63c5af8e310" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_actdrop.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_actdrop.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_contact.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_contact.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_frontpage.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_frontpage.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_actdrop.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_actdrop.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_contact.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_contact.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_frontpage.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_frontpage.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/campus.php" afterPath="$PROJECT_DIR$/campus.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,13 +15,60 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bysykkel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/bysykkel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding>
+                <marker date="1494978970000" expanded="true" signature="724:843" ph="..." />
+                <marker date="1494978970000" expanded="true" signature="876:999" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sykkelloader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/sykkelloader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="campus.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/campus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+              <folding>
+                <marker date="1495113097000" expanded="true" signature="1104:1122" ph="SELECT * FRO... type" />
+                <marker date="1495113097000" expanded="true" signature="1369:1707" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="1503:1692" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="1859:1877" ph="SELECT * FRO... type" />
+                <marker date="1495113097000" expanded="true" signature="2790:2865" ph="SELECT * FRO... data" />
+                <marker date="1495113097000" expanded="true" signature="3143:3833" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="3237:3833" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="3386:3729" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="3519:3711" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="3792:3833" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="4567:4972" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="4927:4950" ph="..." />
+                <marker date="1495113097000" expanded="true" signature="5310:5524" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,6 +81,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/campus.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER">
     <gruntfile path="$PROJECT_DIR$/Gruntfile.js">
@@ -99,20 +146,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pro101g33" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pro101g33" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -155,12 +188,12 @@
       <option name="presentableId" value="Default" />
       <updated>1493933423558</updated>
       <workItem from="1493933426037" duration="218000" />
-      <workItem from="1495055138527" duration="395000" />
+      <workItem from="1495055138527" duration="1926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613000" />
+    <option name="totallyTimeSpent" value="2144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -235,12 +268,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/sykkelloader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/bysykkel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <marker date="1494978970000" expanded="true" signature="724:843" ph="..." />
+            <marker date="1494978970000" expanded="true" signature="876:999" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/campus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <marker date="1495113097000" expanded="true" signature="1104:1122" ph="SELECT * FRO... type" />
+            <marker date="1495113097000" expanded="true" signature="1369:1707" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="1503:1692" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="1859:1877" ph="SELECT * FRO... type" />
+            <marker date="1495113097000" expanded="true" signature="2790:2865" ph="SELECT * FRO... data" />
+            <marker date="1495113097000" expanded="true" signature="3143:3833" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="3237:3833" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="3386:3729" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="3519:3711" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="3792:3833" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="4567:4972" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="4927:4950" ph="..." />
+            <marker date="1495113097000" expanded="true" signature="5310:5524" ph="..." />
           </folding>
         </state>
       </provider>
