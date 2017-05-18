@@ -4,7 +4,7 @@
 ?>
 
 <body class="indexbody" style="background-image: url('img/LargePic/Background.png');">
-    <div class="main-container">
+    <div class="main-container" style="background-color: red;">
         <div class="left-col">
             <div class="left-col-inner">
                 <img class="left-col-inner-logo" src="img/westerdals-hvit.png">
