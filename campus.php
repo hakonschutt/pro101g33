@@ -12,11 +12,11 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$error = "You need to pass an ID";
 } else {
 	$id = $_GET['id'];
-}?>
+} 
 
 //echo $id;
 
-/*if ($error === null){
+/* if ($error === null){
 	// Starter queryen.
 
 	$query = "SELECT * FROM campus WHERE campus_id = :id";
@@ -39,7 +39,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    ';
 	}
 }*/
-
+?>
 <div class="activities" id="Aktiviteter">
 	<div onclick="start('.act'); return false;" class="activities-inner">
 	<?php
@@ -168,9 +168,10 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															</br>
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
-														</div>
-														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-													';
+														</div>'
+														//<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+                                                        //<div id="campusmap" style="width:50%;height:200px;"></div>
+													;
 												}
 												echo '</div>
 											</div>
