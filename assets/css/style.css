@@ -20,6 +20,19 @@
     right: 0;
     bottom: 0;
     margin: auto; }
+    .nav-bar-campus {
+      float: left;
+      height: 50px;
+      margin: 10px 5px;
+      color: #ffffff;
+      text-decoration: none; }
+      .nav-bar-campus-icon {
+        height: 100%; }
+      .nav-bar-campus span {
+        font-size: 1.5rem;
+        position: relative;
+        margin-left: 5px;
+        top: -18px; }
     .nav-bar-logo {
       float: left;
       height: 50px;
@@ -285,7 +298,8 @@
   max-height: 700px;
   height: 200px;
   display: flex;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 50px; }
   .activities-inner {
     max-width: 1000px;
     height: 100%;
@@ -293,6 +307,8 @@
     left: 0;
     right: 0;
     margin: auto; }
+  .activities a {
+    text-decoration: none; }
   .activities .activity {
     display: inline-block;
     padding: 20px;
@@ -320,7 +336,7 @@
 .info {
   width: 100%;
   height: 700px;
-  padding-top: 120px;
+  padding-top: 70px;
   position: relative;
   margin-bottom: 100px; }
   .info-inner {
@@ -453,9 +469,204 @@
           color: #2B518C; }
 
 .mapcontainer {
-  height: 1200px;
-  background-color: red;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 89px;
+  margin-bottom: 30px; }
+  .mapcontainer img {
+    height: 20px;
+    width: 20px; }
+  .mapcontainer label > input {
+    visibility: hidden;
+    position: absolute; }
+  .mapcontainer label > input + img {
+    cursor: pointer;
+    border: 2px solid transparent; }
+  .mapcontainer label > input:checked + img {
+    border: 2px solid #2B518C; }
+
+.map {
+  width: 70%;
   position: relative; }
+
+.markerinfo {
+  height: 83.2%;
+  width: 19.8%;
+  position: absolute;
+  left: 72%;
+  bottom: 0;
+  border: 5px solid #2B518C;
+  padding: 30px; }
+  .markerinfo-title {
+    background-color: #2B518C;
+    height: 7%;
+    margin: -32px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5%; }
+  .markerinfo-content {
+    padding-top: 50px;
+    color: #2B518C; }
+
+.stopp {
+  max-height: 0px; }
+
+.start {
+  max-height: 750px; }
+
+.act {
+  overflow: hidden;
+  transition: max-height .5s ease-in-out; }
+  .act .inaktiv-d {
+    height: 500px; }
+  .act .aktiv-d {
+    height: 750px; }
+  .act-div {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: .3s ease-in-out;
+    box-shadow: inset 0px 15px 20px -20px #172d4f, inset 0px -15px 20px -20px #172d4f; }
+    .act-div .off {
+      display: none; }
+    .act-div .on {
+      display: block; }
+    .act-div-inner {
+      width: 1000px;
+      position: absolute;
+      height: 85%;
+      left: 0;
+      right: 0;
+      top: 50px;
+      margin: auto;
+      background-color: #ffffff; }
+      .act-div-inner-left {
+        width: 250px;
+        height: 100%;
+        float: left;
+        top: 0;
+        color: #2B518C; }
+        .act-div-inner-left-header {
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+          font-size: 1.5rem; }
+        .act-div-inner-left img {
+          width: auto;
+          height: 120px;
+          display: block;
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-top: 25px;
+          margin-bottom: 25px; }
+        .act-div-inner-left-des {
+          width: 200px;
+          margin: 0px 25px;
+          text-align: justify; }
+      .act-div-inner-right {
+        width: 700px;
+        height: 100%;
+        float: right;
+        top: 0; }
+        .act-div-inner-right-box {
+          width: 100%;
+          position: relative;
+          background-color: #2B518C;
+          margin-bottom: 10px;
+          color: #ffffff;
+          display: block; }
+          .act-div-inner-right-box-name {
+            font-size: 1.5rem;
+            height: 60px;
+            margin-left: 20px;
+            line-height: 60px;
+            display: inline-block; }
+          .act-div-inner-right-box-right {
+            height: 100%;
+            width: 50%;
+            float: right; }
+            .act-div-inner-right-box-right-reisetid {
+              line-height: 60px;
+              display: inline-block; }
+            .act-div-inner-right-box-right-les {
+              line-height: 60px;
+              display: inline-block;
+              float: right;
+              margin-right: 70px; }
+          .act-div-inner-right-box .inaktiv {
+            max-height: 60px; }
+          .act-div-inner-right-box .aktiv {
+            max-height: 310px; }
+          .act-div-inner-right-box-inner {
+            overflow: hidden;
+            transition: .3s ease-in-out; }
+            .act-div-inner-right-box-inner-wrap {
+              transition: .3s ease-in-out; }
+          .act-div-inner-right-box-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+            background: url("../../img/icons/dropDown.png") no-repeat, #2B518C;
+            color: #444;
+            background-position: 650px 16px;
+            background-size: 30px;
+            color: #ffffff; }
+          .act-div-inner-right-box-inner.aktiv .act-div-inner-right-box-inner-wrap {
+            background: url("../../img/icons/dropDown.png") no-repeat, #2B518C;
+            color: #444;
+            background-position: 650px -34px;
+            background-size: 30px;
+            color: #ffffff; }
+          .act-div-inner-right-box .dropdown {
+            height: 250px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            border: 2px solid #2B518C; }
+            .act-div-inner-right-box .dropdown-inner {
+              height: 230px;
+              width: 680px;
+              background-color: #E8ECF3;
+              position: absolute;
+              color: #2B518C;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto; }
+              .act-div-inner-right-box .dropdown-inner-left {
+                height: 200px;
+                width: 300px;
+                float: left;
+                margin: 15px 15px;
+                color: #2B518C; }
+                .act-div-inner-right-box .dropdown-inner-left p {
+                  display: block; }
+                .act-div-inner-right-box .dropdown-inner-left span {
+                  display: block;
+                  margin-top: 5px;
+                  margin-left: 10px; }
+              .act-div-inner-right-box .dropdown-inner-image {
+                height: 200px;
+                width: auto;
+                overflow: hidden;
+                float: right;
+                margin: 15px 15px; }
+              .act-div-inner-right-box .dropdown-inner-rep {
+                width: 100%; }
+                .act-div-inner-right-box .dropdown-inner-rep-inner {
+                  width: 100%;
+                  height: 30px;
+                  line-height: 30px;
+                  position: relative;
+                  border-bottom: 1px solid #2B518C; }
+                  .act-div-inner-right-box .dropdown-inner-rep-inner :nth-child(1) {
+                    float: left;
+                    padding-left: 15px; }
+                  .act-div-inner-right-box .dropdown-inner-rep-inner :nth-child(2) {
+                    float: right;
+                    padding-right: 15px; }
 
 * {
   margin: 0;

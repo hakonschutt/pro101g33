@@ -1,11 +1,52 @@
-.mapcontainer { 
-    height: 1200px;
-    background-color: red;
+.mapcontainer {
+    height: 100%;
+    width: 80%;
     position: relative;
+    margin: auto;
+    margin-top: 89px;
+    margin-bottom: 30px;
+    
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    label > input{ 
+        visibility: hidden;
+        position: absolute;
+    }
+    label > input + img{
+        cursor:pointer;
+        border:2px solid transparent;
+    }
+    label > input:checked + img{
+        border:2px solid $brandcolor;
+    }
 }
 
 .map {
+    width: 70%;
+    position: relative;
 }
 
 .markerinfo {
+    height: 83.2%;
+    width: 19.8%;
+    position: absolute;
+    left: 72%;
+    bottom: 0;
+    border: 5px solid $brandcolor;  
+    padding: 30px;
+    
+    &-title {
+        background-color: $brandcolor;
+        height: 7%;
+        margin: -32px;
+        color: $white;
+        text-align: center;
+        padding-top: 5%;
+    }
+    &-content {
+        padding-top: 50px;
+        color: $brandcolor;
+    }
 }

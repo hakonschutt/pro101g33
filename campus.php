@@ -12,12 +12,11 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$error = "You need to pass an ID";
 } else {
 	$id = $_GET['id'];
-}
+} 
 
-//echo $id; 
+//echo $id;
 
-
-/*if ($error === null){
+/* if ($error === null){
 	// Starter queryen.
 
 	$query = "SELECT * FROM campus WHERE campus_id = :id";
@@ -31,46 +30,148 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	while ($element = $sql->fetch()) {
 	    echo '
-	        <a href="campus.php?id=' . $element->campus_id . '">
+	        <!--<a href="campus.php?id=' . $element->campus_id . '">
 	            <div id="campus campus' . $element->campus_id . '">
 	                <img class="campus--icon" src="' . $element->bilde_path . '"/>
 	                <span class="campusn--ame">' . $element->navn . '</span>
 	            </div>
-	        </a>
+	        </a>-->
 	    ';
 	}
 }*/
-
-echo '<div class="activities" id="Aktiviteter">';
-	echo '<div class="activities-inner">';
+?>
+<div class="activities" id="Aktiviteter">
+	<div onclick="start('.act'); return false;" class="activities-inner">
+	<?php
 	// Starter queryen.
-	    $query = "SELECT * FROM type";
+	    $query = "
+	    	SELECT * FROM type
+	    ";
 	    $sql = $database->prepare("$query;");
 	    $sql->setFetchMode(PDO::FETCH_OBJ);
 	    $sql->execute();
 
-	    // Kjører en loop for hvert element i som PDO henter.
+	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a href="#">
-		            <div class="activity" id="activity' . $element->type_id . '">
-		                <img class="activity-icon" src="' . $element->bilde_path . '"/>
+		    	<a class="tester">
+		            <div onclick="on(\'#act-div' . $element->id  . '\'); return false;" class="activity" id="activity' . $element->id . '">
+		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
 		        </a>
 	        ';
-	    }
-	echo '</div>';
-echo '</div>';
+	    }?>
+	</div>
+</div>
+<div class="act stopp" id="act">
+	<div class="act-div inaktiv-d">
+		<?php
+		// Starter queryen.
+			$query = "
+				SELECT * FROM type
+			";
+		    $sql = $database->prepare("$query;");
+		    $sql->setFetchMode(PDO::FETCH_OBJ);
+		    $sql->execute();
 
+		    $result = $sql->fetchAll(PDO::FETCH_OBJ);
 
+		    //echo '<pre>' . print_r($result, true) . '</pre>';
 
-/***************************************/
-/*	Room for rest of activity post
-/*
-/***************************************/
+		// Kjører en loop for hvert element i som PDO henter. &id
+			foreach ($result as $element) {
+				$type_id = $element->id;
 
-?>
+				//echo '<pre>' . print_r($element, true) . '</pre>';
+
+				echo'
+					<div class="act-div-inner act-div' . $element->id . ' off" id="act-div' . $element->id . '">
+						<div class="act-div-inner-left">
+							<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
+							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
+							<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
+						</div>
+						<div class="act-div-inner-right">';
+						
+						// Starter queryen.
+							$query = "
+								SELECT * FROM data
+								WHERE campus_id = '$id' AND type_id = '$type_id'
+							";
+						    $sql = $database->prepare("$query;");
+						    $sql->setFetchMode(PDO::FETCH_OBJ);
+						    $sql->execute();
+
+						    $rows = $sql->fetchAll(PDO::FETCH_OBJ);
+
+							foreach ($rows as $row) {
+
+								echo '
+									<div class="act-div-inner-right-box">
+										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
+			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap">
+												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
+												<div class="act-div-inner-right-box-right">
+													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
+													<p class="act-div-inner-right-box-right-les">Les mer</p>
+												</div>
+											</div>
+											<div class="act-div-inner-right-box-drop dropdown">
+												<div class="dropdown-inner">';
+												/*for ($type_id = 1; $type_id <= 2; $type_id++) {
+												    echo '
+														Hello
+													';
+												} 
+
+												for ($type_id = 3; $type_id <= 6; $type_id++) {
+													echo '
+														<div class="dropdown-inner-left">
+															<p>Adresse: </p>
+															<span>' . $row->adresse . '</span>
+															</br>
+															<p>Beskrivelse: </p>
+															<span>' . $row->beskrivelse . '</span>
+														</div>
+														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+													';
+												}*/
+												if ($row->type_id <= 1){
+													echo '
+														Bysykkel
+													';
+												} else if ($row->type_id == 2){
+													$ruter_id = $row->x_id;
+
+													echo '<div class="dropdown-inner-rep">';
+														require 'core/ruter.php';
+													echo '</div>';
+
+												} else {
+													echo '
+														<div class="dropdown-inner-left">
+															<p>Adresse: </p>
+															<span>' . $row->adresse . '</span>
+															</br>
+															<p>Beskrivelse: </p>
+															<span>' . $row->beskrivelse . '</span>
+														</div>'
+														//<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+                                                        //<div id="campusmap" style="width:50%;height:200px;"></div>
+													;
+												}
+												echo '</div>
+											</div>
+										</div>
+									</div>
+								';
+							}
+					echo '</div>
+				    </div>';
+			}?>
+	</div>
+</div>
 <div class="info" id="Omoss">
 	<div class="info-inner">
 		<div class="info-inner-left">

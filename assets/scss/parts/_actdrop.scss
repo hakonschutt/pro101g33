@@ -1,0 +1,232 @@
+#act {
+}
+
+.stopp {
+	max-height: 0px;
+}
+
+.start {
+	max-height: 750px;
+}
+
+.act {
+	overflow: hidden;
+	transition: max-height .5s ease-in-out;
+
+	.inaktiv-d {
+	height: 500px;
+	}
+
+	.aktiv-d {
+		height: 750px;
+	}
+
+	&-div {
+		position: relative;
+		width: 100%; 
+		overflow: hidden;
+		background-color: $white;
+		transition: .3s ease-in-out;
+		box-shadow: inset 0px 15px 20px -20px rgba(23,45,79,1), inset 0px -15px 20px -20px rgba(23,45,79,1);
+
+		.off {
+			display: none; 
+		}	
+
+		.on {
+			display: block;
+		}
+
+		&-inner {
+			width: 1000px; 
+			position: absolute; 
+			height: 85%; 
+			left: 0; 
+			right: 0; 
+			top: 50px;
+			margin: auto; 
+			background-color: $white;
+
+			&-left {
+				width: 250px; 
+				height: 100%;
+				float: left; 
+				top: 0; 
+				color: $brandcolor;
+
+				&-header {
+					width: 100%; 
+					text-align: center; 
+					margin-top: 30px;
+					font-size: 1.5rem;
+				}
+
+				img {
+					width: auto;
+					height: 120px;
+					display: block;
+					left: 0; 
+					right: 0; 
+					margin: auto;
+					margin-top: 25px;
+					margin-bottom: 25px;
+				}
+
+				&-des {
+					width: 200px; 
+					margin: 0px 25px;
+					text-align: justify;
+				}
+			}
+
+			&-right {
+				width: 700px; 
+				height: 100%;
+				float: right; 
+				top: 0; 
+
+				&-box {
+					width: 100%; 
+					position: relative;
+					background-color: $brandcolor;
+					margin-bottom: 10px;
+					color: $white;
+					display: block;
+
+					&-name {
+						font-size: 1.5rem; 
+						height: 60px; 
+						margin-left: 20px; 
+						line-height: 60px;
+						display: inline-block;
+					}
+
+					&-right {
+						height: 100%; 
+						width: 50%; 
+						float: right; 
+
+						&-reisetid {
+							line-height: 60px;
+							display: inline-block;
+						}
+
+						&-les {
+							line-height: 60px;
+							display: inline-block;
+							float: right;
+							margin-right: 70px;
+						}
+					}
+
+					.inaktiv {
+						max-height: 60px;
+					}
+
+					.aktiv {
+						//min-height: 60px;
+						max-height: 310px;
+					}
+
+					&-inner {
+						overflow: hidden;
+						transition: .3s ease-in-out;
+
+						&-wrap {
+							transition: .3s ease-in-out;
+						}
+					}
+
+					&-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+						background: 
+					        url('../../img/icons/dropDown.png') no-repeat,
+					        $brandcolor;
+					    color: #444;
+					    background-position: 650px 16px;
+					    background-size: 30px;
+					    color: $white;
+					}
+
+					&-inner.aktiv .act-div-inner-right-box-inner-wrap {
+						background: 
+					        url('../../img/icons/dropDown.png') no-repeat,
+					        $brandcolor;
+					    color: #444;
+					    background-position: 650px -34px;
+					    background-size: 30px;
+					    color: $white;
+					}
+
+					.dropdown {
+						height: 250px;
+						width: 100%; 
+						position: relative;
+						box-sizing: border-box;
+						border: 2px solid $brandcolor;
+
+						&-inner {
+							height: 230px;
+							width: 680px;
+							background-color: $backgroundcolor;
+							position: absolute;
+							color: $brandcolor;
+							top: 0; 
+							right: 0;
+							bottom: 0; 
+							left: 0;
+							margin: auto;
+
+							&-left {
+								height: 200px;
+								width: 300px;
+								float: left; 
+								margin: 15px 15px;
+								color: $brandcolor;
+
+								p {
+									display: block; 
+								}
+
+								span {
+									display: block;
+									margin-top: 5px;
+									margin-left: 10px;
+								}
+							}
+
+							&-image {
+								height: 200px;
+								width: auto; 
+								overflow: hidden; 
+								float: right; 
+								margin: 15px 15px;
+							}
+
+							&-rep {
+								width: 100%; 
+
+								&-inner {
+									width: 100%; 
+									height: 30px;
+									line-height: 30px;
+									position: relative;
+									border-bottom: 1px solid $brandcolor;
+
+									:nth-child(1){
+										float: left; 
+										padding-left: 15px;
+									}
+
+									:nth-child(2){
+										float: right; 
+										padding-right: 15px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

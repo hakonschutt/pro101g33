@@ -1,58 +1,61 @@
-var id = _CAMPUS_ID;
+var id;
 var markers = [];
 var zoom = 15;
 var centerPos;
+var map;
+var dblocations = [];
 
-var fjerdingen_locations = [
-    ['Fjerdingen', 59.916049, 10.760024, 'campus'],
-    ['Hausmanns gate', 59.916395, 10.757641, 'transport'],
-    ['Rema 1000', 59.914244, 10.756892, 'matbutikker']
-];
-
-//Vulkan
-var vulkan_locations = [
-    ['Vulkan', 59.923341, 10.752494, 'campus'],
-    ['Telthusbakken', 59.924503, 10.750547, 'transport']
-];
-
-//Brenneriveien
-var brenneriveien_locations = [
-    ['Brenneriveien', 59.920360, 10.752799, 'campus'],
-    ['Møllerveien', 59.920611, 10.751407, 'transport']
+var campuses = [
+    ['Fjerdingen', 59.916049, 10.760024, 0],
+    ['Vulkan', 59.923341, 10.752494, 0],
+    ['Brenneriveien', 59.920360, 10.752799, 0]
 ];
 
 var icons = [
-    ["campus", 'img/campus/Fjerdingen.png'],
-    ["bysykkel", 'img/aktivitet/bicycle.png'],
-    ["transport", 'img/aktivitet/front-of-bus.png'],
-    ["matbutikker", 'img/aktivitet/shopping-cart.png'],
-    ["spisesteder", 'img/aktivitet/food2.png'],
-    ["utesteder", 'img/aktivitet/food.png'],
-    ["fritidsaktiviteter", 'img/aktivitet/puzzle.png']
+    [0, 'img/campus/Fjerdingen.png'],
+    [1, 'img/aktivitet/bicycle.png'],
+    [2, 'img/aktivitet/front-of-bus.png'],
+    [3, 'img/aktivitet/shopping-cart.png'],
+    [4, 'img/aktivitet/2food.png'],
+    [5, 'img/aktivitet/food.png'],
+    [6, 'img/aktivitet/puzzle.png']
 ];
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var infoWindow;
+var mapStyle = [ 
+    {
+        featureType: "poi",
+        elementType: "labels",
+        stylers: [
+            { visibility: "off" }
+        ]
+    },
+    {
+         featureType: "transit",
+         elementType: "labels",
+         stylers: [
+            { visibility: "off" }
+         ]
+    }
+];
 
-switch(id) {
-    case "1":
-        centerPos = new google.maps.LatLng(59.916049, 10.760024);
-        createMap(zoom, fjerdingen_locations, 0);
-        break;
-    case "2":
-        centerPos = new google.maps.LatLng(59.923341, 10.752494);
-        createMap(zoom, vulkan_locations, 0);
-        break;
-    case "3":
-        centerPos = new google.maps.LatLng(59.920360, 10.752799);
-        createMap(zoom, brenneriveien_locations, 0);
-        break;
-}
+fillLocations();
 
-//Lager kart og fyller med markers fra -locations-
-function createMap(zoom, locations, locId) {
-    var i;
+//Lager kart og fyller med markers fra xmlfil
+function createMap() {
+    switch(id) {
+        case "1":
+            centerPos = new google.maps.LatLng(59.916049, 10.760024);
+            break;
+        case "2":
+            centerPos = new google.maps.LatLng(59.923341, 10.752494);
+            break;
+        case "3":
+            centerPos = new google.maps.LatLng(59.920360, 10.752799);
+            break;
+    }
     directionsDisplay = new google.maps.DirectionsRenderer({
         preserveViewport: true,
         suppressMarkers: true,
@@ -60,23 +63,30 @@ function createMap(zoom, locations, locId) {
             strokeColor : "red"
         }
     });
-    var map = new google.maps.Map(document.getElementById('campusmap'), {
+    map = new google.maps.Map(document.getElementById('campusmap'), {
+        mapTypeControlOptions: {
+            mapTypeIds: ['mapStyle', google.maps.MapTypeId.ROADMAP]
+        },
         zoom: zoom,
         center: centerPos,
+        mapTypeId: 'mapStyle'
     });
+    map.mapTypes.set('mapStyle', new google.maps.StyledMapType(mapStyle, { name: '@Campus' }));
     directionsDisplay.setMap(map);
     infoWindow = new google.maps.InfoWindow();
-    
-    if (locId > 0) {
-        addMarker(locations[locId][0], locations[locId][1], locations[locId][2], locations[locId][3], map);
-    } else {
-        for(i = 0; i < locations.length; i++) {
-            addMarker(locations[i][0], locations[i][1], locations[i][2], locations[i][3], map);
-        }
+    addMarker(campuses[id-1][0],campuses[id-1][1],campuses[id-1][2], campuses[id-1][3]);
+    addMarkers();
+}
+
+//Fyller kartet med markers
+function addMarkers() {
+    for(var i = 0; i < dblocations.length; i++) {
+        addMarker(dblocations[i][0], dblocations[i][1], dblocations[i][2], dblocations[i][3], dblocations[i][4], dblocations[i][5]);
     }
 }
 
-function addMarker(name, lat, lng, category, map) {
+//Legger til marker og legger til eventhandling
+function addMarker(name, lat, lng, category, add, time) {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lng),
         category: category,  
@@ -87,16 +97,29 @@ function addMarker(name, lat, lng, category, map) {
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
             directionsDisplay.setMap(map);
-            var div = document.getElementById('markercontent');
+            var titleDiv = document.getElementById('markertitle');
+            var contentDiv = document.getElementById('markercontent');
             infoWindow.setContent(name);
             infoWindow.open(map, marker);
-            createRoute(map.getCenter(), marker.getPosition());
-            div.innerHTML = name;
+            createRoute(marker.getPosition());
+            titleDiv.innerHTML = name;
+            contentDiv.innerHTML = "Adresse:<br> " + add + "<br><br>" + "Reisetid: " + time + " min";
         }
     })(marker, i));
 }
 
+//Hjelpemetode for å få markericon basert på type
 function typeToIconPath(type) {
+    if(type == 0) {
+        switch(id)  {
+            case "1":
+                return 'img/campus/Fjerdingen.png';
+            case "2":
+                return 'img/campus/vulkan.png';
+            case "3":
+                return 'img/campus/brenneriveien.png';
+        }
+    }
     for(i = 0; i < icons.length; i++) {
         var iconType = icons[i][0]
         if (type == iconType) {
@@ -106,7 +129,7 @@ function typeToIconPath(type) {
     return 'img/icons/pin.png';
 }
 
-
+//Metode for å filtrere etter aktivitetstype
 function filterMarkersByType(type) {
     if(directionsDisplay != null) {
         directionsDisplay.setMap(null);
@@ -116,7 +139,7 @@ function filterMarkersByType(type) {
         if(type == "all") {
             marker.setVisible(true);
         } else {
-            if(marker.category == type || type.length === 0 || marker.category == "campus") {
+            if(marker.category == type || marker.category == 0) {
                 marker.setVisible(true);
             } else {
                 marker.setVisible(false);
@@ -124,10 +147,10 @@ function filterMarkersByType(type) {
         }
     }
 }
-
-function createRoute(origin, destination) {
+//Tegner rute mellom campus og valgt marker
+function createRoute(destination) {
     var request = {
-        origin: origin,
+        origin: centerPos,
         destination: destination,
         travelMode: google.maps.TravelMode["WALKING"]
     };
@@ -136,4 +159,35 @@ function createRoute(origin, destination) {
             directionsDisplay.setDirections(response);
         }
     });
+}
+
+//To metoder for å hente databaseverdier fra xmlfil
+function fillLocations() {
+    var xhttp;
+    if(window.XMLHttpRequest) {
+        xhttp = new XMLHttpRequest();
+    } else {
+        xhttp = new ActiveXObject("microsoft.XMLHTTP");
+    }
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            fillhelper(this);
+        }
+    };
+    xhttp.open("GET", "./assets/xml/map_locations.xml", true);
+    xhttp.send();
+    
+    
+}
+
+function fillhelper(xml) {
+    var xmlDoc = xml.responseXML;
+    id = xmlDoc.getElementsByTagName("data")[0].getAttribute("id");
+    var x = xmlDoc.getElementsByTagName("location");
+    for(i = 0; i < x.length; i++) {
+        if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue != 2) {
+            dblocations.push([x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue, parseFloat(x[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue), parseFloat(x[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue), parseInt(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue, parseInt(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue)]);
+        }
+    }
+    createMap();
 }

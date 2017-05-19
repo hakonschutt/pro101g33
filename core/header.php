@@ -12,7 +12,29 @@
 <body class="mainbody">
 	<div class="nav">
 	    <div class="nav-bar">
-	    	<a href="index.php"><img class="nav-bar-logo" src="img/westerdals-hvit.png" /></a>
+	    <?php
+	    	// Starter queryen.
+            $query = "
+            	SELECT * FROM campus
+            	WHERE id = '$id'
+            	";
+
+            $sql = $database->prepare("$query;");
+            $sql->setFetchMode(PDO::FETCH_OBJ);
+            $sql->execute();
+
+            // Kjører en loop for hvert element i som PDO henter.
+            while ($element = $sql->fetch()) {
+                echo '
+                        <a href="index.php">
+                            <div class="nav-bar-campus" id="campus' . $element->id . '">
+                            	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '"/>
+                            	<span class="nav-bar-campus-navn">@Campus - ' . $element->navn . '</span>
+                            </div>
+                        </a>
+                    ';
+            }?>
+    		<!--<a href="index.php"><img class="nav-bar-logo" src="img/westerdals-hvit.png" /></a>-->
 	    	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function(){
@@ -42,7 +64,6 @@
 			<div class="menu-inner-campuses">
                 <h1 class="menu-inner-campuses-title">Velg Campus</h1>
             	<?php 
-                    
                     // Starter queryen.
                     $query = "SELECT * FROM campus";
                     $sql = $database->prepare("$query;");
@@ -51,16 +72,16 @@
 
                     // Kjører en loop for hvert element i som PDO henter.
                     while ($element = $sql->fetch()) {
-                        if ($element->campus_id === $id){
+                        if ($element->id === $id){
                         	$class = 'active';
                         } else {
                         	$class = '';
                         }
 
                         echo '
-	                            <a href="campus.php?id=' . $element->campus_id . '">
-	                                <div class="menu-inner-campuses-campus" id="campus' . $element->campus_id . '">
-	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->bilde_path . '"/>
+	                            <a href="campus.php?id=' . $element->id . '">
+	                                <div class="menu-inner-campuses-campus" id="campus' . $element->id . '">
+	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->campus_bilde_path . '"/>
 	                                    <span class="menu-inner-campuses-campus-name ' . $class . '">' . substr($element->navn,0,1) . '</span>
 	                                </div>
 	                            </a>
@@ -111,7 +132,7 @@
 				   	//var targetSec = $('a').attr('href');
 				    //var targetSec = $(this).attr('href');
 				    $('html, body').animate({
-				        scrollTop: $('#' + targetSec).offset().top
+				        scrollTop: $('#' + targetSec).offset().top - 50
 				    }, 1000);
 
 				    $('#nav-icon').toggleClass('open');
@@ -126,6 +147,42 @@
 						left: animateLeft + 'px'
 				    });
 				});
+
+				$(document).on("click", ".active", function (e) {
+					e.preventDefault();
+				});
+
+	            function aapne($id) {
+	                if ($($id).hasClass('aktiv')) {
+	                    $($id).removeClass('aktiv');
+	                    $($id).addClass('inaktiv');
+	                    $('.act-div').removeClass('aktiv-d');
+	                    $('.act-div').addClass('inaktiv-d');
+	                } else {
+	                    $('.act-div-inner-right-box-inner').removeClass('aktiv');
+	                    $('.act-div-inner-right-box-inner').addClass('inaktiv');
+	                    $('.act-div').addClass('aktiv-d');
+	                    $('.act-div').removeClass('inaktiv-d');
+	                    $($id).removeClass('inaktiv');
+	                    $($id).addClass('aktiv');
+	                }
+	            }
+
+	            function start($content) {
+	                if ($($content).hasClass('stopp')) {
+	                    $($content).removeClass('stopp');
+	                    $($content).addClass('start');
+	                } 
+	            }
+
+	            function on($act) {
+	                if ($($act).hasClass('off')) {
+	                	$('.act-div-inner').removeClass('on');
+	                    $('.act-div-inner').addClass('off');
+	                    $($act).removeClass('off');
+	                    $($act).addClass('on');
+	                }
+	            }
 
 			</script>
 		</div>
