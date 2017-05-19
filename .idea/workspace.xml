@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26200d6-2e9d-428d-af72-f63c5af8e310" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_info.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42a577708dfc796fb9daeadbac6a102e0c4edada/_info.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/parts/_info.scss" afterPath="$PROJECT_DIR$/assets/scss/parts/_info.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atcamp_3128@rask29.raskesider.no" afterPath="$PROJECT_DIR$/atcamp_3128@rask29.raskesider.no" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,9 +19,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -260,7 +254,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2199000" />
+    <option name="totallyTimeSpent" value="2344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -341,9 +335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -359,9 +351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -410,9 +400,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -428,9 +416,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -471,9 +457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,9 +473,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1494978970000" expanded="true" signature="1051:1071" ph="SELECT * FRO... campus" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
