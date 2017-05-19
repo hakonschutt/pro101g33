@@ -1,6 +1,6 @@
 <?php
 
-    $host = "127.0.0.1:8889";
+    $host = "localhost";
     $db = "campus";
     $bruker = "root";
     $pass = "root";
