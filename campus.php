@@ -110,7 +110,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 								echo '
 									<div class="act-div-inner-right-box">
 										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
-			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap">
+			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap CallWrapper">
 												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
 												<div class="act-div-inner-right-box-right">
 													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
@@ -138,14 +138,26 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 													';
 												}*/
 												if ($row->type_id <= 1){
+													$by_id = $row->x_id;
+
 													echo '
-														Bysykkel
-													';
+															<div class="dropdown-inner-left">
+																<p>' . $row->beskrivelse . '</p>
+																</br>
+																<p>Åpningstid: </p>
+																<span>' . $row->aapningstid . '</span>
+																</br>
+																</br>
+																<p>Tilgjenglighet: </p>
+																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
+																</div>
+															</div>
+														';
+
 												} else if ($row->type_id == 2){
 													$ruter_id = $row->x_id;
 
-													echo '<div class="dropdown-inner-rep">';
-														require 'core/ruter.php';
+													echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
 													echo '</div>';
 
 												} else {
@@ -177,12 +189,12 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		<div class="info-inner-left">
 			<div class="info-inner-left-topwrap">
 				<h1>Hva er @Campus</h1>
-				<p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer.</p>
+				<p>@Campus er vårt bidrag til å hjelpe nye og gamle studenter på Westerdals til å bli kjent med nærmiljøet rundt campusene. Her vil du kunne finne informasjon om tilbud som befinner seg nært campus og hvor de forskjellige tilbudene befinner seg. Du kan finne alt fra de nærmeste matbutikkene til utestedene som befinner seg i nærheten. </p>
 			</div>
 			<div class="info-inner-left-bottomwrap">
 				<h1>Hvorfor bruker vi det?</h1>
-				<p>Det er et velkjent faktum at lesere distraheres av lesbart innhold på en side når man ser på dens layout. Poenget med å bruke Lorem Ipsum er at det har en mer eller mindre normal fordeling av bokstaver i ord, i motsetning til ‘Innhold her, innhold her’, og gir inntrykk av å være lesbar tekst. Mange webside- og sideombrekkingsprogrammer bruker nå Lorem Ipsum som sin standard for provisorisk tekst, og et søk etter ‘Lorem Ipsum’ vil avdekke mang en uferdig webside. Ulike versjoner har sprunget frem i senere år, noen ved rene uhell og andre mer planlagte (med humor o.l.).</p>
-				<p>Det finnes mange ulike varianter av Lorem Ipsum, men majoriteten av disse har blitt tuklet med på et eller annet vis. Det være seg innlagt humor eller tilfeldig genererte ord som ser langt fra troverdige ut. Skal man bruke avsnitt av Lorem Ipsum må man være sikker på at det ikke skjuler seg noe pinlig midt i teksten. </p>
+				<p>Ja, hvorfor skal du bruke @Campus. Vi vil at studenter og andre som er på Westerdals sine campuser skal vite hvilke tilbud som befinner seg i nærområdet. Ved å bruke @Campus skal du kunne finne nettopp dette. Ved hjelp av denne siden skal du kunne finne frem til alt som er i nærmiljøet til campusene. Vi ønsker rett og slett å gjøre hverdagen enklere for alle som benytter seg av Westerdals sine campuser. </p>
+				<p>@Campus er ditt hjelpemiddel til å få den beste opplevelsen når du befinner deg på campus.</p>
 			</div>
 		</div>
 		<div class="info-inner-right">
@@ -215,12 +227,12 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		</div>
 		<div class="contact-inner-right">
 			<div class="contact-inner-right-wrap">
-				<form method="post" action="core/contactaction.php">
-					<input type="text" name="Name" id="Name" placeholder="Navn"/>
+				<form method="post" id="contactForm" action="core/contactaction.php">
+					<input required type="text" name="Name" id="Name" placeholder="Navn"/>
 		
-					<input type="text" name="Email" id="Email" placeholder="Email"/>
+					<input required type="email" name="Email" id="Email" placeholder="Email"/>
 					
-					<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
+					<textarea required name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
 
 					<input type="submit" name="submit" value="Send melding" class="submit-button" />
 				</form>
