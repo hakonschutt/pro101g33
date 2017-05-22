@@ -14,9 +14,6 @@
   top: 0;
   position: fixed;
   z-index: 100; }
-  @media only screen and (max-width: 768px) {
-    .nav {
-      background-color: red; } }
   .nav-bar {
     width: 85%;
     height: 100%;
@@ -120,7 +117,7 @@
   z-index: 99; }
   .menu-inner {
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 350px; }
     .menu-inner-items {
       margin-top: 100px;
@@ -140,8 +137,8 @@
     .menu-inner-campuses {
       width: 100%;
       height: 200px;
-      margin-top: 150px;
-      position: relative; }
+      position: absolute;
+      bottom: 10px; }
       .menu-inner-campuses-title {
         width: 100%;
         text-align: center;

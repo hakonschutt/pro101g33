@@ -13,10 +13,6 @@
 	position: fixed;
 	z-index: 100;
 
-	@media only screen and (max-width: $tablet) {
-		background-color: red; 
-	}
-
 	&-bar {
 		width: 85%; 
 		height: 100%;
@@ -152,7 +148,7 @@
 
 	&-inner {
 		position: relative;
-    	height: 100%;
+    	height: 90%;
     	width: 350px;
 
     	&-items {
@@ -179,8 +175,8 @@
     	&-campuses {
     		width: 100%; 
     		height: 200px; 
-    		margin-top: 150px;
-    		position: relative;
+    		position: absolute;
+    		bottom: 10px;
 
 
     		&-title {
