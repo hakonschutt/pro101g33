@@ -12,11 +12,11 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$error = "You need to pass an ID";
 } else {
 	$id = $_GET['id'];
-}?>
+} 
 
 //echo $id;
 
-/*if ($error === null){
+/* if ($error === null){
 	// Starter queryen.
 
 	$query = "SELECT * FROM campus WHERE campus_id = :id";
@@ -39,7 +39,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    ';
 	}
 }*/
-
+?>
 <div class="activities" id="Aktiviteter">
 	<div onclick="start('.act'); return false;" class="activities-inner">
 	<?php
@@ -152,6 +152,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
 																</div>
 															</div>
+															<div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div>
 														';
 
 												} else if ($row->type_id == 2){
@@ -160,7 +161,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 													echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
 													echo '</div>';
 
-												} else {
+												} else { 
 													echo '
 														<div class="dropdown-inner-left">
 															<p>Adresse: </p>
@@ -169,8 +170,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
 														</div>
-														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-													';
+														<div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div>
+														';
 												}
 												echo '</div>
 											</div>
