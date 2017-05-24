@@ -161,6 +161,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 													echo '</div>';
 
 												} else {
+													$bilde = $row->bilde_path; 
 													echo '
 														<div class="dropdown-inner-left">
 															<p>Adresse: </p>
@@ -168,10 +169,13 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															</br>
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
-														</div>'
-														//<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
+														</div>
+														<div class="dropdown-inner-image" style="background-image: url(' . $bilde . '); background-position: center;"></div>
+														';
+														//echo $row->bilde_path;
+														//<img class="dropdown-inner-image" src="' . $row->bilde_path . '">'
+														////<div class="dropdown-inner-imgage" style="background-image: url("' . $row->bilde_path . '");"></div>'
                                                         //<div id="campusmap" style="width:50%;height:200px;"></div>
-													;
 												}
 												echo '</div>
 											</div>

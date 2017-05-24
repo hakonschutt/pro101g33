@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<data id="1">
+<data id="2">
   <location>
-    <name>Hausmanns gate</name>
+    <name>Vulkan</name>
     <lat/>
     <lng/>
     <type>1</type>
@@ -9,7 +9,7 @@
     <time>2</time>
   </location>
   <location>
-    <name>Legevakten</name>
+    <name>AHO</name>
     <lat/>
     <lng/>
     <type>1</type>
@@ -17,275 +17,275 @@
     <time>3</time>
   </location>
   <location>
-    <name>Nylandsveien</name>
+    <name>Fredensborg</name>
     <lat/>
     <lng/>
     <type>1</type>
     <address/>
-    <time>5</time>
+    <time>4</time>
   </location>
   <location>
-    <name>Jakob Kirke</name>
+    <name>Bjerregaards gate</name>
+    <lat/>
+    <lng/>
+    <type>1</type>
+    <address/>
+    <time>6</time>
+  </location>
+  <location>
+    <name>Olaf Ryes plass</name>
     <lat/>
     <lng/>
     <type>1</type>
     <address/>
     <time>7</time>
+  </location>
+  <location>
+    <name>Alexander Kiellands Plass</name>
+    <lat/>
+    <lng/>
+    <type>1</type>
+    <address/>
+    <time>8</time>
+  </location>
+  <location>
+    <name>Birkelunden</name>
+    <lat/>
+    <lng/>
+    <type>2</type>
+    <address/>
+    <time>1</time>
+  </location>
+  <location>
+    <name>Telthusbakken</name>
+    <lat/>
+    <lng/>
+    <type>2</type>
+    <address/>
+    <time>3</time>
+  </location>
+  <location>
+    <name>MÃ¸llerveien</name>
+    <lat/>
+    <lng/>
+    <type>2</type>
+    <address/>
+    <time>4</time>
+  </location>
+  <location>
+    <name>Alexander Kiellands plass</name>
+    <lat/>
+    <lng/>
+    <type>2</type>
+    <address/>
+    <time>5</time>
   </location>
   <location>
     <name>Schous plass</name>
     <lat/>
     <lng/>
-    <type>1</type>
-    <address/>
-    <time>7</time>
-  </location>
-  <location>
-    <name>Vaterlandsparken</name>
-    <lat/>
-    <lng/>
-    <type>1</type>
-    <address/>
-    <time>7</time>
-  </location>
-  <location>
-    <name>Hausmanns gate</name>
-    <lat/>
-    <lng/>
-    <type>2</type>
-    <address/>
-    <time>3</time>
-  </location>
-  <location>
-    <name>Heimdalsgata</name>
-    <lat/>
-    <lng/>
-    <type>2</type>
-    <address/>
-    <time>5</time>
-  </location>
-  <location>
-    <name>GrÃ¸nland [T-bane]</name>
-    <lat/>
-    <lng/>
     <type>2</type>
     <address/>
     <time>6</time>
   </location>
   <location>
-    <name>Vahls gate</name>
+    <name>Stensberggata</name>
     <lat/>
     <lng/>
     <type>2</type>
     <address/>
-    <time>7</time>
-  </location>
-  <location>
-    <name>Jakob kirke</name>
-    <lat/>
-    <lng/>
-    <type>2</type>
-    <address/>
-    <time>7</time>
-  </location>
-  <location>
-    <name>Hammersborggata</name>
-    <lat/>
-    <lng/>
-    <type>2</type>
-    <address/>
-    <time>8</time>
+    <time>10</time>
   </location>
   <location>
     <name>Rema 1000</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <lat/>
+    <lng/>
     <type>3</type>
-    <address>Chr. Kroghs Gate 1-11, 0186 Oslo</address>
-    <time>3</time>
+    <address>Maridalsveien 15, 0178 Oslo</address>
+    <time>2</time>
   </location>
   <location>
-    <name>Coop Prix</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <name>Kiwi </name>
+    <lat/>
+    <lng/>
     <type>3</type>
-    <address>Hausmanns Gate 19, 0182 Oslo</address>
-    <time>4</time>
-  </location>
-  <location>
-    <name>Extra</name>
-    <lat>11</lat>
-    <lng>59</lng>
-    <type>3</type>
-    <address>Trondheimsveien 5, 0560</address>
-    <time>5</time>
-  </location>
-  <location>
-    <name>Kiwi</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>3</type>
-    <address>Storgata 32, 0184 Oslo</address>
-    <time>7</time>
-  </location>
-  <location>
-    <name>Kiwi</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>3</type>
-    <address>GrÃ¸nland 18, 0188 Oslo</address>
+    <address>Markveien 35b, 0554 Oslo</address>
     <time>7</time>
   </location>
   <location>
     <name>Rema 1000</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <lat/>
+    <lng/>
     <type>3</type>
-    <address>Herslebs Gate 17, 0561 Oslo</address>
+    <address>Darres Gate 2, 0175 Oslo</address>
     <time>8</time>
   </location>
   <location>
-    <name>Tehran Kebab House</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>4</type>
-    <address>Storgata 38, 0182 Oslo</address>
-    <time>3</time>
+    <name>Rema 1000</name>
+    <lat/>
+    <lng/>
+    <type>3</type>
+    <address>Fredenborgsveien 24, 0177 Oslo</address>
+    <time>9</time>
   </location>
   <location>
-    <name>Wiberg</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>4</type>
-    <address>Filipstad brygge, 0182 Oslo</address>
-    <time>4</time>
+    <name>Rema 1000</name>
+    <lat/>
+    <lng/>
+    <type>3</type>
+    <address>Waldemar Thranes Gate 25, 0171 Oslo</address>
+    <time>10</time>
   </location>
   <location>
-    <name>Tehran Kebab House</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>4</type>
-    <address>Trondheimsveien 2, 0182 Oslo</address>
-    <time>5</time>
+    <name>Rema 1000</name>
+    <lat/>
+    <lng/>
+    <type>3</type>
+    <address>Thorvald Meyers Gate 23, 0555 Oslo</address>
+    <time>11</time>
   </location>
   <location>
-    <name>SÃ¼dÃ¸st Asian Crossover</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <name>Lucky Bird</name>
+    <lat/>
+    <lng/>
     <type>4</type>
-    <address>Trondheimsveien 5, 0182 Oslo</address>
-    <time>5</time>
-  </location>
-  <location>
-    <name>Delicatessen GrÃ¼nerlÃ¸kka</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>4</type>
-    <address>SÃ¸ndre gate 8, 0550 Oslo</address>
-    <time>5</time>
-  </location>
-  <location>
-    <name>Trancher EntrecÃ´te</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>4</type>
-    <address>Thorvald Meyers gate 78, 0550 Oslo</address>
-    <time>5</time>
-  </location>
-  <location>
-    <name>Sjenkestua Studentbar</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>5</type>
-    <address>Chr. Kroghs Gate 32, 0186 Oslo</address>
+    <address>Vulkan 7, 0175 Oslo</address>
     <time>1</time>
   </location>
   <location>
-    <name>Skuret bar og scene</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>5</type>
-    <address>Chr. Kroghs Gate 2, 0186 Oslo</address>
-    <time>3</time>
+    <name>La CrÃªpe</name>
+    <lat/>
+    <lng/>
+    <type>4</type>
+    <address>Vulkan 28, 0178 Oslo</address>
+    <time>1</time>
   </location>
   <location>
-    <name>Cafe Con Bar</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>5</type>
-    <address>Brugata 11, 0186 Oslo</address>
+    <name>Mathallen Oslo</name>
+    <lat/>
+    <lng/>
+    <type>4</type>
+    <address>Markveien 34, 0554 Oslo</address>
+    <time>1</time>
+  </location>
+  <location>
+    <name>DÃ¸gnvill Burger Vulkan</name>
+    <lat/>
+    <lng/>
+    <type>4</type>
+    <address>Vulkan 12, 0178 Oslo</address>
     <time>4</time>
   </location>
   <location>
-    <name>Dattera til hagen</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>5</type>
-    <address>GrÃ¸nland 10, 0188 Oslo</address>
+    <name>Foccaceria</name>
+    <lat/>
+    <lng/>
+    <type>4</type>
+    <address>Markveien 34, 0554 Oslo</address>
     <time>6</time>
   </location>
   <location>
-    <name>Verkstedet bar</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>5</type>
-    <address>Hausmanns gate 29, 0182 Oslo</address>
+    <name>Noodlepie AS</name>
+    <lat/>
+    <lng/>
+    <type>4</type>
+    <address>GrÃ¼ners gate 9, 0552 Oslo</address>
     <time>6</time>
   </location>
   <location>
-    <name>Schouskjeller Mikrobyggeri</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <name>Bar Vulkan</name>
+    <lat/>
+    <lng/>
     <type>5</type>
-    <address>Trondheimsveien 2, 0560 Oslo</address>
+    <address>Vulkan 9, 0178 Oslo</address>
+    <time>1</time>
+  </location>
+  <location>
+    <name>Vulkan Pub</name>
+    <lat/>
+    <lng/>
+    <type>5</type>
+    <address>Vulkan 26, 0178 Oslo</address>
+    <time>1</time>
+  </location>
+  <location>
+    <name>Fyrhuset kuba</name>
+    <lat/>
+    <lng/>
+    <type>5</type>
+    <address>Maridalsveien 19, 0175 Oslo</address>
+    <time>1</time>
+  </location>
+  <location>
+    <name>Hendrix Ibsen</name>
+    <lat/>
+    <lng/>
+    <type>5</type>
+    <address>Vulkan 16, 0178 Oslo</address>
+    <time>2</time>
+  </location>
+  <location>
+    <name>SÃ¸vnlÃ¸s Bar</name>
+    <lat/>
+    <lng/>
+    <type>5</type>
+    <address>Vulkan 12, 0178 Oslo</address>
+    <time>2</time>
+  </location>
+  <location>
+    <name>Parkteateret bar</name>
+    <lat/>
+    <lng/>
+    <type>5</type>
+    <address>Olaf Ryes Plass 11, 0552 Oslo</address>
+    <time>7</time>
+  </location>
+  <location>
+    <name>SiO Athletica Vulkan</name>
+    <lat/>
+    <lng/>
+    <type>6</type>
+    <address>Vulkan 15, 0178 Oslo</address>
+    <time>1</time>
+  </location>
+  <location>
+    <name>Galleri Vulkan</name>
+    <lat/>
+    <lng/>
+    <type>6</type>
+    <address>Maridalsveien 13, 0175 Oslo</address>
+    <time>3</time>
+  </location>
+  <location>
+    <name>Dansens Hus</name>
+    <lat/>
+    <lng/>
+    <type>6</type>
+    <address>Vulkan 1, 0182 Oslo</address>
+    <time>3</time>
+  </location>
+  <location>
+    <name>Ytteborgs Ã¸lhall</name>
+    <lat/>
+    <lng/>
+    <type>6</type>
+    <address>Akersbakken 28, 0174 Oslo</address>
     <time>8</time>
   </location>
   <location>
-    <name>Volleyballbane</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <name>Sofienbergparken</name>
+    <lat/>
+    <lng/>
     <type>6</type>
-    <address>Nylandsveien, 0186 Oslo</address>
-    <time>3</time>
+    <address>Sofienberggata 14, 0558 Oslo</address>
+    <time>11</time>
   </location>
   <location>
-    <name>Legevakta</name>
-    <lat>11</lat>
-    <lng>60</lng>
+    <name>Oslo Reptilpark</name>
+    <lat/>
+    <lng/>
     <type>6</type>
-    <address>Storgata 40, 0182 Oslo</address>
-    <time>3</time>
-  </location>
-  <location>
-    <name>Anker Gymsal</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>6</type>
-    <address>Storgata 91, 0182 Oslo</address>
-    <time>3</time>
-  </location>
-  <location>
-    <name>Farah Kaah Internet CafÃ¨</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>6</type>
-    <address>Storgata 51, 0182 Oslo</address>
-    <time>3</time>
-  </location>
-  <location>
-    <name>JÃ¸disk museum</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>6</type>
-    <address>Calmeyers gate 15b, 0183 Oslo</address>
-    <time>5</time>
-  </location>
-  <location>
-    <name>Botanisk hage</name>
-    <lat>11</lat>
-    <lng>60</lng>
-    <type>6</type>
-    <address>Monrads Gate, 0562</address>
-    <time>9</time>
+    <address>St. Olavs Gate 2, 0165 Oslo</address>
+    <time>13</time>
   </location>
 </data>
