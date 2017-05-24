@@ -807,7 +807,8 @@
                 width: 300px;
                 overflow: hidden;
                 float: right;
-                margin: 15px 15px; }
+                margin: 15px 15px;
+                background-size: 250px auto; }
               .act-div-inner-right-box .dropdown-inner .byLoader .loadWrapper {
                 text-align: left;
                 font-size: 1.5rem; }
