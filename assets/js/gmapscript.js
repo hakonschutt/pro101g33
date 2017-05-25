@@ -99,11 +99,13 @@ function addMarker(name, lat, lng, category, add, time) {
             directionsDisplay.setMap(map);
             var titleDiv = document.getElementById('markertitle');
             var contentDiv = document.getElementById('markercontent');
+            var markerdiv = document.getElementById("marker");
             infoWindow.setContent(name);
             infoWindow.open(map, marker);
             createRoute(marker.getPosition());
             titleDiv.innerHTML = name;
             contentDiv.innerHTML = "Adresse:<br> " + add + "<br><br>" + "Reisetid: " + time + " min";
+            markerdiv.style.display = "block";
         }
     })(marker, i));
 }

@@ -104,7 +104,7 @@ if ($error === null){
                 </div>
             </form>
             <div class="map"><div id="campusmap"></div></div>
-            <div class="markerinfo">
+            <div class="markerinfo" id="marker">
                 <div class="markerinfo-title" id="markertitle"></div>
                 <div class="markerinfo-content" id="markercontent"></div>
             </div>
