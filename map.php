@@ -24,7 +24,7 @@ $dom->appendChild($data);
 if ($error === null){
 	// Starter queryen.
     
-	$query = "SELECT navn, latitude, longitude, type_id, adresse, reisetid FROM data WHERE campus_id = '$id'";
+	$query = "SELECT * FROM data WHERE campus_id = '$id'";
 	$sql = $database->prepare("$query;");
 
 	$sql->setFetchMode(PDO::FETCH_ASSOC);
