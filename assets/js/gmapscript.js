@@ -174,7 +174,7 @@ function fillLocations() {
             fillhelper(this);
         }
     };
-    xhttp.open("GET", "./assets/xml/map_locations.xml", true);
+    xhttp.open("GET", "assets/xml/map_locations.xml", true);
     xhttp.send();
     
     
@@ -185,9 +185,9 @@ function fillhelper(xml) {
     id = xmlDoc.getElementsByTagName("data")[0].getAttribute("id");
     var x = xmlDoc.getElementsByTagName("location");
     for(i = 0; i < x.length; i++) {
-        if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue != 2) {
+        if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue != 2){
             dblocations.push([x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue, parseFloat(x[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue), parseFloat(x[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue), parseInt(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue, parseInt(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue)]);
-        }
+        } 
     }
     createMap();
 }

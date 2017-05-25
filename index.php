@@ -16,7 +16,7 @@
                 <h1 class="campus-title">Velg Campus</h1>
             	<?php 
                     
-                    // Starter queryen.
+                    // Starter queryen
                     $query = "SELECT * FROM campus";
                     $sql = $database->prepare("$query;");
                     $sql->setFetchMode(PDO::FETCH_OBJ);

@@ -1,5 +1,6 @@
 /* Typography */
 /* Colours */
+/* Sceen sizes */
 .mainbody {
   background-color: #E8ECF3;
   position: relative;
@@ -116,7 +117,7 @@
   z-index: 99; }
   .menu-inner {
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 350px; }
     .menu-inner-items {
       margin-top: 100px;
@@ -136,8 +137,8 @@
     .menu-inner-campuses {
       width: 100%;
       height: 200px;
-      margin-top: 150px;
-      position: relative; }
+      position: absolute;
+      bottom: 10px; }
       .menu-inner-campuses-title {
         width: 100%;
         text-align: center;
@@ -278,6 +279,9 @@
     margin: auto;
     margin-top: 20px;
     display: block; }
+    @media only screen and (max-width: 1024px) {
+      .right-col .campus {
+        width: 300px; } }
     .right-col .campus-icon {
       position: absolute;
       height: 100px;
@@ -285,12 +289,18 @@
       bottom: 0;
       left: 0;
       margin: auto 20px; }
+      @media only screen and (max-width: 1024px) {
+        .right-col .campus-icon {
+          display: none; } }
     .right-col .campus-name {
       font-size: 2rem;
       line-height: 120px;
       color: #ffffff;
       position: absolute;
       margin-left: 140px; }
+      @media only screen and (max-width: 1024px) {
+        .right-col .campus-name {
+          margin-left: 20px; } }
     .right-col .campus-arrow {
       position: absolute;
       height: 50px;
@@ -299,6 +309,90 @@
       right: 0;
       margin: auto 20px; }
 
+@media only screen and (max-width: 768px) {
+  .main-container {
+    height: 90%; }
+
+  .left-col {
+    width: 100%;
+    height: 55%;
+    overflow: hidden; }
+    .left-col-inner {
+      width: 100%;
+      height: 100%; }
+      .left-col-inner-logo {
+        width: 200px;
+        margin: 0; }
+      .left-col-inner-text {
+        margin-top: 10px;
+        overflow: ellipsis; }
+
+  .right-col {
+    width: 100%;
+    height: 250px;
+    overflow: hidden; }
+    .right-col #campuses {
+      border: none;
+      position: relative;
+      width: 415px; }
+    .right-col .campus-title {
+      width: 100%;
+      text-align: center;
+      font-size: 2.0rem; }
+    .right-col .campus {
+      height: 150px;
+      width: 120px;
+      display: inline-block;
+      margin: 0px;
+      text-align: center;
+      margin: 0 5px; }
+      .right-col .campus-icon {
+        display: block;
+        margin: 10px;
+        position: relative; }
+      .right-col .campus-name {
+        font-size: 1rem;
+        margin: 0;
+        line-height: 0;
+        position: relative;
+        margin-top: 110px; }
+      .right-col .campus-arrow {
+        display: none; } }
+@media only screen and (max-width: 425px) {
+  .left-col {
+    display: none; }
+
+  .right-col {
+    width: 100%;
+    height: 100%; }
+    .right-col #campuses {
+      position: relative;
+      width: 100%; }
+    .right-col .campus-title {
+      width: 100%;
+      text-align: center;
+      font-size: 2.0rem; }
+    .right-col .campus {
+      height: 120px;
+      width: calc(100% - 15px);
+      display: block;
+      margin: 0px;
+      text-align: center;
+      margin: 10px 5px; }
+      .right-col .campus-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto 20px; }
+      .right-col .campus-name {
+        position: absolute;
+        font-size: 1.5rem;
+        margin-top: 60px;
+        left: 0;
+        margin-left: 130px; }
+      .right-col .campus-arrow {
+        display: none; } }
 .activities {
   padding-top: 70px;
   position: relative;
@@ -358,7 +452,8 @@
     .info-inner-left {
       float: left;
       width: 60%;
-      height: 100%;
+      height: 80%;
+      margin-top: 5%;
       padding-top: 20px;
       color: #2B518C; }
       .info-inner-left p {
@@ -710,10 +805,11 @@
                     vertical-align: middle; }
               .act-div-inner-right-box .dropdown-inner-image {
                 height: 200px;
-                width: auto;
+                width: 300px;
                 overflow: hidden;
                 float: right;
-                margin: 15px 15px; }
+                margin: 15px 15px;
+                background-size: 250px auto; }
               .act-div-inner-right-box .dropdown-inner .byLoader .loadWrapper {
                 text-align: left;
                 font-size: 1.5rem; }
