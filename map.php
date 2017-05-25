@@ -6,6 +6,7 @@ require_once 'core/header.php';
 
 $error = null;
 $id = null;
+$data_id = null; 
 $locations = array();
 
 if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
@@ -13,6 +14,14 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 } else {
 	$id = $_GET['id'];
 }
+
+if (isset($_GET['data_id']) && is_numeric($_GET['data_id'])) {
+    $data_id = $_GET['data_id'];
+} else {
+    $data_id = null;
+}
+
+
 
 $dom = new DomDocument('1.0', 'utf-8');
 $dom->formatOutput=true;
@@ -23,8 +32,13 @@ $dom->appendChild($data);
 
 if ($error === null){
 	// Starter queryen.
+
+    if (!empty($data_id)){
+        $query = "SELECT * FROM data WHERE campus_id = '$id' AND id = '$data_id'";
+    } else {
+        $query = "SELECT * FROM data WHERE campus_id = '$id'";
+    }
     
-	$query = "SELECT * FROM data WHERE campus_id = '$id'";
 	$sql = $database->prepare("$query;");
 
 	$sql->setFetchMode(PDO::FETCH_ASSOC);

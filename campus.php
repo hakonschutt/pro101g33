@@ -14,31 +14,6 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 } 
 
-//echo $id;
-
-/* if ($error === null){
-	// Starter queryen.
-
-	$query = "SELECT * FROM campus WHERE campus_id = :id";
-	$sql = $database->prepare("$query;");
-
-	$sql->bindParam(':id', $id, PDO::PARAM_INT);
-
-	$sql->setFetchMode(PDO::FETCH_OBJ);
-	$sql->execute();
-
-	// Kjører en loop for hvert element i som PDO henter.
-	while ($element = $sql->fetch()) {
-	    echo '
-	        <!--<a href="campus.php?id=' . $element->campus_id . '">
-	            <div id="campus campus' . $element->campus_id . '">
-	                <img class="campus--icon" src="' . $element->bilde_path . '"/>
-	                <span class="campusn--ame">' . $element->navn . '</span>
-	            </div>
-	        </a>-->
-	    ';
-	}
-}*/
 ?>
 <div class="activities" id="Aktiviteter">
 	<div onclick="start('.act'); return false;" class="activities-inner">
@@ -170,7 +145,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
 														</div>
-														<div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div>
+														<a href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
 														';
 												}
 												echo '</div>
