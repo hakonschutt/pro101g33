@@ -5,6 +5,7 @@
   background-color: #E8ECF3;
   position: relative;
   margin: 0;
+  min-height: calc(100vh - 170px);
   padding-bottom: 100px; }
 
 .nav {
@@ -582,46 +583,78 @@
           color: #2B518C; }
 
 .mapcontainer {
-  height: 100%;
-  width: 80%;
-  position: relative;
-  margin: auto;
-  margin-top: 89px;
-  margin-bottom: 30px; }
-  .mapcontainer img {
-    height: 20px;
-    width: 20px; }
-  .mapcontainer label > input {
-    visibility: hidden;
-    position: absolute; }
-  .mapcontainer label > input + img {
-    cursor: pointer;
-    border: 2px solid transparent; }
-  .mapcontainer label > input:checked + img {
-    border: 2px solid #2B518C; }
-
-.map {
-  width: 70%;
+  margin-top: 70px;
+  min-height: 600px;
+  height: calc(100vh - 170px);
+  width: 100%;
   position: relative; }
-
-.markerinfo {
-  height: 83.2%;
-  width: 19.8%;
-  position: absolute;
-  left: 72%;
-  bottom: 0;
-  border: 5px solid #2B518C;
-  padding: 30px; }
-  .markerinfo-title {
-    background-color: #2B518C;
-    height: 7%;
-    margin: -32px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 5%; }
-  .markerinfo-content {
-    padding-top: 50px;
-    color: #2B518C; }
+  .mapcontainer-inner {
+    width: 1004px;
+    height: 560px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    .mapcontainer-inner-map {
+      width: 100%;
+      position: relative;
+      height: 100%;
+      border: 2px solid #2B518C; }
+      .mapcontainer-inner-map #campusmap {
+        height: 560px;
+        width: 1004px; }
+      .mapcontainer-inner-map form {
+        position: absolute;
+        height: 55px;
+        width: 240px;
+        padding: 10px;
+        z-index: 10;
+        right: 0;
+        border-left: 2px solid #2B518C;
+        border-bottom: 2px solid #2B518C;
+        background-color: #ffffff; }
+        .mapcontainer-inner-map form p {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+          color: #2B518C; }
+        .mapcontainer-inner-map form img {
+          height: 20px;
+          width: auto;
+          padding: 4px;
+          margin-right: 2px; }
+        .mapcontainer-inner-map form label > input {
+          visibility: hidden;
+          position: absolute; }
+        .mapcontainer-inner-map form label > input + img {
+          cursor: pointer;
+          border: 1px solid transparent; }
+        .mapcontainer-inner-map form label > input:checked + img {
+          border: 1px solid #2B518C; }
+      .mapcontainer-inner-map .markerinfo {
+        width: 260px;
+        position: absolute;
+        display: none;
+        top: 85px;
+        right: 0;
+        background-color: #ffffff;
+        border-top: 2px solid #2B518C;
+        border-left: 2px solid #2B518C;
+        border-bottom: 2px solid #2B518C; }
+        .mapcontainer-inner-map .markerinfo-title {
+          background-color: #2B518C;
+          height: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          text-align: center;
+          color: #ffffff; }
+        .mapcontainer-inner-map .markerinfo-content {
+          position: relative;
+          padding: 20px 10px 20px 10px;
+          color: #2B518C; }
 
 .stopp {
   max-height: 0px; }
@@ -840,5 +873,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
+
+html {
+  min-height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

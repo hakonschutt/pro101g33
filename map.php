@@ -6,6 +6,7 @@ require_once 'core/header.php';
 
 $error = null;
 $id = null;
+$data_id = null; 
 $locations = array();
 
 if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
@@ -13,6 +14,14 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 } else {
 	$id = $_GET['id'];
 }
+
+if (isset($_GET['data_id']) && is_numeric($_GET['data_id'])) {
+    $data_id = $_GET['data_id'];
+} else {
+    $data_id = null;
+}
+
+
 
 $dom = new DomDocument('1.0', 'utf-8');
 $dom->formatOutput=true;
@@ -23,8 +32,13 @@ $dom->appendChild($data);
 
 if ($error === null){
 	// Starter queryen.
+
+    if (!empty($data_id)){
+        $query = "SELECT * FROM data WHERE campus_id = '$id' AND id = '$data_id'";
+    } else {
+        $query = "SELECT * FROM data WHERE campus_id = '$id'";
+    }
     
-	$query = "SELECT * FROM data WHERE campus_id = '$id'";
 	$sql = $database->prepare("$query;");
 
 	$sql->setFetchMode(PDO::FETCH_ASSOC);
@@ -54,7 +68,9 @@ if ($error === null){
         
         $time=$dom->createElement("time",$loc['reisetid']);
         $location->appendChild($time);
-        
+
+        $aapning=$dom->createElement("aapning",$loc['aapningstid']);
+        $location->appendChild($aapning);
         
     }
     $dom->save("./assets/xml/map_locations.xml") or die("couldnt make file!");
@@ -68,42 +84,47 @@ if ($error === null){
 ?>
 <input type="hidden" id="juksediv" value="<?php echo $id ?>" />
 <div class="mapcontainer">
-    <form>
-        <div>
-            <label>
-                <input type="radio" name="a" value="all" onclick="filterMarkersByType(this.value);" checked>
-                <img src="img/icons/icon.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=1 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/bicycle.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=2 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/front-of-bus.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=3 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/shopping-cart.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=4 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/2food.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=5 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/food.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=6 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/puzzle.png">
-            </label>
+    <div class="mapcontainer-inner">
+        <div class="mapcontainer-inner-map">
+            <form>
+                <p>Filter</p>
+                <div>
+                    <label>
+                        <input type="radio" name="a" value="all" onclick="filterMarkersByType(this.value);" checked>
+                        <img src="img/icons/icon.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=1 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/bicycle.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=2 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/front-of-bus.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=3 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/shopping-cart.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=4 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/2food.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=5 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/food.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=6 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/puzzle.png">
+                    </label>
+                </div>
+            </form>
+            <div class="map"><div id="campusmap"></div></div>
+            <div class="markerinfo" id="marker">
+                <div class="markerinfo-title" id="markertitle"></div>
+                <div class="markerinfo-content" id="markercontent"></div>
+            </div>
         </div>
-    </form>
-    <div class="map"><div id="campusmap" style="width:100%;height:550px;"></div></div>
-    <div class="markerinfo">
-        <div class="markerinfo-title" id="markertitle"></div>
-        <div class="markerinfo-content" id="markercontent"></div>
     </div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
