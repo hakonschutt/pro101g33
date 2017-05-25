@@ -31,11 +31,11 @@ foreach ($data as $tempStation) {
 
 		echo '
 				<div class="bysykkel-lock">
-					<img class="bysykkel-lock-img" src="img/icons/lock.png" />
+					<img class="bysykkel-lock-img" src="img/icons/lock.png" alt="blå åpen lås" />
 					<span>' . $station['locks'] . '</span>
 				</div>
 				<div class="bysykkel-bikes">
-					<img class="bysykkel-bikes-img" src="img/icons/bicycle.png" />
+					<img class="bysykkel-bikes-img" src="img/icons/bicycle.png" alt="blå sykkel" />
 					<span>' . $station['bikes'] . '</span>
 				</div>
 			';

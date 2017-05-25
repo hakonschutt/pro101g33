@@ -73,7 +73,7 @@ if ($error === null){
         $location->appendChild($aapning);
         
     }
-    $dom->save("./assets/xml/map_locations.xml") or die("couldnt make file!");
+    $dom->save("assets/xml/map_locations.xml") or die("couldnt make file!");
     
 }
 
@@ -91,31 +91,31 @@ if ($error === null){
                 <div>
                     <label>
                         <input type="radio" name="a" value="all" onclick="filterMarkersByType(this.value);" checked>
-                        <img src="img/icons/icon.png">
+                        <img src="img/icons/icon.png" alt="westerdals logo">
                     </label>
                     <label>
                         <input type="radio" name="a" value=1 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/bicycle.png">
+                        <img src="img/aktivitet/bicycle.png" alt="blå sykkel">
                     </label>
                     <label>
                         <input type="radio" name="a" value=2 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/front-of-bus.png">
+                        <img src="img/aktivitet/front-of-bus.png" alt="blå bus">
                     </label>
                     <label>
                         <input type="radio" name="a" value=3 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/shopping-cart.png">
+                        <img src="img/aktivitet/shopping-cart.png" alt="blå handle vogn">
                     </label>
                     <label>
                         <input type="radio" name="a" value=4 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/2food.png">
+                        <img src="img/aktivitet/2food.png" alt="blå kniv og gaffel">
                     </label>
                     <label>
                         <input type="radio" name="a" value=5 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/food.png">
+                        <img src="img/aktivitet/food.png" alt="blå coctail">
                     </label>
                     <label>
                         <input type="radio" name="a" value=6 onclick="filterMarkersByType(this.value);">
-                        <img src="img/aktivitet/puzzle.png">
+                        <img src="img/aktivitet/puzzle.png" alt="blått puslespill">
                     </label>
                 </div>
             </form>

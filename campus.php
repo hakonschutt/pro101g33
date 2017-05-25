@@ -31,7 +31,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    	echo'
 		    	<a class="tester">
 		            <div onclick="on(\'#act-div' . $element->id  . '\'); return false;" class="activity" id="activity' . $element->id . '">
-		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
+		                <img class="activity-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
 		        </a>
@@ -64,7 +64,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 					<div class="act-div-inner act-div' . $element->id . ' off" id="act-div' . $element->id . '">
 						<div class="act-div-inner-left">
 							<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
-							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
+							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
 							<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
 						</div>
 						<div class="act-div-inner-right">';
@@ -94,25 +94,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 											</div>
 											<div class="act-div-inner-right-box-drop dropdown">
 												<div class="dropdown-inner">';
-												/*for ($type_id = 1; $type_id <= 2; $type_id++) {
-												    echo '
-														Hello
-													';
-												} 
 
-												for ($type_id = 3; $type_id <= 6; $type_id++) {
-													echo '
-														<div class="dropdown-inner-left">
-															<p>Adresse: </p>
-															<span>' . $row->adresse . '</span>
-															</br>
-															<p>Beskrivelse: </p>
-															<span>' . $row->beskrivelse . '</span>
-														</div>
-														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-													';
-												}*/
-												if ($row->type_id <= 1){
+												if ($row->type_id == 1){
 													$by_id = $row->x_id;
 
 													echo '
