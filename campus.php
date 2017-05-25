@@ -156,9 +156,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 			</div>
 		</div>
 		<div class="info-inner-right">
-			<img class="info-inner-right-image" src="img/LargePic/image1.jpg" />
-			<img class="info-inner-right-image" src="img/LargePic/image2.jpg" />
-			<img class="info-inner-right-image" src="img/LargePic/image3.jpg" />
+			<img class="info-inner-right-image" src="img/LargePic/image1.jpg" alt="bilde av westerdals elever på vulkan" />
+			<img class="info-inner-right-image" src="img/LargePic/image2.jpg" alt="bilde av westerdals elever i forelesning på fjerdingen" />
+			<img class="info-inner-right-image" src="img/LargePic/image3.jpg" alt="bilde av campus fjerdingen på innsiden" />
 		</div>
 	</div>
 </div>
@@ -167,18 +167,18 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>
 		<div class="contact-inner-left">
-			<img class="contact-inner-left-image" src="img/LargePic/map.png" />
+			<img class="contact-inner-left-image" src="img/LargePic/map.png" alt="bilde av kart over campusene" />
 			<div class="contact-inner-left-info">
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/pin.png" />
+					<img src="img/icons/pin.png" alt="location pin" />
 					<p style="bottom: 12px;">Chr. Krohgs gate 32, </br>0186 Oslo</p>
 				</div>
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/mail.png" />
+					<img src="img/icons/mail.png" alt="mail logo" />
 					<p>post@westerdals.no</p>
 				</div>
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/phone.png" />
+					<img src="img/icons/phone.png" alt="phone logo" />
 					<p>22 05 75 50</p>
 				</div>	
 			</div>
