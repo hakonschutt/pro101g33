@@ -72,7 +72,6 @@
                 display: none;
                 top: 85px;
                 right: 0; 
-                height: 300px;
                 background-color: $white;
                 border-top: 2px solid $brandcolor;
                 border-left: 2px solid $brandcolor;
@@ -90,7 +89,7 @@
 
                 &-content {
                     position: relative; 
-                    padding: 20px 10px 0px 10px;
+                    padding: 20px 10px 20px 10px;
                     color: $brandcolor;
                 }
             }

@@ -54,7 +54,9 @@ if ($error === null){
         
         $time=$dom->createElement("time",$loc['reisetid']);
         $location->appendChild($time);
-        
+
+        $aapning=$dom->createElement("aapning",$loc['aapningstid']);
+        $location->appendChild($aapning);
         
     }
     $dom->save("./assets/xml/map_locations.xml") or die("couldnt make file!");

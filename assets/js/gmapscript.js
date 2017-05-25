@@ -81,12 +81,12 @@ function createMap() {
 //Fyller kartet med markers
 function addMarkers() {
     for(var i = 0; i < dblocations.length; i++) {
-        addMarker(dblocations[i][0], dblocations[i][1], dblocations[i][2], dblocations[i][3], dblocations[i][4], dblocations[i][5]);
+        addMarker(dblocations[i][0], dblocations[i][1], dblocations[i][2], dblocations[i][3], dblocations[i][4], dblocations[i][5], dblocations[i][6]);
     }
 }
 
 //Legger til marker og legger til eventhandling
-function addMarker(name, lat, lng, category, add, time) {
+function addMarker(name, lat, lng, category, add, time, aapning) {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lng),
         category: category,  
@@ -104,7 +104,7 @@ function addMarker(name, lat, lng, category, add, time) {
             infoWindow.open(map, marker);
             createRoute(marker.getPosition());
             titleDiv.innerHTML = name;
-            contentDiv.innerHTML = "Adresse:<br> " + add + "<br><br>" + "Reisetid: " + time + " min";
+            contentDiv.innerHTML = "Adresse:<br> &nbsp;" + add + "<br><br>" + "Reisetid: " + time + "min<br><br> Åpningstid:</br> &nbsp;" + aapning;
             markerdiv.style.display = "block";
         }
     })(marker, i));
@@ -190,9 +190,11 @@ function fillhelper(xml) {
     id = xmlDoc.getElementsByTagName("data")[0].getAttribute("id");
     var x = xmlDoc.getElementsByTagName("location");
     for(i = 0; i < x.length; i++) {
-        if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue != 2){
-            dblocations.push([x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue, parseFloat(x[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue), parseFloat(x[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue), parseInt(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue, parseInt(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue)]);
-        } 
+        try {
+            dblocations.push([x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue, parseFloat(x[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue), parseFloat(x[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue), parseInt(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue, parseInt(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("aapning")[0].childNodes[0].nodeValue]);
+        } catch(e) {
+            console.log("Det mangler verdier i databasen" + e);
+        }
     }
     createMap();
 }

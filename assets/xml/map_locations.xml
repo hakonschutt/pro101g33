@@ -7,6 +7,7 @@
     <type>1</type>
     <address>test</address>
     <time>2</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Legevakten</name>
@@ -15,6 +16,7 @@
     <type>1</type>
     <address>test</address>
     <time>3</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Nylandsveien</name>
@@ -23,6 +25,7 @@
     <type>1</type>
     <address>test</address>
     <time>5</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Jakob Kirke</name>
@@ -31,6 +34,7 @@
     <type>1</type>
     <address>test</address>
     <time>7</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Schous plass</name>
@@ -39,6 +43,7 @@
     <type>1</type>
     <address>test</address>
     <time>7</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Vaterlandsparken</name>
@@ -47,6 +52,7 @@
     <type>1</type>
     <address>test</address>
     <time>7</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Hausmanns gate</name>
@@ -55,6 +61,7 @@
     <type>2</type>
     <address/>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Heimdalsgata</name>
@@ -63,6 +70,7 @@
     <type>2</type>
     <address/>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>GrÃ¸nland [T-bane]</name>
@@ -71,6 +79,7 @@
     <type>2</type>
     <address/>
     <time>6</time>
+    <aapning/>
   </location>
   <location>
     <name>Vahls gate</name>
@@ -79,6 +88,7 @@
     <type>2</type>
     <address/>
     <time>7</time>
+    <aapning/>
   </location>
   <location>
     <name>Jakob kirke</name>
@@ -87,6 +97,7 @@
     <type>2</type>
     <address/>
     <time>7</time>
+    <aapning/>
   </location>
   <location>
     <name>Hammersborggata</name>
@@ -95,6 +106,7 @@
     <type>2</type>
     <address/>
     <time>8</time>
+    <aapning/>
   </location>
   <location>
     <name>Rema 1000</name>
@@ -103,6 +115,7 @@
     <type>3</type>
     <address>Chr. Kroghs Gate 1-11, 0186 Oslo</address>
     <time>3</time>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
     <name>Coop Prix</name>
@@ -111,6 +124,7 @@
     <type>3</type>
     <address>Hausmanns Gate 19, 0182 Oslo</address>
     <time>4</time>
+    <aapning/>
   </location>
   <location>
     <name>Extra</name>
@@ -119,6 +133,7 @@
     <type>3</type>
     <address>Trondheimsveien 5, 0560</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>Kiwi</name>
@@ -127,6 +142,7 @@
     <type>3</type>
     <address>Storgata 32, 0184 Oslo</address>
     <time>7</time>
+    <aapning/>
   </location>
   <location>
     <name>Kiwi</name>
@@ -135,6 +151,7 @@
     <type>3</type>
     <address>GrÃ¸nland 18, 0188 Oslo</address>
     <time>7</time>
+    <aapning/>
   </location>
   <location>
     <name>Rema 1000</name>
@@ -143,6 +160,7 @@
     <type>3</type>
     <address>Herslebs Gate 17, 0561 Oslo</address>
     <time>8</time>
+    <aapning/>
   </location>
   <location>
     <name>Tehran Kebab House</name>
@@ -151,6 +169,7 @@
     <type>4</type>
     <address>Storgata 38, 0182 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Wiberg</name>
@@ -159,6 +178,7 @@
     <type>4</type>
     <address>Filipstad brygge, 0182 Oslo</address>
     <time>4</time>
+    <aapning/>
   </location>
   <location>
     <name>Tehran Kebab House</name>
@@ -167,6 +187,7 @@
     <type>4</type>
     <address>Trondheimsveien 2, 0182 Oslo</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>SÃ¼dÃ¸st Asian Crossover</name>
@@ -175,6 +196,7 @@
     <type>4</type>
     <address>Trondheimsveien 5, 0182 Oslo</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>Delicatessen GrÃ¼nerlÃ¸kka</name>
@@ -183,6 +205,7 @@
     <type>4</type>
     <address>SÃ¸ndre gate 8, 0550 Oslo</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>Trancher EntrecÃ´te</name>
@@ -191,6 +214,7 @@
     <type>4</type>
     <address>Thorvald Meyers gate 78, 0550 Oslo</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>Sjenkestua Studentbar</name>
@@ -199,6 +223,7 @@
     <type>5</type>
     <address>Chr. Kroghs Gate 32, 0186 Oslo</address>
     <time>1</time>
+    <aapning/>
   </location>
   <location>
     <name>Skuret bar og scene</name>
@@ -207,6 +232,7 @@
     <type>5</type>
     <address>Chr. Kroghs Gate 2, 0186 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Cafe Con Bar</name>
@@ -215,6 +241,7 @@
     <type>5</type>
     <address>Brugata 11, 0186 Oslo</address>
     <time>4</time>
+    <aapning/>
   </location>
   <location>
     <name>Dattera til hagen</name>
@@ -223,6 +250,7 @@
     <type>5</type>
     <address>GrÃ¸nland 10, 0188 Oslo</address>
     <time>6</time>
+    <aapning/>
   </location>
   <location>
     <name>Verkstedet bar</name>
@@ -231,6 +259,7 @@
     <type>5</type>
     <address>Hausmanns gate 29, 0182 Oslo</address>
     <time>6</time>
+    <aapning/>
   </location>
   <location>
     <name>Schouskjeller Mikrobyggeri</name>
@@ -239,6 +268,7 @@
     <type>5</type>
     <address>Trondheimsveien 2, 0560 Oslo</address>
     <time>8</time>
+    <aapning/>
   </location>
   <location>
     <name>Volleyballbane</name>
@@ -247,6 +277,7 @@
     <type>6</type>
     <address>Nylandsveien, 0186 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Legevakta</name>
@@ -255,6 +286,7 @@
     <type>6</type>
     <address>Storgata 40, 0182 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Anker Gymsal</name>
@@ -263,6 +295,7 @@
     <type>6</type>
     <address>Storgata 91, 0182 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>Farah Kaah Internet CafÃ¨</name>
@@ -271,6 +304,7 @@
     <type>6</type>
     <address>Storgata 51, 0182 Oslo</address>
     <time>3</time>
+    <aapning/>
   </location>
   <location>
     <name>JÃ¸disk museum</name>
@@ -279,6 +313,7 @@
     <type>6</type>
     <address>Calmeyers gate 15b, 0183 Oslo</address>
     <time>5</time>
+    <aapning/>
   </location>
   <location>
     <name>Botanisk hage</name>
@@ -287,5 +322,6 @@
     <type>6</type>
     <address>Monrads Gate, 0562</address>
     <time>9</time>
+    <aapning/>
   </location>
 </data>
