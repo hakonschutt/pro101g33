@@ -68,42 +68,47 @@ if ($error === null){
 ?>
 <input type="hidden" id="juksediv" value="<?php echo $id ?>" />
 <div class="mapcontainer">
-    <form>
-        <div>
-            <label>
-                <input type="radio" name="a" value="all" onclick="filterMarkersByType(this.value);" checked>
-                <img src="img/icons/icon.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=1 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/bicycle.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=2 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/front-of-bus.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=3 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/shopping-cart.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=4 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/2food.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=5 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/food.png">
-            </label>
-            <label>
-                <input type="radio" name="a" value=6 onclick="filterMarkersByType(this.value);">
-                <img src="img/aktivitet/puzzle.png">
-            </label>
+    <div class="mapcontainer-inner">
+        <div class="mapcontainer-inner-map">
+            <form>
+                <p>Filter</p>
+                <div>
+                    <label>
+                        <input type="radio" name="a" value="all" onclick="filterMarkersByType(this.value);" checked>
+                        <img src="img/icons/icon.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=1 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/bicycle.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=2 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/front-of-bus.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=3 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/shopping-cart.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=4 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/2food.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=5 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/food.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value=6 onclick="filterMarkersByType(this.value);">
+                        <img src="img/aktivitet/puzzle.png">
+                    </label>
+                </div>
+            </form>
+            <div class="map"><div id="campusmap"></div></div>
+            <div class="markerinfo">
+                <div class="markerinfo-title" id="markertitle"></div>
+                <div class="markerinfo-content" id="markercontent"></div>
+            </div>
         </div>
-    </form>
-    <div class="map"><div id="campusmap" style="width:100%;height:550px;"></div></div>
-    <div class="markerinfo">
-        <div class="markerinfo-title" id="markertitle"></div>
-        <div class="markerinfo-content" id="markercontent"></div>
     </div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
