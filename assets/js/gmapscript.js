@@ -133,6 +133,9 @@ function typeToIconPath(type) {
 
 //Metode for å filtrere etter aktivitetstype
 function filterMarkersByType(type) {
+    var markerdiv = document.getElementById("marker");
+    markerdiv.style.display = "none";
+    infoWindow.close(map, marker);
     if(directionsDisplay != null) {
         directionsDisplay.setMap(null);
     }
