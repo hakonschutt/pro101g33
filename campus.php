@@ -204,6 +204,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 <?php
 require_once 'core/footer.php';
 
+echo Init::campusfooteradd();
 echo Init::footer(); 
 
 
