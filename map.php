@@ -23,21 +23,20 @@ if (isset($_GET['data_id']) && is_numeric($_GET['data_id'])) {
 
 
 
-$dom = new DomDocument('1.0', 'utf-8');
+$dom = new DomDocument('1.0', 'UTF-8');
 $dom->formatOutput=true;
 
 $data = $dom->createElement("data");
 $data->setAttribute("id", $id);
+$data->setAttribute("data_id", $data_id);
 $dom->appendChild($data);
 
 if ($error === null){
 	// Starter queryen.
 
-    if (!empty($data_id)){
-        $query = "SELECT * FROM data WHERE campus_id = '$id' AND id = '$data_id'";
-    } else {
-        $query = "SELECT * FROM data WHERE campus_id = '$id'";
-    }
+    
+    $query = "SELECT * FROM data WHERE campus_id = '$id'";
+    
     
 	$sql = $database->prepare("$query;");
 
@@ -50,6 +49,9 @@ if ($error === null){
     foreach($elements as $loc) {
         $location = $dom->createElement("location");
         $data->appendChild($location);
+        
+        $loc_id=$dom->createElement("id",$loc['id']);
+        $location->appendChild($loc_id);
         
         $name=$dom->createElement("name",utf8_encode($loc['navn']));
         $location->appendChild($name);
@@ -69,20 +71,14 @@ if ($error === null){
         $time=$dom->createElement("time",$loc['reisetid']);
         $location->appendChild($time);
 
-        $aapning=$dom->createElement("aapning",$loc['aapningstid']);
+        $aapning=$dom->createElement("aapning",utf8_encode($loc['aapningstid']));
         $location->appendChild($aapning);
         
     }
     $dom->save("assets/xml/map_locations.xml") or die("couldnt make file!");
     
 }
-
-/***************************************/
-/*	Room for rest of activity post
-/*
-/***************************************/
 ?>
-<input type="hidden" id="juksediv" value="<?php echo $id ?>" />
 <div class="mapcontainer">
     <div class="mapcontainer-inner">
         <div class="mapcontainer-inner-map">

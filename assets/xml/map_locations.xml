@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<data id="1">
+<?xml version="1.0" encoding="UTF-8"?>
+<data id="1" data_id="92">
   <location>
+    <id>1</id>
     <name>Hausmanns gate</name>
     <lat>59.915412</lat>
     <lng>10.758343</lng>
@@ -10,6 +11,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>2</id>
     <name>Legevakten</name>
     <lat>59.916847</lat>
     <lng>10.758148</lng>
@@ -19,6 +21,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>3</id>
     <name>Nylandsveien</name>
     <lat>59.915620</lat>
     <lng>10.762248</lng>
@@ -28,6 +31,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>4</id>
     <name>Jakob Kirke</name>
     <lat>59.917879</lat>
     <lng>10.754906</lng>
@@ -37,6 +41,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>5</id>
     <name>Schous plass</name>
     <lat>59.920383</lat>
     <lng>10.760820</lng>
@@ -46,6 +51,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>6</id>
     <name>Vaterlandsparken</name>
     <lat>59.913409</lat>
     <lng>10.757370</lng>
@@ -55,6 +61,7 @@
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
+    <id>19</id>
     <name>Hausmanns gate</name>
     <lat>59.916405</lat>
     <lng>10.757647</lng>
@@ -65,6 +72,7 @@
 00:00-00:00</aapning>
   </location>
   <location>
+    <id>20</id>
     <name>Heimdalsgata</name>
     <lat>59.918441</lat>
     <lng>10.761438</lng>
@@ -75,7 +83,9 @@
 00:00-00:00</aapning>
   </location>
   <location>
-    <name>GrÃ¸nland [T-bane]</name>
+    <id>21</id>
+    <name>Grønland [T-bane]</name>
+
     <lat>59.912801</lat>
     <lng>10.760186</lng>
     <type>2</type>
@@ -85,6 +95,7 @@
 05:00-01:00</aapning>
   </location>
   <location>
+    <id>22</id>
     <name>Vahls gate</name>
     <lat>59.916643</lat>
     <lng>10.765231</lng>
@@ -95,6 +106,7 @@
 00:00-00:00</aapning>
   </location>
   <location>
+    <id>23</id>
     <name>Jakob kirke</name>
     <lat>59.918165</lat>
     <lng>10.753644</lng>
@@ -105,6 +117,7 @@
 00:00-00:00</aapning>
   </location>
   <location>
+    <id>24</id>
     <name>Hammersborggata</name>
     <lat>59.914595</lat>
     <lng>10.752373</lng>
@@ -115,6 +128,7 @@
 00:00-00:00</aapning>
   </location>
   <location>
+    <id>37</id>
     <name>Rema 1000</name>
     <lat>59.914287</lat>
     <lng>10.757001</lng>
@@ -129,6 +143,7 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>38</id>
     <name>Coop Prix</name>
     <lat>59.916524</lat>
     <lng>10.755877</lng>
@@ -143,6 +158,7 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>39</id>
     <name>Extra</name>
     <lat>59.018322</lat>
     <lng>10.761252</lng>
@@ -157,6 +173,7 @@ Søndag&#13;
 14-20</aapning>
   </location>
   <location>
+    <id>40</id>
     <name>Kiwi</name>
     <lat>59.914281</lat>
     <lng>10.753185</lng>
@@ -171,11 +188,12 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>41</id>
     <name>Kiwi</name>
     <lat>59.913017</lat>
     <lng>10.761312</lng>
     <type>3</type>
-    <address>GrÃ¸nland 18, 0188 Oslo</address>
+    <address>Grønland 18, 0188 Oslo</address>
     <time>7</time>
     <aapning>Mandag - Fredag&#13;
 07–23&#13;
@@ -185,6 +203,7 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>42</id>
     <name>Rema 1000</name>
     <lat>59.917967</lat>
     <lng>10.763736</lng>
@@ -199,6 +218,7 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>55</id>
     <name>Tehran Kebab House</name>
     <lat>59.916156</lat>
     <lng>10.757805</lng>
@@ -213,6 +233,7 @@ Søndag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>56</id>
     <name>Wilberg</name>
     <lat>59.916539</lat>
     <lng>10.755717</lng>
@@ -222,6 +243,7 @@ Stengt</aapning>
     <aapning>Bestilling</aapning>
   </location>
   <location>
+    <id>57</id>
     <name>Trattoria Popolare</name>
     <lat>59.918232</lat>
     <lng>10.760001</lng>
@@ -236,7 +258,8 @@ Søndag&#13;
 12:00-23:00</aapning>
   </location>
   <location>
-    <name>SÃ¼dÃ¸st Asian Crossover</name>
+    <id>58</id>
+    <name>Südøst Asian Crossover</name>
     <lat>59.918181</lat>
     <lng>10.760572</lng>
     <type>4</type>
@@ -248,11 +271,12 @@ Fredag - Lørdag&#13;
 11:00-01:00</aapning>
   </location>
   <location>
-    <name>Delicatessen GrÃ¼nerlÃ¸kka</name>
+    <id>59</id>
+    <name>Delicatessen Grünerløkka</name>
     <lat>59.918701</lat>
     <lng>10.758267</lng>
     <type>4</type>
-    <address>SÃ¸ndre gate 8, 0550 Oslo</address>
+    <address>Søndre gate 8, 0550 Oslo</address>
     <time>5</time>
     <aapning>Mandag - Tirsdag&#13;
 11:00-00:00&#13;
@@ -266,7 +290,8 @@ Søndag&#13;
 12:00-00:00"</aapning>
   </location>
   <location>
-    <name>Trancher EntrecÃ´te</name>
+    <id>60</id>
+    <name>Trancher Entrecôte</name>
     <lat>59.918942</lat>
     <lng>10.759502</lng>
     <type>4</type>
@@ -276,6 +301,7 @@ Søndag&#13;
 16:00-23:00</aapning>
   </location>
   <location>
+    <id>73</id>
     <name>Sjenkestua Studentbar</name>
     <lat>59.916053</lat>
     <lng>10.760126</lng>
@@ -290,6 +316,7 @@ Lørdag - Onsdag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>74</id>
     <name>Skuret bar og scene</name>
     <lat>59.914973</lat>
     <lng>10.758224</lng>
@@ -304,6 +331,7 @@ Søndag&#13;
 18:00-01:00</aapning>
   </location>
   <location>
+    <id>75</id>
     <name>Cafe Con Bar</name>
     <lat>59.913836</lat>
     <lng>10.756544</lng>
@@ -318,11 +346,12 @@ Søndag&#13;
 12:00-12:00</aapning>
   </location>
   <location>
+    <id>76</id>
     <name>Dattera til hagen</name>
     <lat>59.913254</lat>
     <lng>10.760122</lng>
     <type>5</type>
-    <address>GrÃ¸nland 10, 0188 Oslo</address>
+    <address>Grønland 10, 0188 Oslo</address>
     <time>6</time>
     <aapning>Mandag - Torsdag&#13;
 11:00-01:00&#13;
@@ -332,6 +361,7 @@ Søndag&#13;
 12:00-00:00"</aapning>
   </location>
   <location>
+    <id>77</id>
     <name>Verkstedet bar</name>
     <lat>59.917716</lat>
     <lng>10.754042</lng>
@@ -346,6 +376,7 @@ Søndag - Tirsdag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>78</id>
     <name>Schouskjeller Mikrobyggeri</name>
     <lat>59.918411</lat>
     <lng>10.760267</lng>
@@ -360,6 +391,7 @@ Søndag&#13;
 16:00-01:00</aapning>
   </location>
   <location>
+    <id>91</id>
     <name>Volleyballbane</name>
     <lat>59.915534</lat>
     <lng>10.760954</lng>
@@ -370,18 +402,20 @@ Søndag&#13;
 00:00-00:00</aapning>
   </location>
   <location>
+    <id>92</id>
     <name>Haralds Gym</name>
     <lat>59.915788</lat>
     <lng>10.758701</lng>
     <type>6</type>
     <address>Hausmanns gate 6, 0186 Oslo</address>
     <time>3</time>
-    <aapning>Mandag - Fredag&#13;
-09:00-21:00&#13;
-Lørdag - Søndag&#13;
+    <aapning>mandag - fredag
+09:00-21:00
+lørdag - søndag
 12:00-18:00</aapning>
   </location>
   <location>
+    <id>93</id>
     <name>Anker Gymsal</name>
     <lat>59.917499</lat>
     <lng>10.756832</lng>
@@ -391,7 +425,8 @@ Lørdag - Søndag&#13;
     <aapning>Time bestilling</aapning>
   </location>
   <location>
-    <name>Farah Kaah Internet CafÃ¨</name>
+    <id>94</id>
+    <name>Farah Kaah Internet Cafè</name>
     <lat>59.915914</lat>
     <lng>10.756482</lng>
     <type>6</type>
@@ -401,7 +436,8 @@ Lørdag - Søndag&#13;
 10:00-20:00</aapning>
   </location>
   <location>
-    <name>JÃ¸disk museum</name>
+    <id>95</id>
+    <name>Jødisk museum</name>
     <lat>59.916390</lat>
     <lng>10.755296</lng>
     <type>6</type>
@@ -419,6 +455,7 @@ Fredag - Lørdag&#13;
 Stengt</aapning>
   </location>
   <location>
+    <id>96</id>
     <name>Botanisk hage</name>
     <lat>59.918409</lat>
     <lng>10.770372</lng>
