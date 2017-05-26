@@ -110,7 +110,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
 																</div>
 															</div>
-															<div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div>
+															<a href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
 														';
 
 												} else if ($row->type_id == 2){
