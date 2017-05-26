@@ -3,8 +3,8 @@
   <location>
     <id>1</id>
     <name>Hausmanns gate</name>
-    <lat>59.914287</lat>
-    <lng>10.757001</lng>
+    <lat>59.915412</lat>
+    <lng>10.758343</lng>
     <type>1</type>
     <address>test</address>
     <time>2</time>
@@ -13,8 +13,8 @@
   <location>
     <id>2</id>
     <name>Legevakten</name>
-    <lat>60.000000</lat>
-    <lng>11.000000</lng>
+    <lat>59.916847</lat>
+    <lng>10.758148</lng>
     <type>1</type>
     <address>test</address>
     <time>3</time>
@@ -23,8 +23,8 @@
   <location>
     <id>3</id>
     <name>Nylandsveien</name>
-    <lat>60.000000</lat>
-    <lng>11.000000</lng>
+    <lat>59.915620</lat>
+    <lng>10.762248</lng>
     <type>1</type>
     <address>test</address>
     <time>5</time>
@@ -33,8 +33,8 @@
   <location>
     <id>4</id>
     <name>Jakob Kirke</name>
-    <lat>60.000000</lat>
-    <lng>11.000000</lng>
+    <lat>59.917879</lat>
+    <lng>10.754906</lng>
     <type>1</type>
     <address>test</address>
     <time>7</time>
@@ -43,8 +43,8 @@
   <location>
     <id>5</id>
     <name>Schous plass</name>
-    <lat>60.000000</lat>
-    <lng>11.000000</lng>
+    <lat>59.920383</lat>
+    <lng>10.760820</lng>
     <type>1</type>
     <address>test</address>
     <time>7</time>
@@ -53,8 +53,8 @@
   <location>
     <id>6</id>
     <name>Vaterlandsparken</name>
-    <lat>60.000000</lat>
-    <lng>11.000000</lng>
+    <lat>59.913409</lat>
+    <lng>10.757370</lng>
     <type>1</type>
     <address>test</address>
     <time>7</time>
@@ -66,9 +66,10 @@
     <lat>59.916405</lat>
     <lng>10.757647</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>20</id>
@@ -76,19 +77,22 @@
     <lat>59.918441</lat>
     <lng>10.761438</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>21</id>
     <name>Grønland [T-bane]</name>
+
     <lat>59.912801</lat>
     <lng>10.760186</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>6</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+05:00-01:00</aapning>
   </location>
   <location>
     <id>22</id>
@@ -96,9 +100,10 @@
     <lat>59.916643</lat>
     <lng>10.765231</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>7</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>23</id>
@@ -106,9 +111,10 @@
     <lat>59.918165</lat>
     <lng>10.753644</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>7</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>24</id>
@@ -116,9 +122,10 @@
     <lat>59.914595</lat>
     <lng>10.752373</lng>
     <type>2</type>
-    <address/>
+    <address>test</address>
     <time>8</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>37</id>
@@ -128,7 +135,12 @@
     <type>3</type>
     <address>Chr. Kroghs Gate 1-11, 0186 Oslo</address>
     <time>3</time>
-    <aapning>06:00 - 24:00</aapning>
+    <aapning>Mandag - Fredag&#13;
+07–23&#13;
+Lørdag&#13;
+08–22&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>38</id>
@@ -138,7 +150,12 @@
     <type>3</type>
     <address>Hausmanns Gate 19, 0182 Oslo</address>
     <time>4</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+07–23&#13;
+Lørdag&#13;
+08–21&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>39</id>
@@ -148,7 +165,12 @@
     <type>3</type>
     <address>Trondheimsveien 5, 0560</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+07–23&#13;
+Lørdag&#13;
+08–23&#13;
+Søndag&#13;
+14-20</aapning>
   </location>
   <location>
     <id>40</id>
@@ -158,7 +180,12 @@
     <type>3</type>
     <address>Storgata 32, 0184 Oslo</address>
     <time>7</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+06–00&#13;
+Lørdag&#13;
+08–00&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>41</id>
@@ -168,7 +195,12 @@
     <type>3</type>
     <address>Grønland 18, 0188 Oslo</address>
     <time>7</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+07–23&#13;
+Lørdag&#13;
+08–21&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>42</id>
@@ -178,7 +210,12 @@
     <type>3</type>
     <address>Herslebs Gate 17, 0561 Oslo</address>
     <time>8</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+07–23&#13;
+Lørdag&#13;
+08–22&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>55</id>
@@ -188,7 +225,12 @@
     <type>4</type>
     <address>Storgata 38, 0182 Oslo</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Mandag - Fredag&#13;
+10:00-21:00&#13;
+Lørdag&#13;
+12:00-23:00&#13;
+Søndag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>56</id>
@@ -198,7 +240,7 @@
     <type>4</type>
     <address>Filipstad brygge, 0182 Oslo</address>
     <time>4</time>
-    <aapning/>
+    <aapning>Bestilling</aapning>
   </location>
   <location>
     <id>57</id>
@@ -208,7 +250,12 @@
     <type>4</type>
     <address>Trondheimsveien 2, 0182 Oslo</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Mandag - Torsdag&#13;
+11:00-22:00&#13;
+Fredag - Lørdag&#13;
+11:00-23:00&#13;
+Søndag&#13;
+12:00-23:00</aapning>
   </location>
   <location>
     <id>58</id>
@@ -218,7 +265,10 @@
     <type>4</type>
     <address>Trondheimsveien 5, 0182 Oslo</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Søndag - Torsdag&#13;
+11:00-00:00&#13;
+Fredag - Lørdag&#13;
+11:00-01:00</aapning>
   </location>
   <location>
     <id>59</id>
@@ -228,7 +278,16 @@
     <type>4</type>
     <address>Søndre gate 8, 0550 Oslo</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Mandag - Tirsdag&#13;
+11:00-00:00&#13;
+Onsdag - Torsdag&#13;
+11:00-01:00&#13;
+Fredag&#13;
+11:00-02:00&#13;
+Lørdag&#13;
+12:00-02:00&#13;
+Søndag&#13;
+12:00-00:00"</aapning>
   </location>
   <location>
     <id>60</id>
@@ -238,7 +297,8 @@
     <type>4</type>
     <address>Thorvald Meyers gate 78, 0550 Oslo</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Mandag - Søndag&#13;
+16:00-23:00</aapning>
   </location>
   <location>
     <id>73</id>
@@ -248,7 +308,12 @@
     <type>5</type>
     <address>Chr. Kroghs Gate 32, 0186 Oslo</address>
     <time>1</time>
-    <aapning/>
+    <aapning>Torsdag&#13;
+17:00-00:00&#13;
+Fredag&#13;
+15:00-00:00&#13;
+Lørdag - Onsdag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>74</id>
@@ -258,7 +323,12 @@
     <type>5</type>
     <address>Chr. Kroghs Gate 2, 0186 Oslo</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Mandag - Torsdag&#13;
+16:00-01:00&#13;
+Fredag - Lørdag&#13;
+15:00-03:30&#13;
+Søndag&#13;
+18:00-01:00</aapning>
   </location>
   <location>
     <id>75</id>
@@ -268,7 +338,12 @@
     <type>5</type>
     <address>Brugata 11, 0186 Oslo</address>
     <time>4</time>
-    <aapning/>
+    <aapning>Mandag - Torsdag&#13;
+10:00-01:00&#13;
+Fredag - Lørdag&#13;
+10:00-03:00&#13;
+Søndag&#13;
+12:00-12:00</aapning>
   </location>
   <location>
     <id>76</id>
@@ -278,7 +353,12 @@
     <type>5</type>
     <address>Grønland 10, 0188 Oslo</address>
     <time>6</time>
-    <aapning/>
+    <aapning>Mandag - Torsdag&#13;
+11:00-01:00&#13;
+Fredag - Lørdag&#13;
+11:00-03:30&#13;
+Søndag&#13;
+12:00-00:00"</aapning>
   </location>
   <location>
     <id>77</id>
@@ -288,7 +368,12 @@
     <type>5</type>
     <address>Hausmanns gate 29, 0182 Oslo</address>
     <time>6</time>
-    <aapning/>
+    <aapning>Onsdag - Torsdag&#13;
+17:00-01:00&#13;
+Fredag - Lørdag&#13;
+19:00-03:00&#13;
+Søndag - Tirsdag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>78</id>
@@ -298,7 +383,12 @@
     <type>5</type>
     <address>Trondheimsveien 2, 0560 Oslo</address>
     <time>8</time>
-    <aapning/>
+    <aapning>Mandag - Torsdag&#13;
+16:00-02:00&#13;
+Fredag - Lørdag&#13;
+16:00-03:30&#13;
+Søndag&#13;
+16:00-01:00</aapning>
   </location>
   <location>
     <id>91</id>
@@ -308,7 +398,8 @@
     <type>6</type>
     <address>Nylandsveien, 0186 Oslo</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Mandag - Søndag&#13;
+00:00-00:00</aapning>
   </location>
   <location>
     <id>92</id>
@@ -331,7 +422,7 @@ lørdag - søndag
     <type>6</type>
     <address>Storgata 91, 0182 Oslo</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Time bestilling</aapning>
   </location>
   <location>
     <id>94</id>
@@ -341,7 +432,8 @@ lørdag - søndag
     <type>6</type>
     <address>Storgata 51, 0182 Oslo</address>
     <time>3</time>
-    <aapning/>
+    <aapning>Mandag-Søndag&#13;
+10:00-20:00</aapning>
   </location>
   <location>
     <id>95</id>
@@ -351,7 +443,16 @@ lørdag - søndag
     <type>6</type>
     <address>Calmeyers gate 15b, 0183 Oslo</address>
     <time>5</time>
-    <aapning/>
+    <aapning>Tirsdag&#13;
+10:00-15:00&#13;
+Onsdag - Torsdag&#13;
+14:00-19:00&#13;
+Søndag&#13;
+11:00-16:00&#13;
+Mandag&#13;
+Stengt&#13;
+Fredag - Lørdag&#13;
+Stengt</aapning>
   </location>
   <location>
     <id>96</id>
@@ -361,6 +462,7 @@ lørdag - søndag
     <type>6</type>
     <address>Monrads Gate, 0562</address>
     <time>9</time>
-    <aapning/>
+    <aapning>Mandag - Søndag&#13;
+07:00-21:00</aapning>
   </location>
 </data>

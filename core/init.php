@@ -38,6 +38,14 @@
 
    	} // End header
 
+      public static function campusfooteradd(){
+         $content = '
+            <script src="assets/js/navscroll.js"></script>
+         ';
+
+         return $content;
+      }
+
    	public static function footer(){
 
    		$content = '
