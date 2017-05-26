@@ -256,7 +256,8 @@
 								overflow: hidden; 
 								float: right; 
 								margin: 15px 15px;
-								background-size: 250px auto;
+								background-size: auto 100%;
+								background-repeat: no-repeat;
 							}
 
 							.byLoader {
