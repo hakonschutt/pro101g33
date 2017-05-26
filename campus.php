@@ -14,31 +14,6 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 } 
 
-//echo $id;
-
-/* if ($error === null){
-	// Starter queryen.
-
-	$query = "SELECT * FROM campus WHERE campus_id = :id";
-	$sql = $database->prepare("$query;");
-
-	$sql->bindParam(':id', $id, PDO::PARAM_INT);
-
-	$sql->setFetchMode(PDO::FETCH_OBJ);
-	$sql->execute();
-
-	// Kjører en loop for hvert element i som PDO henter.
-	while ($element = $sql->fetch()) {
-	    echo '
-	        <!--<a href="campus.php?id=' . $element->campus_id . '">
-	            <div id="campus campus' . $element->campus_id . '">
-	                <img class="campus--icon" src="' . $element->bilde_path . '"/>
-	                <span class="campusn--ame">' . $element->navn . '</span>
-	            </div>
-	        </a>-->
-	    ';
-	}
-}*/
 ?>
 <div class="activities" id="Aktiviteter">
 	<div onclick="start('.act'); return false;" class="activities-inner">
@@ -56,7 +31,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    	echo'
 		    	<a class="tester">
 		            <div onclick="on(\'#act-div' . $element->id  . '\'); return false;" class="activity" id="activity' . $element->id . '">
-		                <img class="activity-icon" src="' . $element->type_bilde_path . '"/>
+		                <img class="activity-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
 		            </div>
 		        </a>
@@ -89,7 +64,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 					<div class="act-div-inner act-div' . $element->id . ' off" id="act-div' . $element->id . '">
 						<div class="act-div-inner-left">
 							<h3 class="act-div-inner-left-header">' . $element->type_navn . '</h3>
-							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" />
+							<img class"act-div-inner-left-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
 							<p class="act-div-inner-left-des">' . $element->type_beskrivelse . '</p>
 						</div>
 						<div class="act-div-inner-right">';
@@ -119,25 +94,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 											</div>
 											<div class="act-div-inner-right-box-drop dropdown">
 												<div class="dropdown-inner">';
-												/*for ($type_id = 1; $type_id <= 2; $type_id++) {
-												    echo '
-														Hello
-													';
-												} 
 
-												for ($type_id = 3; $type_id <= 6; $type_id++) {
-													echo '
-														<div class="dropdown-inner-left">
-															<p>Adresse: </p>
-															<span>' . $row->adresse . '</span>
-															</br>
-															<p>Beskrivelse: </p>
-															<span>' . $row->beskrivelse . '</span>
-														</div>
-														<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-													';
-												}*/
-												if ($row->type_id <= 1){
+												if ($row->type_id == 1){
 													$by_id = $row->x_id;
 
 													echo '
@@ -152,6 +110,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
 																</div>
 															</div>
+															<div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div>
 														';
 
 												} else if ($row->type_id == 2){
@@ -160,7 +119,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 													echo '<div class="dropdown-inner-rep stopLoader" data-api-path="/core/ruter.php?stop=' . $ruter_id . '">';
 													echo '</div>';
 
-												} else {
+												} else { 
 													echo '
 														<div class="dropdown-inner-left">
 															<p>Adresse: </p>
@@ -168,10 +127,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															</br>
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
-														</div>'
-														//<img class="dropdown-inner-image" src="' . $row->bilde_path . '">
-                                                        //<div id="campusmap" style="width:50%;height:200px;"></div>
-													;
+														</div>
+														<a href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
+														';
 												}
 												echo '</div>
 											</div>
@@ -198,9 +156,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 			</div>
 		</div>
 		<div class="info-inner-right">
-			<img class="info-inner-right-image" src="img/LargePic/image1.jpg" />
-			<img class="info-inner-right-image" src="img/LargePic/image2.jpg" />
-			<img class="info-inner-right-image" src="img/LargePic/image3.jpg" />
+			<img class="info-inner-right-image" src="img/LargePic/image1.jpg" alt="bilde av westerdals elever på vulkan" />
+			<img class="info-inner-right-image" src="img/LargePic/image2.jpg" alt="bilde av westerdals elever i forelesning på fjerdingen" />
+			<img class="info-inner-right-image" src="img/LargePic/image3.jpg" alt="bilde av campus fjerdingen på innsiden" />
 		</div>
 	</div>
 </div>
@@ -209,18 +167,18 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>
 		<div class="contact-inner-left">
-			<img class="contact-inner-left-image" src="img/LargePic/map.png" />
+			<img class="contact-inner-left-image" src="img/LargePic/map.png" alt="bilde av kart over campusene" />
 			<div class="contact-inner-left-info">
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/pin.png" />
+					<img src="img/icons/pin.png" alt="location pin" />
 					<p style="bottom: 12px;">Chr. Krohgs gate 32, </br>0186 Oslo</p>
 				</div>
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/mail.png" />
+					<img src="img/icons/mail.png" alt="mail logo" />
 					<p>post@westerdals.no</p>
 				</div>
 				<div class="contact-inner-left-info-bit">
-					<img src="img/icons/phone.png" />
+					<img src="img/icons/phone.png" alt="phone logo" />
 					<p>22 05 75 50</p>
 				</div>	
 			</div>

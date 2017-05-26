@@ -22,6 +22,7 @@
             <meta charset="utf-8" />
             <meta name="author" content="Gruppe 36 - PJ2100">
             <meta http-equiv="X-UA-Compatible" content="IE=9" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" />
             <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
             <link rel="stylesheet" href="assets/css/style.css" type="text/css" />

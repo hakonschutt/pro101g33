@@ -28,7 +28,7 @@
                 echo '
                         <a href="index.php">
                             <div class="nav-bar-campus" id="campus' . $element->id . '">
-                            	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '"/>
+                            	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '" alt="rundt bilde av campus ' . $element->navn . '"/>
                             	<span class="nav-bar-campus-navn">@Campus - ' . $element->navn . '</span>
                             </div>
                         </a>
@@ -73,7 +73,7 @@
                         echo '
 	                            <a href="campus.php?id=' . $element->id . '">
 	                                <div class="menu-inner-campuses-campus" id="campus' . $element->id . '">
-	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->campus_bilde_path . '"/>
+	                                    <img class="menu-inner-campuses-campus-icon" src="' . $element->campus_bilde_path . '" alt="rundt bilde av campus ' . $element->navn . '"/>
 	                                    <span class="menu-inner-campuses-campus-name ' . $class . '">' . substr($element->navn,0,1) . '</span>
 	                                </div>
 	                            </a>
