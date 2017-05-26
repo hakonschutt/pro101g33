@@ -5,6 +5,13 @@
     margin: auto;
     margin-top: 89px;
     margin-bottom: 30px;
+}
+
+.markerFilter{
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     
     img {
         height: 20px;
@@ -24,6 +31,7 @@
 }
 
 .map {
+    z-index: 1;
     width: 70%;
     position: relative;
 }

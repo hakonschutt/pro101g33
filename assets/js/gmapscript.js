@@ -41,6 +41,7 @@ var mapStyle = [
     }
 ];
 
+
 fillLocations();
 
 //Lager kart og fyller med markers fra xmlfil
@@ -74,12 +75,12 @@ function createMap() {
     map.mapTypes.set('mapStyle', new google.maps.StyledMapType(mapStyle, { name: '@Campus' }));
     directionsDisplay.setMap(map);
     infoWindow = new google.maps.InfoWindow();
-    addMarker(campuses[id-1][0],campuses[id-1][1],campuses[id-1][2], campuses[id-1][3]);
     addMarkers();
 }
 
 //Fyller kartet med markers
 function addMarkers() {
+    addMarker(campuses[id-1][0],campuses[id-1][1],campuses[id-1][2], campuses[id-1][3]);
     for(var i = 0; i < dblocations.length; i++) {
         addMarker(dblocations[i][0], dblocations[i][1], dblocations[i][2], dblocations[i][3], dblocations[i][4], dblocations[i][5]);
     }
@@ -103,7 +104,11 @@ function addMarker(name, lat, lng, category, add, time) {
             infoWindow.open(map, marker);
             createRoute(marker.getPosition());
             titleDiv.innerHTML = name;
-            contentDiv.innerHTML = "Adresse:<br> " + add + "<br><br>" + "Reisetid: " + time + " min";
+            if(marker.getPosition() == centerPos) {
+                contentDiv.innerHTML = "Campus!";
+            } else {
+                contentDiv.innerHTML = "Adresse:<br> " + add + "<br><br>" + "Reisetid: " + time + " min";
+            }
         }
     })(marker, i));
 }
@@ -147,6 +152,14 @@ function filterMarkersByType(type) {
         }
     }
 }
+
+function filterMarkersById(id) {
+    for(i = 0; i < markers.length; i++) {
+        marker = markers[i];
+        if (marker) {}
+    }
+}
+
 //Tegner rute mellom campus og valgt marker
 function createRoute(destination) {
     var request = {
@@ -167,7 +180,7 @@ function fillLocations() {
     if(window.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
     } else {
-        xhttp = new ActiveXObject("microsoft.XMLHTTP");
+        xhttp = new ActiveXObject("microsoft.XMLHTTP"); 
     }
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
@@ -180,14 +193,18 @@ function fillLocations() {
     
 }
 
+
 function fillhelper(xml) {
     var xmlDoc = xml.responseXML;
     id = xmlDoc.getElementsByTagName("data")[0].getAttribute("id");
     var x = xmlDoc.getElementsByTagName("location");
     for(i = 0; i < x.length; i++) {
-        if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue != 2) {
+        try {
             dblocations.push([x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue, parseFloat(x[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue), parseFloat(x[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue), parseInt(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue), x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue, parseInt(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue)]);
+        } catch(e) {
+            console.log("Det mangler vitale dbverdier!" + e);
         }
     }
+    console.log(dblocations[0][0]);
     createMap();
 }
