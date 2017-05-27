@@ -707,7 +707,7 @@
 
 @media only screen and (max-width: 1024px) {
   .mapcontainer {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 170px);
     min-height: 100px; }
     .mapcontainer-inner {
       width: 100%;
@@ -719,7 +719,7 @@
         width: 100%;
         border: 0px solid transparent; }
         .mapcontainer-inner-map #campusmap {
-          height: calc(100vh - 140px);
+          height: calc(100vh - 170px);
           width: 100%; }
 
   form {
@@ -727,6 +727,12 @@
     form p {
       display: none; } }
 @media only screen and (max-width: 768px) {
+  .mapcontainer {
+    height: calc(100vh - 140px); }
+    .mapcontainer #campusmap {
+      height: calc(100vh - 140px);
+      width: 100%; }
+
   form {
     height: 35px !important;
     width: 300px !important; }
