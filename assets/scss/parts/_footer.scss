@@ -32,3 +32,17 @@
 		}
 	}
 }
+
+@media only screen and (max-width: $tablet) {
+	.footer {
+		background-color: red; 
+	}
+
+}
+
+@media only screen and (max-width: $mobil) {
+	.footer {
+		background-color: green; 
+	}
+
+}
