@@ -114,7 +114,7 @@ function addMarker(id, name, lat, lng, category, add, time, aapning) {
             if(marker.category == 0) {
                 contentDiv.innerHTML = "Adresse:<br> &nbsp;" + add;
             } else {
-                contentDiv.innerHTML = "Adresse:<br> &nbsp;" + add + "<br><br>" + "Reisetid: " + time + "min<br><br> Åpningstid:</br> &nbsp;" + aapning;
+                contentDiv.innerHTML = "Adresse:<br> &nbsp;" + add + "<br><br>" + "Reisetid: " + time + "min<br><br> Åpningstid:</br>" + aapning;
             }
             markerDiv.style.display = "block";
         }

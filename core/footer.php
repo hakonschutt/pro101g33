@@ -3,7 +3,7 @@
 	<div class="footer">
 	    <div class="footer-inner">
 	    	<div class="footer-inner-left">
-	    		<span>© Westerdals Oslo AC</span>
+	    		<span>© Westerdals Oslo ACT</span>
 	    	</div>
 	    	<div class="footer-inner-right">
 	    		<a href="https://www.instagram.com/attcampus/" target="_blank"><img class="footer-inner-right-icon" src="img/icons/instagram.png" alt="instagram logo"/></a>

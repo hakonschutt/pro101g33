@@ -1,467 +1,488 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data id="1" data_id="1">
+<data id="2" data_id="11">
   <location>
-    <id>1</id>
-    <name>Hausmanns gate</name>
-    <lat>59.915412</lat>
-    <lng>10.758343</lng>
+    <id>7</id>
+    <name>Vulkan</name>
+    <lat>59.922483</lat>
+    <lng>10.751129</lng>
     <type>1</type>
-    <address>test</address>
+    <address>Maridalsveien 15, 0175 Oslo</address>
     <time>2</time>
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>2</id>
-    <name>Legevakten</name>
-    <lat>59.916847</lat>
-    <lng>10.758148</lng>
+    <id>8</id>
+    <name>AHO</name>
+    <lat>59.925276</lat>
+    <lng>10.750405</lng>
     <type>1</type>
-    <address>test</address>
+    <address>Maridalsveien 27, 0175 Oslo</address>
     <time>3</time>
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>3</id>
-    <name>Nylandsveien</name>
-    <lat>59.915620</lat>
-    <lng>10.762248</lng>
+    <id>9</id>
+    <name>Fredensborg</name>
+    <lat>59.920944</lat>
+    <lng>10.750362</lng>
     <type>1</type>
-    <address>test</address>
-    <time>5</time>
+    <address>Fredensborgveien 64, 0177 Oslo</address>
+    <time>4</time>
     <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>4</id>
-    <name>Jakob Kirke</name>
-    <lat>59.917879</lat>
-    <lng>10.754906</lng>
+    <id>10</id>
+    <name>Bjerregaards gate</name>
+    <lat>59.925502</lat>
+    <lng>10.746069</lng>
     <type>1</type>
-    <address>test</address>
-    <time>7</time>
-    <aapning>06:00 - 24:00</aapning>
-  </location>
-  <location>
-    <id>5</id>
-    <name>Schous plass</name>
-    <lat>59.920383</lat>
-    <lng>10.760820</lng>
-    <type>1</type>
-    <address>test</address>
-    <time>7</time>
-    <aapning>06:00 - 24:00</aapning>
-  </location>
-  <location>
-    <id>6</id>
-    <name>Vaterlandsparken</name>
-    <lat>59.913409</lat>
-    <lng>10.757370</lng>
-    <type>1</type>
-    <address>test</address>
-    <time>7</time>
-    <aapning>06:00 - 24:00</aapning>
-  </location>
-  <location>
-    <id>19</id>
-    <name>Hausmanns gate</name>
-    <lat>59.916405</lat>
-    <lng>10.757647</lng>
-    <type>2</type>
-    <address>test</address>
-    <time>3</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-00:00-00:00</aapning>
-  </location>
-  <location>
-    <id>20</id>
-    <name>Heimdalsgata</name>
-    <lat>59.918441</lat>
-    <lng>10.761438</lng>
-    <type>2</type>
-    <address>test</address>
-    <time>5</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-00:00-00:00</aapning>
-  </location>
-  <location>
-    <id>21</id>
-    <name>GrÃ¸nland [T-bane]</name>
-    <lat>59.912801</lat>
-    <lng>10.760186</lng>
-    <type>2</type>
-    <address>test</address>
+    <address>Bjerregaards Gate 32, 0172 Oslo</address>
     <time>6</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-05:00-01:00</aapning>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>22</id>
-    <name>Vahls gate</name>
-    <lat>59.916643</lat>
-    <lng>10.765231</lng>
-    <type>2</type>
-    <address>test</address>
+    <id>11</id>
+    <name>Olaf Ryes plass</name>
+    <lat>59.922414</lat>
+    <lng>10.758127</lng>
+    <type>1</type>
+    <address>Olaf Ryes Plass, 0552 Oslo</address>
     <time>7</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-00:00-00:00</aapning>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>23</id>
-    <name>Jakob kirke</name>
-    <lat>59.918165</lat>
-    <lng>10.753644</lng>
-    <type>2</type>
-    <address>test</address>
-    <time>7</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-00:00-00:00</aapning>
-  </location>
-  <location>
-    <id>24</id>
-    <name>Hammersborggata</name>
-    <lat>59.914595</lat>
-    <lng>10.752373</lng>
-    <type>2</type>
-    <address>test</address>
+    <id>12</id>
+    <name>Kiellands Plass</name>
+    <lat>59.928050</lat>
+    <lng>10.751203</lng>
+    <type>1</type>
+    <address>Waldemar Thranes Gate 71, 0175 Oslo</address>
     <time>8</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-00:00-00:00</aapning>
+    <aapning>06:00 - 24:00</aapning>
   </location>
   <location>
-    <id>37</id>
-    <name>Rema 1000</name>
-    <lat>59.914287</lat>
-    <lng>10.757001</lng>
-    <type>3</type>
-    <address>Chr. Kroghs Gate 1-11, 0186 Oslo</address>
+    <id>25</id>
+    <name>Birkelunden</name>
+    <lat>59.926937</lat>
+    <lng>10.761036</lng>
+    <type>2</type>
+    <address>Schleppegrells gate 12, 0556 Oslo</address>
+    <time>1</time>
+    <aapning>Sjekk Rutetabell</aapning>
+  </location>
+  <location>
+    <id>26</id>
+    <name>Telthusbakken</name>
+    <lat>59.924478</lat>
+    <lng>10.750551</lng>
+    <type>2</type>
+    <address>Telthusbakken, 0175 Oslo</address>
     <time>3</time>
-    <aapning>Mandag - Fredag&#13;
-07â23&#13;
-LÃ¸rdag&#13;
-08â22&#13;
-SÃ¸ndag&#13;
-Stengt</aapning>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>38</id>
-    <name>Coop Prix</name>
-    <lat>59.916524</lat>
-    <lng>10.755877</lng>
-    <type>3</type>
-    <address>Hausmanns Gate 19, 0182 Oslo</address>
+    <id>27</id>
+    <name>Møllerveien</name>
+    <lat>59.920588</lat>
+    <lng>10.751391</lng>
+    <type>2</type>
+    <address>Møllerveien, 0178 Oslo</address>
     <time>4</time>
-    <aapning>Mandag - Fredag&#13;
-07â23&#13;
-LÃ¸rdag&#13;
-08â21&#13;
-SÃ¸ndag&#13;
-Stengt</aapning>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>39</id>
-    <name>Extra</name>
-    <lat>59.018322</lat>
-    <lng>10.761252</lng>
-    <type>3</type>
-    <address>Trondheimsveien 5, 0560</address>
+    <id>28</id>
+    <name>Kiellands plass</name>
+    <lat>59.928332</lat>
+    <lng>10.749310</lng>
+    <type>2</type>
+    <address>Waldemar Thranes gate 70, 0173 Oslo</address>
     <time>5</time>
-    <aapning>Mandag - Fredag&#13;
-07â23&#13;
-LÃ¸rdag&#13;
-08â23&#13;
-SÃ¸ndag&#13;
-14-20</aapning>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>40</id>
-    <name>Kiwi</name>
-    <lat>59.914281</lat>
-    <lng>10.753185</lng>
-    <type>3</type>
-    <address>Storgata 32, 0184 Oslo</address>
-    <time>7</time>
-    <aapning>Mandag - Fredag&#13;
-06â00&#13;
-LÃ¸rdag&#13;
-08â00&#13;
-SÃ¸ndag&#13;
-Stengt</aapning>
+    <id>29</id>
+    <name>Schous plass</name>
+    <lat>59.920797</lat>
+    <lng>10.759327</lng>
+    <type>2</type>
+    <address>Thorvald Meyers gate 66, 0552 Oslo</address>
+    <time>6</time>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>41</id>
-    <name>Kiwi</name>
-    <lat>59.913017</lat>
-    <lng>10.761312</lng>
-    <type>3</type>
-    <address>GrÃ¸nland 18, 0188 Oslo</address>
-    <time>7</time>
-    <aapning>Mandag - Fredag&#13;
-07â23&#13;
-LÃ¸rdag&#13;
-08â21&#13;
-SÃ¸ndag&#13;
-Stengt</aapning>
+    <id>30</id>
+    <name>Stensberggata</name>
+    <lat>59.922324</lat>
+    <lng>10.742162</lng>
+    <type>2</type>
+    <address>Ullevålsveien 10, 0171 Oslo</address>
+    <time>10</time>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>42</id>
+    <id>43</id>
     <name>Rema 1000</name>
-    <lat>59.917967</lat>
-    <lng>10.763736</lng>
+    <lat>59.923303</lat>
+    <lng>10.751537</lng>
     <type>3</type>
-    <address>Herslebs Gate 17, 0561 Oslo</address>
+    <address>Maridalsveien 15, 0178 Oslo</address>
+    <time>2</time>
+    <aapning>Man - Fre
+07:00-23:00
+&lt;/br&gt;
+Lør
+08:00-21:00
+&lt;/br&gt;
+Søn
+Stengt</aapning>
+  </location>
+  <location>
+    <id>44</id>
+    <name>Kiwi </name>
+    <lat>59.921623</lat>
+    <lng>10.757222</lng>
+    <type>3</type>
+    <address>Markveien 35b, 0554 Oslo</address>
+    <time>7</time>
+    <aapning>Man - Lør
+07:00-23:00
+&lt;/br&gt;
+Søn
+Stengt</aapning>
+  </location>
+  <location>
+    <id>45</id>
+    <name>Rema 1000</name>
+    <lat>59.927668</lat>
+    <lng>10.752105</lng>
+    <type>3</type>
+    <address>Darres Gate 2, 0175 Oslo</address>
     <time>8</time>
-    <aapning>Mandag - Fredag&#13;
-07â23&#13;
-LÃ¸rdag&#13;
-08â22&#13;
-SÃ¸ndag&#13;
+    <aapning>Man - Fre
+07:00-23:00
+&lt;/br&gt;
+Lør
+08:00-21:00
+&lt;/br&gt;
+Søn
 Stengt</aapning>
   </location>
   <location>
-    <id>55</id>
-    <name>Tehran Kebab House</name>
-    <lat>59.916156</lat>
-    <lng>10.757805</lng>
-    <type>4</type>
-    <address>Storgata 38, 0182 Oslo</address>
-    <time>3</time>
-    <aapning>Mandag - Fredag&#13;
-10:00-21:00&#13;
-LÃ¸rdag&#13;
-12:00-23:00&#13;
-SÃ¸ndag&#13;
+    <id>46</id>
+    <name>Rema 1000</name>
+    <lat>59.919226</lat>
+    <lng>10.747038</lng>
+    <type>3</type>
+    <address>Fredenborgsveien 24, 0177 Oslo</address>
+    <time>9</time>
+    <aapning>Man - Fre
+07:00-23:00
+&lt;/br&gt;
+Lør
+08:00-21:00
+&lt;/br&gt;
+Søn
 Stengt</aapning>
   </location>
   <location>
-    <id>56</id>
-    <name>Wilberg</name>
-    <lat>59.916539</lat>
-    <lng>10.755717</lng>
-    <type>4</type>
-    <address>Filipstad brygge, 0182 Oslo</address>
-    <time>4</time>
-    <aapning>Bestilling</aapning>
+    <id>47</id>
+    <name>Rema 1000</name>
+    <lat>59.925721</lat>
+    <lng>10.746049</lng>
+    <type>3</type>
+    <address>Waldemar Thranes Gate 25, 0171 Oslo</address>
+    <time>10</time>
+    <aapning>Man - Fre
+07:00-23:00
+&lt;/br&gt;
+Lør
+08:00-21:00
+&lt;/br&gt;
+Søn
+Stengt</aapning>
   </location>
   <location>
-    <id>57</id>
-    <name>Trattoria Popolare</name>
-    <lat>59.918232</lat>
-    <lng>10.760001</lng>
+    <id>48</id>
+    <name>Rema 1000</name>
+    <lat>59.927308</lat>
+    <lng>10.758928</lng>
+    <type>3</type>
+    <address>Thorvald Meyers Gate 23, 0555 Oslo</address>
+    <time>11</time>
+    <aapning>Man - Fre
+07:00-23:00
+&lt;/br&gt;
+Lør
+08:00-21:00
+&lt;/br&gt;
+Søn
+Stengt</aapning>
+  </location>
+  <location>
+    <id>61</id>
+    <name>Lucky Bird</name>
+    <lat>59.922603</lat>
+    <lng>10.752000</lng>
     <type>4</type>
-    <address>Trondheimsveien 2, 0182 Oslo</address>
-    <time>5</time>
-    <aapning>Mandag - Torsdag&#13;
-11:00-22:00&#13;
-Fredag - LÃ¸rdag&#13;
-11:00-23:00&#13;
-SÃ¸ndag&#13;
+    <address>Vulkan 7, 0175 Oslo</address>
+    <time>1</time>
+    <aapning>Man - Tors
+15:00-23:00
+&lt;/br&gt;
+Fre - Lør
+12:00-00:00
+&lt;/br&gt;
+Søn
 12:00-23:00</aapning>
   </location>
   <location>
-    <id>58</id>
-    <name>SÃ¼dÃ¸st Asian Crossover</name>
-    <lat>59.918181</lat>
-    <lng>10.760572</lng>
+    <id>62</id>
+    <name>La Crêpe</name>
+    <lat>59.922568</lat>
+    <lng>10.751655</lng>
     <type>4</type>
-    <address>Trondheimsveien 5, 0182 Oslo</address>
-    <time>5</time>
-    <aapning>SÃ¸ndag - Torsdag&#13;
-11:00-00:00&#13;
-Fredag - LÃ¸rdag&#13;
+    <address>Vulkan 28, 0178 Oslo</address>
+    <time>1</time>
+    <aapning>Tirs - Søn
+12:00-21:00</aapning>
+  </location>
+  <location>
+    <id>63</id>
+    <name>Mathallen Oslo</name>
+    <lat>59.922222</lat>
+    <lng>10.751999</lng>
+    <type>4</type>
+    <address>Vulkan 5, 0178 Oslo</address>
+    <time>1</time>
+    <aapning>Tirs - Ons
+10:00-19:00
+&lt;/br&gt;
+Tors - Fre
+10:00-20:00
+&lt;/br&gt;
+Lør
+10:00-19:00
+&lt;/br&gt;
+Søn
+11:00-18:00</aapning>
+  </location>
+  <location>
+    <id>64</id>
+    <name>Døgnvill Burger</name>
+    <lat>59.921711</lat>
+    <lng>10.751670</lng>
+    <type>4</type>
+    <address>Vulkan 12, 0178 Oslo</address>
+    <time>4</time>
+    <aapning>Man - Ons
+12:00-23:00
+&lt;/br&gt;
+Tors- Lør
+12:00-00:00
+&lt;/br&gt;
+Søn
+12:00-23:00</aapning>
+  </location>
+  <location>
+    <id>65</id>
+    <name>Foccaceria</name>
+    <lat>59.923700</lat>
+    <lng>10.757363</lng>
+    <type>4</type>
+    <address>Markveien 34, 0554 Oslo</address>
+    <time>6</time>
+    <aapning>Tirs - Søn
+12:00-21:00
+</aapning>
+  </location>
+  <location>
+    <id>66</id>
+    <name>Noodlepie AS</name>
+    <lat>59.923353</lat>
+    <lng>10.757034</lng>
+    <type>4</type>
+    <address>Grüners gate 9, 0552 Oslo</address>
+    <time>6</time>
+    <aapning>Man - Søn
+12:00-23:00</aapning>
+  </location>
+  <location>
+    <id>79</id>
+    <name>Bar Vulkan</name>
+    <lat>59.922838</lat>
+    <lng>10.752404</lng>
+    <type>5</type>
+    <address>Vulkan 9, 0178 Oslo</address>
+    <time>1</time>
+    <aapning>Tirs - Tors
+17:00-00:00
+&lt;/br&gt;
+Fre
+16:00-03:00
+&lt;/br&gt;
+Lør
+16:00-00:00</aapning>
+  </location>
+  <location>
+    <id>80</id>
+    <name>Vulkan Pub</name>
+    <lat>59.922476</lat>
+    <lng>10.751246</lng>
+    <type>5</type>
+    <address>Vulkan 26, 0178 Oslo</address>
+    <time>1</time>
+    <aapning>Tirs - Fre
+18:00-00:00
+&lt;/br&gt;
+Lør
+18:00-02:00</aapning>
+  </location>
+  <location>
+    <id>81</id>
+    <name>Fyrhuset kuba</name>
+    <lat>59.923592</lat>
+    <lng>10.751851</lng>
+    <type>5</type>
+    <address>Maridalsveien 19, 0175 Oslo</address>
+    <time>1</time>
+    <aapning>Man - Tirs
+15:00-00:00
+&lt;/br&gt;
+Ons-Lør
+15:00-01:00
+</aapning>
+  </location>
+  <location>
+    <id>82</id>
+    <name>Hendrix Ibsen</name>
+    <lat>59.921941</lat>
+    <lng>10.751436</lng>
+    <type>5</type>
+    <address>Vulkan 16, 0178 Oslo</address>
+    <time>2</time>
+    <aapning>Man - Tors
+08:00-23:00
+&lt;/br&gt;
+Fre
+08:00-03:30
+&lt;/br&gt;
+Lør
+09:00-03:00
+&lt;/br&gt;
+Søn
+10:00-23:00</aapning>
+  </location>
+  <location>
+    <id>83</id>
+    <name>Søvnløs Bar</name>
+    <lat>59.921741</lat>
+    <lng>10.751641</lng>
+    <type>5</type>
+    <address>Vulkan 12, 0178 Oslo</address>
+    <time>2</time>
+    <aapning>Ons - Tors
+18:00-00:00
+&lt;/br&gt;
+Fre
+17:00-01:00
+&lt;/br&gt;
+Lør
+14:00-01:00
+&lt;/br&gt;
+Søn
+14:00-22:00</aapning>
+  </location>
+  <location>
+    <id>84</id>
+    <name>Parkteateret bar</name>
+    <lat>59.923466</lat>
+    <lng>10.758322</lng>
+    <type>5</type>
+    <address>Olaf Ryes Plass 11, 0552 Oslo</address>
+    <time>7</time>
+    <aapning>Ons - Tors
+11:00-02:00
+&lt;/br&gt;
+Fre - Lør
+11:00-03:00
+&lt;/br&gt;
+Søn - Tirs
 11:00-01:00</aapning>
   </location>
   <location>
-    <id>59</id>
-    <name>Delicatessen GrÃ¼nerlÃ¸kka</name>
-    <lat>59.918701</lat>
-    <lng>10.758267</lng>
-    <type>4</type>
-    <address>SÃ¸ndre gate 8, 0550 Oslo</address>
-    <time>5</time>
-    <aapning>Mandag - Tirsdag&#13;
-11:00-00:00&#13;
-Onsdag - Torsdag&#13;
-11:00-01:00&#13;
-Fredag&#13;
-11:00-02:00&#13;
-LÃ¸rdag&#13;
-12:00-02:00&#13;
-SÃ¸ndag&#13;
-12:00-00:00"</aapning>
-  </location>
-  <location>
-    <id>60</id>
-    <name>Trancher EntrecÃ´te</name>
-    <lat>59.918942</lat>
-    <lng>10.759502</lng>
-    <type>4</type>
-    <address>Thorvald Meyers gate 78, 0550 Oslo</address>
-    <time>5</time>
-    <aapning>Mandag - SÃ¸ndag&#13;
-16:00-23:00</aapning>
-  </location>
-  <location>
-    <id>73</id>
-    <name>Sjenkestua Studentbar</name>
-    <lat>59.916053</lat>
-    <lng>10.760126</lng>
-    <type>5</type>
-    <address>Chr. Kroghs Gate 32, 0186 Oslo</address>
+    <id>97</id>
+    <name>SiO Athletica</name>
+    <lat>59.923150</lat>
+    <lng>10.752198</lng>
+    <type>6</type>
+    <address>Vulkan 15, 0178 Oslo</address>
     <time>1</time>
-    <aapning>Torsdag&#13;
-17:00-00:00&#13;
-Fredag&#13;
-15:00-00:00&#13;
-LÃ¸rdag - Onsdag&#13;
-Stengt</aapning>
+    <aapning>Man - Tors
+06:00-22:00
+&lt;/br&gt;
+Fre
+06:00-20:00
+&lt;/br&gt;
+Lør
+09:00-18:00
+&lt;/br&gt;
+Søn
+10:00-19:00</aapning>
   </location>
   <location>
-    <id>74</id>
-    <name>Skuret bar og scene</name>
-    <lat>59.914973</lat>
-    <lng>10.758224</lng>
-    <type>5</type>
-    <address>Chr. Kroghs Gate 2, 0186 Oslo</address>
+    <id>98</id>
+    <name>Galleri Vulkan</name>
+    <lat>59.922396</lat>
+    <lng>10.751264</lng>
+    <type>6</type>
+    <address>Maridalsveien 13, 0175 Oslo</address>
     <time>3</time>
-    <aapning>Mandag - Torsdag&#13;
-16:00-01:00&#13;
-Fredag - LÃ¸rdag&#13;
-15:00-03:30&#13;
-SÃ¸ndag&#13;
-18:00-01:00</aapning>
+    <aapning>Ons - Fre
+12:00-19:00
+&lt;/br&gt;
+Lør - Søn
+12:00-17:00</aapning>
   </location>
   <location>
-    <id>75</id>
-    <name>Cafe Con Bar</name>
-    <lat>59.913836</lat>
-    <lng>10.756544</lng>
-    <type>5</type>
-    <address>Brugata 11, 0186 Oslo</address>
-    <time>4</time>
-    <aapning>Mandag - Torsdag&#13;
-10:00-01:00&#13;
-Fredag - LÃ¸rdag&#13;
-10:00-03:00&#13;
-SÃ¸ndag&#13;
-12:00-12:00</aapning>
+    <id>99</id>
+    <name>Dansens Hus</name>
+    <lat>59.921540</lat>
+    <lng>10.752268</lng>
+    <type>6</type>
+    <address>Vulkan 1, 0182 Oslo</address>
+    <time>3</time>
+    <aapning>Arrangement basert</aapning>
   </location>
   <location>
-    <id>76</id>
-    <name>Dattera til hagen</name>
-    <lat>59.913254</lat>
-    <lng>10.760122</lng>
-    <type>5</type>
-    <address>GrÃ¸nland 10, 0188 Oslo</address>
-    <time>6</time>
-    <aapning>Mandag - Torsdag&#13;
-11:00-01:00&#13;
-Fredag - LÃ¸rdag&#13;
-11:00-03:30&#13;
-SÃ¸ndag&#13;
-12:00-00:00"</aapning>
-  </location>
-  <location>
-    <id>77</id>
-    <name>Verkstedet bar</name>
-    <lat>59.917716</lat>
-    <lng>10.754042</lng>
-    <type>5</type>
-    <address>Hausmanns gate 29, 0182 Oslo</address>
-    <time>6</time>
-    <aapning>Onsdag - Torsdag&#13;
-17:00-01:00&#13;
-Fredag - LÃ¸rdag&#13;
-19:00-03:00&#13;
-SÃ¸ndag - Tirsdag&#13;
-Stengt</aapning>
-  </location>
-  <location>
-    <id>78</id>
-    <name>Schouskjeller Mikrobyggeri</name>
-    <lat>59.918411</lat>
-    <lng>10.760267</lng>
-    <type>5</type>
-    <address>Trondheimsveien 2, 0560 Oslo</address>
+    <id>100</id>
+    <name>Ytteborgs ølhall</name>
+    <lat>59.924461</lat>
+    <lng>10.747488</lng>
+    <type>6</type>
+    <address>Akersbakken 28, 0174 Oslo</address>
     <time>8</time>
-    <aapning>Mandag - Torsdag&#13;
-16:00-02:00&#13;
-Fredag - LÃ¸rdag&#13;
-16:00-03:30&#13;
-SÃ¸ndag&#13;
-16:00-01:00</aapning>
+    <aapning>Døgnåpent</aapning>
   </location>
   <location>
-    <id>91</id>
-    <name>Volleyballbane</name>
-    <lat>59.915534</lat>
-    <lng>10.760954</lng>
+    <id>101</id>
+    <name>Sofienbergparken</name>
+    <lat>59.923103</lat>
+    <lng>10.763558</lng>
     <type>6</type>
-    <address>Nylandsveien, 0186 Oslo</address>
-    <time>3</time>
-    <aapning>Mandag - SÃ¸ndag&#13;
-00:00-00:00</aapning>
+    <address>Sofienberggata 14, 0558 Oslo</address>
+    <time>11</time>
+    <aapning>Døgnåpent</aapning>
   </location>
   <location>
-    <id>92</id>
-    <name>Haralds Gym</name>
-    <lat>59.915788</lat>
-    <lng>10.758701</lng>
+    <id>102</id>
+    <name>Oslo Reptilpark</name>
+    <lat>59.918158</lat>
+    <lng>10.743261</lng>
     <type>6</type>
-    <address>Hausmanns gate 6, 0186 Oslo</address>
-    <time>3</time>
-    <aapning>Mandag - Fredag&#13;
-09:00-21:00&#13;
-LÃ¸rdag - SÃ¸ndag&#13;
-12:00-18:00</aapning>
-  </location>
-  <location>
-    <id>93</id>
-    <name>Anker Gymsal</name>
-    <lat>59.917499</lat>
-    <lng>10.756832</lng>
-    <type>6</type>
-    <address>Storgata 91, 0182 Oslo</address>
-    <time>3</time>
-    <aapning>Time bestilling</aapning>
-  </location>
-  <location>
-    <id>94</id>
-    <name>Farah Kaah Internet CafÃ¨</name>
-    <lat>59.915914</lat>
-    <lng>10.756482</lng>
-    <type>6</type>
-    <address>Storgata 51, 0182 Oslo</address>
-    <time>3</time>
-    <aapning>Mandag-SÃ¸ndag&#13;
-10:00-20:00</aapning>
-  </location>
-  <location>
-    <id>95</id>
-    <name>JÃ¸disk museum</name>
-    <lat>59.916390</lat>
-    <lng>10.755296</lng>
-    <type>6</type>
-    <address>Calmeyers gate 15b, 0183 Oslo</address>
-    <time>5</time>
-    <aapning>Tirsdag&#13;
-10:00-15:00&#13;
-Onsdag - Torsdag&#13;
-14:00-19:00&#13;
-SÃ¸ndag&#13;
-11:00-16:00&#13;
-Mandag&#13;
-Stengt&#13;
-Fredag - LÃ¸rdag&#13;
-Stengt</aapning>
-  </location>
-  <location>
-    <id>96</id>
-    <name>Botanisk hage</name>
-    <lat>59.918409</lat>
-    <lng>10.770372</lng>
-    <type>6</type>
-    <address>Monrads Gate, 0562</address>
-    <time>9</time>
-    <aapning>Mandag - SÃ¸ndag&#13;
-07:00-21:00</aapning>
+    <address>St. Olavs Gate 2, 0165 Oslo</address>
+    <time>13</time>
+    <aapning>Man - Søn
+10:00-18:00</aapning>
   </location>
 </data>

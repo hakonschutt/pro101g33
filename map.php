@@ -53,7 +53,7 @@ if ($error === null){
         $loc_id=$dom->createElement("id",$loc['id']);
         $location->appendChild($loc_id);
         
-        $name=$dom->createElement("name",utf8_encode($loc['navn']));
+        $name=$dom->createElement("name",($loc['navn']));
         $location->appendChild($name);
         
         $lat=$dom->createElement("lat",$loc['latitude']);
@@ -65,13 +65,13 @@ if ($error === null){
         $type=$dom->createElement("type",$loc['type_id']);
         $location->appendChild($type);
         
-        $address=$dom->createElement("address",utf8_encode($loc['adresse']));
+        $address=$dom->createElement("address",($loc['adresse']));
         $location->appendChild($address);
         
         $time=$dom->createElement("time",$loc['reisetid']);
         $location->appendChild($time);
 
-        $aapning=$dom->createElement("aapning",utf8_encode($loc['aapningstid']));
+        $aapning=$dom->createElement("aapning",($loc['aapningstid']));
         $location->appendChild($aapning);
         
     }
