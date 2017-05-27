@@ -39,6 +39,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	    }?>
 	</div>
 </div>
+
 <div class="act stopp" id="act">
 	<div class="act-div inaktiv-d">
 		<?php

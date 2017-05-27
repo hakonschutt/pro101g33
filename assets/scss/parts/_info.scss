@@ -6,14 +6,14 @@
 	margin-bottom: 100px;
 
 	&-inner {
-		width: 1000px;
+		width: 1004px;
 		height: 100%;
 		position: absolute;
 		left: 0; 
 		right: 0; 
 		margin: auto;
 
-		&-left{
+		&-left {
 			float: left; 
 			width: 60%; 
 			height: 80%;
@@ -48,4 +48,53 @@
 			}
 		}
 	}
+}
+
+@media only screen and (max-width: $laptop) {
+	.info {
+		padding-top: 20px;
+		min-height: 550px;
+		height: auto;
+		padding-bottom: 50px;
+
+		&-inner {
+			width: 80%;
+			height: auto;
+
+			&-left {
+				display: block;
+				width: 100%; 
+				position: relative; 
+			}
+
+			&-right { 
+				display: block;
+				position: relative;
+				left: 0; 
+				right: 0;
+				margin: auto;
+				height: 210px;
+				width: 100%;
+				margin-top: 20px;
+
+				&-image {
+					height: auto; 
+					width: 28%; 
+					display: inline-block;
+					margin: 0px 2%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $tablet) {
+	.info {
+		padding-bottom: 110px;
+	}
+
+}
+
+@media only screen and (max-width: $mobil) {
+
 }
