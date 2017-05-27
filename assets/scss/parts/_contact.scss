@@ -7,7 +7,7 @@
 	box-shadow: inset 0px 30px 30px -30px rgba(23,45,79,1), inset 0px -30px 30px -30px rgba(23,45,79,1);
 
 	&-inner {
-		width: 1050px; 
+		width: 1024px; 
 		height: 90%; 
 		position: absolute;
 		left: 0;
@@ -136,7 +136,100 @@
 					background-color: $white; 
 					color: $brandcolor;
 				}
+			}
+		}
+	}
+}
 
+@media only screen and (max-width: $laptop) {
+	.contact {
+		&-inner {
+			width: 95%;
+
+			&-left {
+				width: 230px;
+
+				&-image {
+					display: none;
+				}
+
+				&-info {
+					left: 15%;
+					top: 80px;
+					width: 200px;
+
+					img {
+						margin-left: 5px;
+					}
+				}
+			}
+
+			&-right {
+				width: calc(100% - 250px);
+
+				&-wrap {
+					left: auto; 
+					margin-right: 15px;
+
+					input, textarea {
+						width: 90%;
+						float: right;
+					}
+
+					input.submit-button {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $tablet) {
+	.contact {
+		&-inner {
+			&-left {
+				display: none;
+			}
+
+			&-right {
+				width: 100%;
+
+				&-wrap {
+					left: 0; 
+					margin: auto;
+
+					input, textarea {
+						width: 393px;
+						float: none;
+					}
+
+					input.submit-button {
+						width: 180px;
+						float: left; 
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $tablet) {
+	.contact {
+		&-inner {
+			&-right {
+				&-wrap {
+					width: 350px;
+
+					input, textarea {
+						width: 340px;
+						float: none;
+					}
+
+					input.submit-button {
+						width: 180px;
+					}
+				}
 			}
 		}
 	}

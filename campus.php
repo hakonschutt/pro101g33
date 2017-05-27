@@ -162,7 +162,6 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		</div>
 	</div>
 </div>
-
 <div class="contact" id="Kontaktoss" style="background-image: url('img/LargePic/Background.png');">
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>

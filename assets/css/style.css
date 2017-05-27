@@ -223,6 +223,9 @@
         height: 30px;
         margin: 35px 15px; }
 
+@media only screen and (max-width: 1024px) {
+  .footer {
+    background-color: yellow; } }
 @media only screen and (max-width: 768px) {
   .footer {
     height: 70px;
@@ -531,7 +534,7 @@
   background-size: cover;
   box-shadow: inset 0px 30px 30px -30px #172d4f, inset 0px -30px 30px -30px #172d4f; }
   .contact-inner {
-    width: 1050px;
+    width: 1024px;
     height: 90%;
     position: absolute;
     left: 0;
@@ -631,6 +634,51 @@
           background-color: #ffffff;
           color: #2B518C; }
 
+@media only screen and (max-width: 1024px) {
+  .contact-inner {
+    width: 95%; }
+    .contact-inner-left {
+      width: 230px; }
+      .contact-inner-left-image {
+        display: none; }
+      .contact-inner-left-info {
+        left: 15%;
+        top: 80px;
+        width: 200px; }
+        .contact-inner-left-info img {
+          margin-left: 5px; }
+    .contact-inner-right {
+      width: calc(100% - 250px); }
+      .contact-inner-right-wrap {
+        left: auto;
+        margin-right: 15px; }
+        .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
+          width: 90%;
+          float: right; }
+        .contact-inner-right-wrap input.submit-button {
+          float: right; } }
+@media only screen and (max-width: 768px) {
+  .contact-inner-left {
+    display: none; }
+  .contact-inner-right {
+    width: 100%; }
+    .contact-inner-right-wrap {
+      left: 0;
+      margin: auto; }
+      .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
+        width: 393px;
+        float: none; }
+      .contact-inner-right-wrap input.submit-button {
+        width: 180px;
+        float: left; } }
+@media only screen and (max-width: 768px) {
+  .contact-inner-right-wrap {
+    width: 350px; }
+    .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
+      width: 340px;
+      float: none; }
+    .contact-inner-right-wrap input.submit-button {
+      width: 180px; } }
 .mapcontainer {
   margin-top: 70px;
   min-height: 600px;
