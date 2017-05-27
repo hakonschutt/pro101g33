@@ -35,9 +35,19 @@
 
 @media only screen and (max-width: $tablet) {
 	.footer {
+		height: 70px; 
 		background-color: red; 
-	}
 
+		&-inner {
+			line-height: 70px;
+
+			&-right {
+				img {
+					margin: 20px 15px; 
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $mobil) {
@@ -45,4 +55,18 @@
 		background-color: green; 
 	}
 
+	.footer-inner-left {
+		display: none;
+	}
+
+	.footer-inner-right {
+		clear: both;
+		left: 0; 
+		right: 0; 
+		margin: auto;
+
+		img {
+			margin: 20px 15px; 
+		}
+	}
 }

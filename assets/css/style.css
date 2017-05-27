@@ -198,10 +198,26 @@
 
 @media only screen and (max-width: 768px) {
   .footer {
-    background-color: red; } }
+    height: 70px;
+    background-color: red; }
+    .footer-inner {
+      line-height: 70px; }
+      .footer-inner-right img {
+        margin: 20px 15px; } }
 @media only screen and (max-width: 425px) {
   .footer {
-    background-color: green; } }
+    background-color: green; }
+
+  .footer-inner-left {
+    display: none; }
+
+  .footer-inner-right {
+    clear: both;
+    left: 0;
+    right: 0;
+    margin: auto; }
+    .footer-inner-right img {
+      margin: 20px 15px; } }
 .indexbody {
   width: 100%;
   height: 100%;
