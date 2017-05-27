@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Typography */
 /* Colours */
 /* Sceen sizes */
@@ -30,6 +31,8 @@
       text-decoration: none; }
       .nav-bar-campus-icon {
         height: 100%; }
+      .nav-bar-campus-initial {
+        display: none; }
       .nav-bar-campus span {
         font-size: 1.5rem;
         position: relative;
@@ -170,6 +173,27 @@
           opacity: 0.4;
           cursor: not-allowed; }
 
+@media only screen and (max-width: 768px) {
+  .nav-bar-campus-initial {
+    display: inline-block; }
+  .nav-bar-campus-navn {
+    display: none; } }
+@media only screen and (max-width: 425px) {
+  .nav-bar-campus span {
+    font-size: 1.2rem; }
+
+  #opacity  {
+    visibility: none; }
+
+  .menu {
+    right: -100%;
+    width: 100%; }
+    .menu-inner {
+      left: 0;
+      right: 0;
+      margin: auto; }
+      .menu-inner-items {
+        margin-top: 60px; } }
 .footer {
   background-color: #2B518C;
   width: 100%;

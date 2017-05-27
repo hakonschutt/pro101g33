@@ -33,6 +33,10 @@
 				height: 100%; 
 			}
 
+			&-initial {
+				display: none;
+			}
+
 			span { 
 				font-size: 1.5rem; 
 				position: relative;
@@ -220,6 +224,52 @@
     			}
     		}
     	}
+	}
+}
+
+@media only screen and (max-width: $tablet) {
+	.nav {
+		&-bar {
+			&-campus {
+				&-initial {
+					display: inline-block;
+				}
+
+				&-navn {
+					display: none;
+				}
+
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $mobil) {
+	.nav {
+		&-bar {
+			&-campus {
+				span {font-size: 1.2rem;}
+			}
+		}
+	}
+
+	#opacity {
+		visibility: none;
+	}
+
+	.menu { 
+	right: -100%;
+	width: 100%; 
+
+		&-inner {
+			left: 0;
+			right: 0; 
+			margin: auto;
+
+			&-items {
+				margin-top: 60px;
+			}
+	    }
 	}
 }
 
