@@ -63,11 +63,11 @@
    	} // End footer
    }
 
-   function debug($data, $return = false) {
+   /*function debug($data, $return = false) {
    	$res = '<pre>' . print_f($data, true) . '</pre>';
    	if ($return){
    		return $res;
    	}
    	echo $res;
-   }
+   }*/
 ?>
