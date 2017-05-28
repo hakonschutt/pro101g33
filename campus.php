@@ -84,8 +84,8 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 							foreach ($rows as $row) {
 
 								echo '
-									<div title="Finn ut mer" class="act-div-inner-right-box">
-                                    <div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
+									<div class="act-div-inner-right-box">
+                                    <div title="Finn ut mer" id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
                                         <a href="#" tabindex="0" onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap CallWrapper">
 										<div class="act-div-inner-right-box-inner-wrap CallWrapper">
 												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
@@ -162,9 +162,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 			</div>
 		</div>
 		<div class="info-inner-right">
-			<img class="info-inner-right-image" src="img/LargePic/image1.jpg" alt="bilde av westerdals elever på vulkan" />
-			<img class="info-inner-right-image" src="img/LargePic/image2.jpg" alt="bilde av westerdals elever i forelesning på fjerdingen" />
-			<img class="info-inner-right-image" src="img/LargePic/image3.jpg" alt="bilde av campus fjerdingen på innsiden" />
+			<img class="info-inner-right-image" src="img/largepic/image1.jpg" alt="bilde av westerdals elever på vulkan" />
+			<img class="info-inner-right-image" src="img/largepic/image2.jpg" alt="bilde av westerdals elever i forelesning på fjerdingen" />
+			<img class="info-inner-right-image" src="img/largepic/image3.jpg" alt="bilde av campus fjerdingen på innsiden" />
 		</div>
 	</div>
 </div>

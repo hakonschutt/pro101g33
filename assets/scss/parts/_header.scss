@@ -136,7 +136,7 @@
 	top: 70px;
 	height: calc(100% - 70px);  
 	width: calc(100% - 350px);
-	left: -100%; 
+	left: -100%;
 	background-color: $white; 
 	opacity: 0.5; 
 	display: block; 
@@ -185,7 +185,7 @@
 
 
     		&-title {
-    			width :100%; 
+    			width: 100%; 
     			text-align: center;
     			color: $white;
 
@@ -278,10 +278,23 @@
 			left: 0;
 			right: 0; 
 			margin: auto;
+			height: 90%;
 
 			&-items {
-				margin-top: 40px;
+				margin-top: 10px;
 			}
+
+			&-campuses {
+	    		bottom: 0px; 
+
+	    		&-title {
+	    			display: none;
+	    		}
+
+	    		&-campus {
+	    			margin-top: 100px;
+	    		}
+	    	}
 	    }
 	}
 }

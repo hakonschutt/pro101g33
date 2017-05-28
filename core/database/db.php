@@ -1,9 +1,9 @@
 <?php
 
     $host = "localhost";
-    $db = "newcampus";
-    $bruker = "root";
-    $pass = "root";
+    $db = "atcampusno1";
+    $bruker = "atcampusno1";
+    $pass = "pFsF%qXUb8";
 
     // Prøv å koble til databasen. Hvis problem oppstår, gi en feilmelding til bruker.
     try {

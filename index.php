@@ -8,7 +8,7 @@
         <div class="left-col">
             <div class="left-col-inner">
                 <img class="left-col-inner-logo" src="img/westerdals-hvit.png" alt="Westerdals OSLO ACT logo">
-                <p class="left-col-inner-text">Er du ny på Westerdals ? Eller bare lyst til å se hva som finnes av tilbud i nærområdet ? Da har du kommet til riktig sted. @Campus gir deg enkelt muligheten til å finne steder av interesse. </br></br> I nærområdet til campus Fjerdingen, Vulkan og brenneriveien finner du blant annet spisesteder, utesteder, transportmuligheter og fritidsaktiviteter. Er du nyskjerrig så velg campus og sett gang.</p>
+                <p class="left-col-inner-text">Er du ny på Westerdals? Eller bare lyst til å se hva som finnes av tilbud i nærområdet? Da har du kommet til riktig sted. @Campus gir deg enkelt muligheten til å finne steder av interesse. </br></br> I nærområdet til campus Fjerdingen, Vulkan og brenneriveien finner du blant annet bysykkeler, spisesteder, utesteder, transportmuligheter og fritidsaktiviteter. Er du nysgjerrig så velg campus og sett gang.</p>
             </div>
         </div>
         <div class="right-col">

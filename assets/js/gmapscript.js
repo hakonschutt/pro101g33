@@ -13,7 +13,7 @@ var campuses = [
 ];
 
 var icons = [
-    [0, 'img/campus/Fjerdingen.png'],
+    [0, 'img/campus/fjerdingen.png'],
     [1, 'img/aktivitet/bicycle.png'],
     [2, 'img/aktivitet/front-of-bus.png'],
     [3, 'img/aktivitet/shopping-cart.png'],

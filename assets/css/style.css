@@ -198,9 +198,16 @@
     .menu-inner {
       left: 0;
       right: 0;
-      margin: auto; }
+      margin: auto;
+      height: 90%; }
       .menu-inner-items {
-        margin-top: 40px; } }
+        margin-top: 10px; }
+      .menu-inner-campuses {
+        bottom: 0px; }
+        .menu-inner-campuses-title {
+          display: none; }
+        .menu-inner-campuses-campus {
+          margin-top: 100px; } }
 .footer {
   background-color: #2B518C;
   width: 100%;
@@ -731,19 +738,21 @@
         .contact-inner-right-wrap input.submit-button {
           float: right; } }
 @media only screen and (max-width: 768px) {
-  .contact-inner-left {
-    display: none; }
-  .contact-inner-right {
-    width: 100%; }
-    .contact-inner-right-wrap {
-      left: 0;
-      margin: auto; }
-      .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
-        width: 393px;
-        float: none; }
-      .contact-inner-right-wrap input.submit-button {
-        width: 180px;
-        float: left; } }
+  .contact {
+    background-position: 100% auto; }
+    .contact-inner-left {
+      display: none; }
+    .contact-inner-right {
+      width: 100%; }
+      .contact-inner-right-wrap {
+        left: 0;
+        margin: auto; }
+        .contact-inner-right-wrap input, .contact-inner-right-wrap textarea {
+          width: 393px;
+          float: none; }
+        .contact-inner-right-wrap input.submit-button {
+          width: 180px;
+          float: left; } }
 @media only screen and (max-width: 768px) {
   .contact-inner-right-wrap {
     width: 350px; }
