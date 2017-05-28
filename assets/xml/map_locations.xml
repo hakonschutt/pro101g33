@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data id="1" data_id="">
+
   <location>
     <id>1</id>
     <name>Hausmanns gate</name>
@@ -81,15 +82,14 @@
     <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
-    <id>21</id>
-    <name>Grønland [T]</name>
-    <lat>59.912801</lat>
-    <lng>10.760186</lng>
+    <id>27</id>
+    <name>M�llerveien</name>
+    <lat>59.920588</lat>
+    <lng>10.751391</lng>
     <type>2</type>
-    <address>Smalgangen 8, 0188 Oslo</address>
-    <time>6</time>
-    <aapning>Man-Søn
-05:00-01:00</aapning>
+    <address>M�llerveien, 0178 Oslo</address>
+    <time>4</time>
+    <aapning>Sjekk Rutetabell</aapning>
   </location>
   <location>
     <id>22</id>
@@ -135,7 +135,7 @@
 Lør
 08:00-22:00
 &lt;/br&gt;
-Søn
+S�n
 Stengt</aapning>
   </location>
   <location>
@@ -186,7 +186,7 @@ Søn
 Lør
 08:00-00:00
 &lt;/br&gt;
-Søn
+S�n
 Stengt</aapning>
   </location>
   <location>
@@ -200,10 +200,10 @@ Stengt</aapning>
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-Lør
+L�r
 08:00-21:00
 &lt;/br&gt;
-Søn
+S�n
 Stengt</aapning>
   </location>
   <location>
@@ -220,7 +220,7 @@ Stengt</aapning>
 Lør
 08:00-22:00
 &lt;/br&gt;
-Søn
+S�n
 Stengt</aapning>
   </location>
   <location>
