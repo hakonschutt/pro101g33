@@ -103,9 +103,9 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															<div class="dropdown-inner-left">
 																<p>' . $row->beskrivelse . '</p>
 																</br>
+																<p class="act-div-reisetid">Reisetid: ' . $row->reisetid . 'min - <a href="map.php?id=' . $id . '&data_id=' . $row->id . '">kart</a></p>
 																<p>Åpningstid: </p>
 																<span>' . $row->aapningstid . '</span>
-																</br>
 																</br>
 																<p>Tilgjenglighet: </p>
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
