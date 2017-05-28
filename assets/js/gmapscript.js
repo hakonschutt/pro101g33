@@ -47,7 +47,6 @@ fillLocations();
 
 //Lager kart og fyller med markers fra xmlfil
 function createMap() {
-    //console.log(id);
     switch(id) {
         case "1":
             centerPos = new google.maps.LatLng(59.916049, 10.760024);
