@@ -29,6 +29,7 @@
                         <a title="Tilbake til hovedsiden" href="index.php">
                             <div class="nav-bar-campus" id="campus' . $element->id . '">
                             	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '" alt="rundt bilde av campus ' . $element->navn . '"/>
+                            	<span class="nav-bar-campus-initial">@' . $element->navn . '</span>
                             	<span class="nav-bar-campus-navn">@Campus - ' . $element->navn . '</span>
                             </div>
                         </a>
