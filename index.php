@@ -3,7 +3,7 @@
     echo Init::header();
 ?>
 
-<body class="indexbody" style="background-image: url('img/LargePic/Background.jpg');">
+<body class="indexbody" style="background-image: url('img/largepic/background.jpg');">
     <div class="main-container">
         <div class="left-col">
             <div class="left-col-inner">
