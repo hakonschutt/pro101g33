@@ -97,7 +97,16 @@
 
 @media only screen and (max-width: $mobil) {
 	.info {
-		height: 700px;
-		padding-bottom: 110px;
+		height: 630px;
+		padding-bottom: 90px;
+
+
+	&-inner {
+		&-right {
+			&-image {
+				display: none;
+			}
+		}
+	}
 	}
 }

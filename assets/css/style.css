@@ -223,21 +223,14 @@
         height: 30px;
         margin: 35px 15px; }
 
-@media only screen and (max-width: 1024px) {
-  .footer {
-    background-color: yellow; } }
 @media only screen and (max-width: 768px) {
   .footer {
-    height: 70px;
-    background-color: red; }
+    height: 70px; }
     .footer-inner {
       line-height: 70px; }
       .footer-inner-right img {
         margin: 20px 15px; } }
 @media only screen and (max-width: 425px) {
-  .footer {
-    background-color: green; }
-
   .footer-inner-left {
     display: none; }
 
@@ -599,8 +592,10 @@
     padding-bottom: 110px; } }
 @media only screen and (max-width: 425px) {
   .info {
-    height: 700px;
-    padding-bottom: 110px; } }
+    height: 630px;
+    padding-bottom: 90px; }
+    .info-inner-right-image {
+      display: none; } }
 .contact {
   width: 100%;
   height: 550px;
