@@ -31,10 +31,15 @@
 		margin-top: 20px;
 		position: relative;
 		text-align: center;
+		border-bottom: 1px solid transparent;
 
 		&-icon {
 			max-height: 80px;
 			max-width: 80px;
+			position: absolute;
+			left: 0; 
+			right: 0; 
+			margin: auto; 
 		}
 
 		&-name {
@@ -51,5 +56,63 @@
 
 	.activity:hover {
 		border-bottom: 1px solid $brandcolor;
+	}
+}
+
+@media only screen and (max-width: $laptop) {
+	.activities {
+		height: 100px;
+		margin-bottom: 0px;
+
+		&-inner {
+			min-width: 620px;
+			max-width: 700px;
+		}
+
+		.activity {
+			display: inline-block;
+			margin-left: 4%;
+			width: 5%;
+			margin-top: 20px;
+			height: 80px;
+
+			&-icon {
+				max-height: 50px;
+				max-width: 50px;
+			}
+
+			&-name {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $tablet) {
+	.activities {
+		height: 300px;
+		margin-bottom: 0px;
+
+		&-inner {
+			width: 370px;
+			min-width: 370px;
+		}
+
+		.activity {
+			display: inline-block;
+			margin-left: 4%;
+			width: 55px;
+			margin-top: 20px;
+			height: 80px;
+
+			&-icon {
+				max-height: 50px;
+				max-width: 50px;
+			}
+
+			&-name {
+				font-size: 0.8rem;
+			}
+		}
 	}
 }
