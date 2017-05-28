@@ -29,12 +29,12 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 	// Kjører en loop for hvert element i som PDO henter.
 	    while ($element = $sql->fetch()) {
 	    	echo'
-		    	<a class="tester">
 		            <div onclick="on(\'#act-div' . $element->id  . '\'); return false;" class="activity" id="activity' . $element->id . '">
-		                <img class="activity-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
+                        <a href="#" tabindex="0" onclick="on(\'#act-div' . $element->id  . '\'); return false;">
+		                <img title="Finn ut mer" class="activity-icon" src="' . $element->type_bilde_path . '" alt="logo for aktivitet ' . $element->type_navn . '"/>
 		                <span class="activity-name">' . $element->type_navn . '</span>
+                        </a>
 		            </div>
-		        </a>
 	        ';
 	    }?>
 	</div>
@@ -83,17 +83,21 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 							foreach ($rows as $row) {
 
 								echo '
-									<div class="act-div-inner-right-box">
-										<div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
-			                				<div onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" 	class="act-div-inner-right-box-inner-wrap CallWrapper">
+									<div title="Finn ut mer" class="act-div-inner-right-box">
+                                    <div id="aktivitet' . $row->id  . '" class="act-div-inner-right-box-inner inaktiv">
+                                        <a href="#" tabindex="0" onclick="aapne(\'#aktivitet' . $row->id  . '\'); return false;" class="act-div-inner-right-box-inner-wrap CallWrapper">
+										<div class="act-div-inner-right-box-inner-wrap CallWrapper">
 												<h3 class="act-div-inner-right-box-name">' . $row->navn . '</h3>
+                                                
 												<div class="act-div-inner-right-box-right">
 													<p class="act-div-inner-right-box-right-reisetid">Reisetid: ' . $row->reisetid . 'min</p>
 													<p class="act-div-inner-right-box-right-les">Les mer</p>
 												</div>
 											</div>
+                                            </a>
 											<div class="act-div-inner-right-box-drop dropdown">
-												<div class="dropdown-inner">';
+												<div class="dropdown-inner">'
+                                                ;
 
 												if ($row->type_id == 1){
 													$by_id = $row->x_id;
@@ -110,7 +114,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 																<div class="dropdown-inner-rep byLoader" data-api-path="/core/bysykkel.php?by_id=' . $by_id . '">
 																</div>
 															</div>
-															<a href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
+															<a tabindex="-1" href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div tabindex="-1" class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
 														';
 
 												} else if ($row->type_id == 2){
@@ -128,7 +132,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>
 														</div>
-														<a href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
+														<a tabindex="-1" href="map.php?id=' . $id . '&data_id=' . $row->id . '"><div class="dropdown-inner-image" style="background-image: url(' . $row->bilde_path . '); background-position: center;"></div></a>
 														';
 												}
 												echo '</div>
@@ -186,13 +190,13 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		<div class="contact-inner-right">
 			<div class="contact-inner-right-wrap">
 				<form method="post" id="contactForm" action="core/contactaction.php">
-					<input required type="text" name="Name" id="Name" placeholder="Navn"/>
+					<input required title="Skriv inn navnet ditt." type="text" name="Name" id="Name" placeholder="Navn"/>
 		
-					<input required type="email" name="Email" id="Email" placeholder="Email"/>
+					<input required title="Skriv inn e-post adressen din." type="email" name="Email" id="Email" placeholder="Email"/>
 					
-					<textarea required name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
+					<textarea title="Skriv inn melding din." required name="Message" rows="20" cols="20" id="Message" placeholder="Melding"></textarea>
 
-					<input type="submit" name="submit" value="Send melding" class="submit-button" />
+					<input title="Send meldingen" type="submit" name="submit" value="Send melding" class="submit-button" />
 				</form>
 			</div>
 		</div>

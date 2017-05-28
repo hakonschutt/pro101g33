@@ -26,7 +26,7 @@
             // Kjører en loop for hvert element i som PDO henter.
             while ($element = $sql->fetch()) {
                 echo '
-                        <a href="index.php">
+                        <a title="Tilbake til hovedsiden" href="index.php">
                             <div class="nav-bar-campus" id="campus' . $element->id . '">
                             	<img class="nav-bar-campus-icon" src="' . $element->campus_bilde_path . '" alt="rundt bilde av campus ' . $element->navn . '"/>
                             	<span class="nav-bar-campus-navn">@Campus - ' . $element->navn . '</span>
@@ -35,7 +35,7 @@
                     ';
             }?>
     		<!--<a href="index.php"><img class="nav-bar-logo" src="img/westerdals-hvit.png" /></a>-->
-	    	<a href="#"><div id="nav-icon" style="float: right; margin: 20px;">
+	    	<a title="Åpne navigasjonsmeny" id="nav-icon" href="#"><div tabindex="0" id="nav-icon" style="float: right; margin: 20px;">
 			  <span></span>
 			  <span></span>
 			  <span></span>
@@ -47,10 +47,10 @@
 	<div class="menu" id="menu">
 		<div class="menu-inner">
 			<ul class="menu-inner-items" id="navmenu">
-				<a href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
-				<a href="<?php echo 'campus.php?id=' . $id . '#Aktiviteter'?>"><li class="menu-inner-items-item">Aktiviteter</li></a>
-				<a href="<?php echo 'campus.php?id=' . $id . '#Omoss'?>"><li class="menu-inner-items-item">Om oss</li></a>
-				<a href="<?php echo 'campus.php?id=' . $id . '#Kontaktoss'?>"><li class="menu-inner-items-item">Kontakt oss</li></a>
+				<a tabindex="-1" href="index.php"><li class="menu-inner-items-item">Hjem</li></a>
+				<a tabindex="-1" href="<?php echo 'campus.php?id=' . $id . '#Aktiviteter'?>"><li class="menu-inner-items-item">Aktiviteter</li></a>
+				<a tabindex="-1" href="<?php echo 'campus.php?id=' . $id . '#Omoss'?>"><li class="menu-inner-items-item">Om oss</li></a>
+				<a tabindex="-1" href="<?php echo 'campus.php?id=' . $id . '#Kontaktoss'?>"><li class="menu-inner-items-item">Kontakt oss</li></a>
 				<a href="<?php echo 'map.php?id=' . $id ?>"><li class="menu-inner-items-item" id="map">Kart oversikt</li></a>
 			</ul>
 			<div class="menu-inner-campuses">

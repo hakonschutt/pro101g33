@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data id="2" data_id="11">
+<data id="2" data_id="">
   <location>
     <id>7</id>
     <name>Vulkan</name>
@@ -82,11 +82,11 @@
   </location>
   <location>
     <id>27</id>
-    <name>MÃ¸llerveien</name>
+    <name>Møllerveien</name>
     <lat>59.920588</lat>
     <lng>10.751391</lng>
     <type>2</type>
-    <address>MÃ¸llerveien, 0178 Oslo</address>
+    <address>Møllerveien, 0178 Oslo</address>
     <time>4</time>
     <aapning>Sjekk Rutetabell</aapning>
   </location>
@@ -116,7 +116,7 @@
     <lat>59.922324</lat>
     <lng>10.742162</lng>
     <type>2</type>
-    <address>UllevÃ¥lsveien 10, 0171 Oslo</address>
+    <address>Ullevålsveien 10, 0171 Oslo</address>
     <time>10</time>
     <aapning>Sjekk Rutetabell</aapning>
   </location>
@@ -131,10 +131,10 @@
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 08:00-21:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -145,10 +145,10 @@ Stengt</aapning>
     <type>3</type>
     <address>Markveien 35b, 0554 Oslo</address>
     <time>7</time>
-    <aapning>Man - LÃ¸r
+    <aapning>Man - Lør
 07:00-23:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -162,10 +162,10 @@ Stengt</aapning>
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 08:00-21:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -179,10 +179,10 @@ Stengt</aapning>
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 08:00-21:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -196,10 +196,10 @@ Stengt</aapning>
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 08:00-21:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -213,10 +213,10 @@ Stengt</aapning>
     <aapning>Man - Fre
 07:00-23:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 08:00-21:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 Stengt</aapning>
   </location>
   <location>
@@ -230,21 +230,21 @@ Stengt</aapning>
     <aapning>Man - Tors
 15:00-23:00
 &lt;/br&gt;
-Fre - LÃ¸r
+Fre - Lør
 12:00-00:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 12:00-23:00</aapning>
   </location>
   <location>
     <id>62</id>
-    <name>La CrÃªpe</name>
+    <name>La Crêpe</name>
     <lat>59.922568</lat>
     <lng>10.751655</lng>
     <type>4</type>
     <address>Vulkan 28, 0178 Oslo</address>
     <time>1</time>
-    <aapning>Tirs - SÃ¸n
+    <aapning>Tirs - Søn
 12:00-21:00</aapning>
   </location>
   <location>
@@ -261,15 +261,15 @@ SÃ¸n
 Tors - Fre
 10:00-20:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 10:00-19:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 11:00-18:00</aapning>
   </location>
   <location>
     <id>64</id>
-    <name>DÃ¸gnvill Burger</name>
+    <name>Døgnvill Burger</name>
     <lat>59.921711</lat>
     <lng>10.751670</lng>
     <type>4</type>
@@ -278,10 +278,10 @@ SÃ¸n
     <aapning>Man - Ons
 12:00-23:00
 &lt;/br&gt;
-Tors- LÃ¸r
+Tors- Lør
 12:00-00:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 12:00-23:00</aapning>
   </location>
   <location>
@@ -292,7 +292,7 @@ SÃ¸n
     <type>4</type>
     <address>Markveien 34, 0554 Oslo</address>
     <time>6</time>
-    <aapning>Tirs - SÃ¸n
+    <aapning>Tirs - Søn
 12:00-21:00
 </aapning>
   </location>
@@ -302,9 +302,9 @@ SÃ¸n
     <lat>59.923353</lat>
     <lng>10.757034</lng>
     <type>4</type>
-    <address>GrÃ¼ners gate 9, 0552 Oslo</address>
+    <address>Grüners gate 9, 0552 Oslo</address>
     <time>6</time>
-    <aapning>Man - SÃ¸n
+    <aapning>Man - Søn
 12:00-23:00</aapning>
   </location>
   <location>
@@ -321,7 +321,7 @@ SÃ¸n
 Fre
 16:00-03:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 16:00-00:00</aapning>
   </location>
   <location>
@@ -335,7 +335,7 @@ LÃ¸r
     <aapning>Tirs - Fre
 18:00-00:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 18:00-02:00</aapning>
   </location>
   <location>
@@ -349,7 +349,7 @@ LÃ¸r
     <aapning>Man - Tirs
 15:00-00:00
 &lt;/br&gt;
-Ons-LÃ¸r
+Ons-Lør
 15:00-01:00
 </aapning>
   </location>
@@ -367,15 +367,15 @@ Ons-LÃ¸r
 Fre
 08:00-03:30
 &lt;/br&gt;
-LÃ¸r
+Lør
 09:00-03:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 10:00-23:00</aapning>
   </location>
   <location>
     <id>83</id>
-    <name>SÃ¸vnlÃ¸s Bar</name>
+    <name>Søvnløs Bar</name>
     <lat>59.921741</lat>
     <lng>10.751641</lng>
     <type>5</type>
@@ -387,10 +387,10 @@ SÃ¸n
 Fre
 17:00-01:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 14:00-01:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 14:00-22:00</aapning>
   </location>
   <location>
@@ -404,10 +404,10 @@ SÃ¸n
     <aapning>Ons - Tors
 11:00-02:00
 &lt;/br&gt;
-Fre - LÃ¸r
+Fre - Lør
 11:00-03:00
 &lt;/br&gt;
-SÃ¸n - Tirs
+Søn - Tirs
 11:00-01:00</aapning>
   </location>
   <location>
@@ -424,10 +424,10 @@ SÃ¸n - Tirs
 Fre
 06:00-20:00
 &lt;/br&gt;
-LÃ¸r
+Lør
 09:00-18:00
 &lt;/br&gt;
-SÃ¸n
+Søn
 10:00-19:00</aapning>
   </location>
   <location>
@@ -441,7 +441,7 @@ SÃ¸n
     <aapning>Ons - Fre
 12:00-19:00
 &lt;/br&gt;
-LÃ¸r - SÃ¸n
+Lør - Søn
 12:00-17:00</aapning>
   </location>
   <location>
@@ -456,13 +456,13 @@ LÃ¸r - SÃ¸n
   </location>
   <location>
     <id>100</id>
-    <name>Ytteborgs Ã¸lhall</name>
+    <name>Ytteborgs ølhall</name>
     <lat>59.924461</lat>
     <lng>10.747488</lng>
     <type>6</type>
     <address>Akersbakken 28, 0174 Oslo</address>
     <time>8</time>
-    <aapning>DÃ¸gnÃ¥pent</aapning>
+    <aapning>Døgnåpent</aapning>
   </location>
   <location>
     <id>101</id>
@@ -472,7 +472,7 @@ LÃ¸r - SÃ¸n
     <type>6</type>
     <address>Sofienberggata 14, 0558 Oslo</address>
     <time>11</time>
-    <aapning>DÃ¸gnÃ¥pent</aapning>
+    <aapning>Døgnåpent</aapning>
   </location>
   <location>
     <id>102</id>
@@ -482,7 +482,7 @@ LÃ¸r - SÃ¸n
     <type>6</type>
     <address>St. Olavs Gate 2, 0165 Oslo</address>
     <time>13</time>
-    <aapning>Man - SÃ¸n
+    <aapning>Man - Søn
 10:00-18:00</aapning>
   </location>
 </data>
