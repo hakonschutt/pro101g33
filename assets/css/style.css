@@ -106,7 +106,7 @@
   top: 70px;
   height: calc(100% - 70px);
   width: calc(100% - 350px);
-  left: calc(-100% + 350px);
+  left: -100%;
   background-color: #ffffff;
   opacity: 0.5;
   display: block;
@@ -164,6 +164,7 @@
           font-size: 3.0rem;
           position: absolute;
           top: 0;
+          left: 0;
           bottom: 0;
           margin: auto;
           color: white; }
@@ -180,7 +181,10 @@
   .nav-bar-campus-initial {
     display: inline-block; }
   .nav-bar-campus-navn {
-    display: none; } }
+    display: none; }
+
+  .menu-inner-items {
+    margin-top: 70px; } }
 @media only screen and (max-width: 425px) {
   .nav-bar-campus span {
     font-size: 1.2rem; }
@@ -189,14 +193,14 @@
     visibility: none; }
 
   .menu {
-    right: -100%;
+    right: -425px;
     width: 100%; }
     .menu-inner {
       left: 0;
       right: 0;
       margin: auto; }
       .menu-inner-items {
-        margin-top: 60px; } }
+        margin-top: 40px; } }
 .footer {
   background-color: #2B518C;
   width: 100%;
@@ -1035,7 +1039,7 @@
                   margin-top: 5px;
                   margin-left: 10px; }
                 .act-div-inner-right-box .dropdown-inner-left .act-div-reisetid {
-                  display: none; }
+                  display: none !important; }
                 .act-div-inner-right-box .dropdown-inner-left .bysykkel-lock {
                   height: 50px;
                   width: 85px;

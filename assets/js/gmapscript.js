@@ -125,7 +125,7 @@ function typeToIconPath(type) {
     if(type == 0) {
         switch(id)  {
             case "1":
-                return 'img/campus/Fjerdingen.png';
+                return 'img/campus/fjerdingen.png';
             case "2":
                 return 'img/campus/vulkan.png';
             case "3":

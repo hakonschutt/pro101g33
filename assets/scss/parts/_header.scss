@@ -136,7 +136,7 @@
 	top: 70px;
 	height: calc(100% - 70px);  
 	width: calc(100% - 350px);
-	left: calc(-100% + 350px); 
+	left: -100%; 
 	background-color: $white; 
 	opacity: 0.5; 
 	display: block; 
@@ -211,6 +211,7 @@
     				font-size: 3.0rem; 
     				position: absolute;
     				top: 0; 
+    				left: 0; 
     				bottom: 0; 
     				margin: auto;
     				color: white; 
@@ -246,6 +247,14 @@
 			}
 		}
 	}
+
+	.menu { 
+		&-inner {
+			&-items {
+				margin-top: 70px;
+			}
+	    }
+	}
 }
 
 @media only screen and (max-width: $mobil) {
@@ -262,7 +271,7 @@
 	}
 
 	.menu { 
-	right: -100%;
+	right: -425px;
 	width: 100%; 
 
 		&-inner {
@@ -271,7 +280,7 @@
 			margin: auto;
 
 			&-items {
-				margin-top: 60px;
+				margin-top: 40px;
 			}
 	    }
 	}

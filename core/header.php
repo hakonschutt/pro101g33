@@ -44,7 +44,7 @@
 			</div></a>
 	    </div>
 	</div>
-	<a href="#"><div id="opacity"></div></a>
+	<div id="opacity"></div>
 	<div class="menu" id="menu">
 		<div class="menu-inner">
 			<ul class="menu-inner-items" id="navmenu">
