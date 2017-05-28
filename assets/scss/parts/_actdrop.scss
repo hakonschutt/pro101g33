@@ -205,6 +205,10 @@
 									margin-left: 10px;
 								}
 
+								.act-div-reisetid {
+									display: none;
+								}
+
 								.bysykkel-lock {
 									height: 50px; 
 									width: 85px; 
@@ -406,6 +410,91 @@
 					display: block;
 					width: 90%; 
 					overflow: hidden; 
+
+					&-box {
+						&-name {
+							font-size: 1.1rem; 
+						}
+
+						&-right {
+							height: 100%; 
+							width: 50%; 
+							float: right; 
+
+							&-reisetid {
+								font-size: 0.8rem;
+								float: right; 
+								padding-right: 70px;
+							}
+
+							&-les {
+								display: none; 
+							}
+						}
+
+						&-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+							background-position: 96% 16px;
+						}
+
+						&-inner.aktiv .act-div-inner-right-box-inner-wrap{
+							background-position: 96% -34px;
+						}
+					}
+				}
+			}
+		} 
+	}
+}
+
+@media only screen and (max-width: $mobil) {
+	.stopp {
+		max-height: 750px;
+	}
+
+	.start {
+		max-height: 750px;
+	}
+
+	.act {
+
+		.inaktiv-d {
+		height: 500px;
+		}
+
+		.aktiv-d {
+			height: 750px;
+		}
+
+		&-div {
+
+			&-inner {
+				width: 100%;
+
+				&-left {
+					display: none;
+				}
+
+				&-right {
+					display: block;
+					width: 90%; 
+					overflow: hidden; 
+
+					.act-div-reisetid {
+						display: block !important;
+					}
+
+					&-box {
+						&-name {
+							font-size: 1.0rem; 
+						}
+
+						&-right {
+
+							&-reisetid {
+								display: none;
+							}
+						}
+					}
 				}
 			}
 		} 

@@ -125,6 +125,7 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 														<div class="dropdown-inner-left">
 															<p>Adresse: </p>
 															<span>' . $row->adresse . '</span>
+															<span class="act-div-reisetid"> Reisetid: ' . $row->reisetid . 'min - <a href="map.php?id=' . $id . '&data_id=' . $row->id . '">kart</a></span>
 															</br>
 															<p>Beskrivelse: </p>
 															<span>' . $row->beskrivelse . '</span>

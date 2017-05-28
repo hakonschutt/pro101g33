@@ -1040,6 +1040,8 @@
                   display: block;
                   margin-top: 5px;
                   margin-left: 10px; }
+                .act-div-inner-right-box .dropdown-inner-left .act-div-reisetid {
+                  display: none; }
                 .act-div-inner-right-box .dropdown-inner-left .bysykkel-lock {
                   height: 50px;
                   width: 85px;
@@ -1166,7 +1168,48 @@
     .act-div-inner-right {
       display: block;
       width: 90%;
-      overflow: hidden; } }
+      overflow: hidden; }
+      .act-div-inner-right-box-name {
+        font-size: 1.1rem; }
+      .act-div-inner-right-box-right {
+        height: 100%;
+        width: 50%;
+        float: right; }
+        .act-div-inner-right-box-right-reisetid {
+          font-size: 0.8rem;
+          float: right;
+          padding-right: 70px; }
+        .act-div-inner-right-box-right-les {
+          display: none; }
+      .act-div-inner-right-box-inner.inaktiv .act-div-inner-right-box-inner-wrap {
+        background-position: 96% 16px; }
+      .act-div-inner-right-box-inner.aktiv .act-div-inner-right-box-inner-wrap {
+        background-position: 96% -34px; } }
+@media only screen and (max-width: 425px) {
+  .stopp {
+    max-height: 750px; }
+
+  .start {
+    max-height: 750px; }
+
+  .act .inaktiv-d {
+    height: 500px; }
+  .act .aktiv-d {
+    height: 750px; }
+  .act-div-inner {
+    width: 100%; }
+    .act-div-inner-left {
+      display: none; }
+    .act-div-inner-right {
+      display: block;
+      width: 90%;
+      overflow: hidden; }
+      .act-div-inner-right .act-div-reisetid {
+        display: block !important; }
+      .act-div-inner-right-box-name {
+        font-size: 1.0rem; }
+      .act-div-inner-right-box-right-reisetid {
+        display: none; } }
 * {
   margin: 0;
   padding: 0;
