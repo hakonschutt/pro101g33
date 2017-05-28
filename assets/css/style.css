@@ -1152,7 +1152,7 @@
       margin: auto; } }
 @media only screen and (max-width: 768px) {
   .stopp {
-    max-height: 750px; }
+    max-height: 0px; }
 
   .start {
     max-height: 750px; }
@@ -1162,7 +1162,9 @@
   .act .aktiv-d {
     height: 750px; }
   .act-div-inner {
-    width: 100%; }
+    width: 100%;
+    top: 45px;
+    height: 90%; }
     .act-div-inner-left {
       display: none; }
     .act-div-inner-right {
@@ -1184,32 +1186,79 @@
       .act-div-inner-right-box-inner.inaktiv .act-div-inner-right-box-inner-wrap {
         background-position: 96% 16px; }
       .act-div-inner-right-box-inner.aktiv .act-div-inner-right-box-inner-wrap {
-        background-position: 96% -34px; } }
+        background-position: 96% -34px; }
+      .act-div-inner-right-box .dropdown-inner {
+        width: 98%;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
+        .act-div-inner-right-box .dropdown-inner-image {
+          height: 200px;
+          width: calc(100% - 380px);
+          right: 0;
+          position: absolute; } }
+@media only screen and (max-width: 600px) {
+  .dropdown-inner-image {
+    display: none; } }
 @media only screen and (max-width: 425px) {
   .stopp {
-    max-height: 750px; }
+    max-height: 0px; }
 
   .start {
-    max-height: 750px; }
+    max-height: 770px; }
 
   .act .inaktiv-d {
     height: 500px; }
   .act .aktiv-d {
-    height: 750px; }
+    height: 770px; }
   .act-div-inner {
     width: 100%; }
     .act-div-inner-left {
       display: none; }
-    .act-div-inner-right {
-      display: block;
-      width: 90%;
-      overflow: hidden; }
-      .act-div-inner-right .act-div-reisetid {
-        display: block !important; }
-      .act-div-inner-right-box-name {
-        font-size: 1.0rem; }
-      .act-div-inner-right-box-right-reisetid {
-        display: none; } }
+    .act-div-inner-right .act-div-reisetid {
+      display: block !important; }
+      .act-div-inner-right .act-div-reisetid a {
+        text-decoration: underline;
+        color: #2B518C; }
+    .act-div-inner-right p.act-div-reisetid {
+      margin-bottom: 20px; }
+    .act-div-inner-right span.act-div-reisetid {
+      margin-top: 10px; }
+    .act-div-inner-right-box-right-reisetid {
+      display: none; }
+    .act-div-inner-right-box .inaktiv {
+      max-height: 60px; }
+    .act-div-inner-right-box .aktiv {
+      max-height: 330px; }
+    .act-div-inner-right-box .dropdown {
+      height: 270px; }
+      .act-div-inner-right-box .dropdown-inner {
+        height: 250px; }
+        .act-div-inner-right-box .dropdown-inner-left {
+          height: 220px;
+          width: 100%;
+          max-width: 290px;
+          position: relative; }
+        .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-lock {
+          height: 40px;
+          width: 80px;
+          margin: 15px 0 0 10px; }
+          .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-lock img {
+            height: 20px; }
+          .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-lock span {
+            margin-top: 0px;
+            font-size: 1.5rem; }
+        .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-bikes {
+          height: 40px;
+          width: 90px;
+          margin: 10px 75px 0 10px; }
+          .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-bikes img {
+            width: 35px; }
+          .act-div-inner-right-box .dropdown-inner .byLoader .bysykkel-bikes span {
+            font-size: 1.5rem; } }
 * {
   margin: 0;
   padding: 0;
