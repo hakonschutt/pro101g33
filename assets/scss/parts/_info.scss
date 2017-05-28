@@ -96,5 +96,8 @@
 }
 
 @media only screen and (max-width: $mobil) {
-
+	.info {
+		height: 700px;
+		padding-bottom: 110px;
+	}
 }
