@@ -164,11 +164,11 @@ if (!isset($_GET['id']) && !is_numeric($_GET['id'])) {
 		</div>
 	</div>
 </div>
-<div class="contact" id="Kontaktoss" style="background-image: url('img/LargePic/Background.png');">
+<div class="contact" id="Kontaktoss" style="background-image: url('img/LargePic/Background.jpg');">
 	<div class="contact-inner">
 		<h1 class="contact-inner-header">Kontakt oss</h1>
 		<div class="contact-inner-left">
-			<img class="contact-inner-left-image" src="img/LargePic/map.png" alt="bilde av kart over campusene" />
+			<img class="contact-inner-left-image" src="img/LargePic/map.jpg" alt="bilde av kart over campusene" />
 			<div class="contact-inner-left-info">
 				<div class="contact-inner-left-info-bit">
 					<img src="img/icons/pin.png" alt="location pin" />

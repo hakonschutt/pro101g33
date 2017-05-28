@@ -6,8 +6,8 @@
 /*
 /*******************************************************************************************************/
 
-	error_reporting(E_ALL);
-	ini_set('display_errors', '1');
+	//error_reporting(E_ALL);
+	//ini_set('display_errors', '1');
 
     require 'database/db.php';
 
@@ -63,11 +63,11 @@
    	} // End footer
    }
 
-   function debug($data, $return = false) {
+   /*function debug($data, $return = false) {
    	$res = '<pre>' . print_f($data, true) . '</pre>';
    	if ($return){
    		return $res;
    	}
    	echo $res;
-   }
+   }*/
 ?>
